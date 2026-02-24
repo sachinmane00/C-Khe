@@ -1,0 +1,168 @@
+[
+  {
+    "id": "sci_001",
+    "type": "concept",
+    "subject": "Science",
+    "chapter": "Light — Reflection and Refraction",
+    "difficulty": 1,
+    "xpValue": 5,
+    "content": {
+      "topic": "Law of Reflection",
+      "body": "When a ray of light hits a mirror, the angle of incidence (the angle between the incoming ray and the normal) always equals the angle of reflection (the angle between the reflected ray and the normal). Both angles are measured from the normal to the surface.",
+      "analogy": "Think of it like a tennis ball bouncing off a wall — the angle it hits equals the angle it bounces back."
+    }
+  },
+  {
+    "id": "sci_002",
+    "type": "concept",
+    "subject": "Science",
+    "chapter": "Electricity",
+    "difficulty": 1,
+    "xpValue": 5,
+    "content": {
+      "topic": "Ohm's Law",
+      "body": "Ohm's Law states that the current (I) flowing through a conductor is directly proportional to the voltage (V) across it, provided temperature remains constant. Mathematically: V = IR, where R is resistance in ohms (Ω).",
+      "analogy": "Think of voltage as water pressure, current as water flow rate, and resistance as the pipe width — narrow pipes (high resistance) slow the flow."
+    }
+  },
+  {
+    "id": "sci_003",
+    "type": "concept",
+    "subject": "Science",
+    "chapter": "Carbon and its Compounds",
+    "difficulty": 2,
+    "xpValue": 5,
+    "content": {
+      "topic": "Covalent Bonding in Carbon",
+      "body": "Carbon has 4 valence electrons and forms 4 covalent bonds by sharing electrons with other atoms. This tetravalency allows carbon to form chains, branches, and rings, resulting in millions of organic compounds.",
+      "analogy": "Carbon is like a 4-armed person who can hold hands with up to 4 friends — including itself — forming long chains or rings."
+    }
+  },
+  {
+    "id": "sci_004",
+    "type": "examTip",
+    "subject": "Science",
+    "chapter": "Light — Reflection and Refraction",
+    "difficulty": 1,
+    "xpValue": 10,
+    "content": {
+      "exactPhrase": "1/f = 1/v + 1/u (Mirror Formula), where f = focal length, v = image distance, u = object distance. Sign convention: distances measured from pole; in front of mirror is negative.",
+      "instruction": "Always state the sign convention before applying the mirror formula. Write the formula, substitute values with signs, and box your final answer with units (cm or m)."
+    }
+  },
+  {
+    "id": "sci_005",
+    "type": "examTip",
+    "subject": "Science",
+    "chapter": "Electricity",
+    "difficulty": 1,
+    "xpValue": 10,
+    "content": {
+      "exactPhrase": "Series: R_total = R₁ + R₂ + R₃ | Parallel: 1/R_total = 1/R₁ + 1/R₂ + 1/R₃",
+      "instruction": "For parallel circuits, find 1/R_total first, then take the reciprocal. Always check: parallel total resistance is LESS than the smallest individual resistor."
+    }
+  },
+  {
+    "id": "sci_006",
+    "type": "examTip",
+    "subject": "Science",
+    "chapter": "Carbon and its Compounds",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "exactPhrase": "IUPAC Name = [substituent prefix] + [carbon chain prefix] + [principal chain suffix e.g. -ane/-ene/-ol]. Example: CH₃CH₂OH = Ethanol (eth = 2C, -ol = alcohol group).",
+      "instruction": "Identify the longest carbon chain first, then locate the principal functional group. Number from the end closest to the functional group. Write substituents in alphabetical order."
+    }
+  },
+  {
+    "id": "sci_007",
+    "type": "quiz",
+    "subject": "Science",
+    "chapter": "Light — Reflection and Refraction",
+    "difficulty": 1,
+    "xpValue": 15,
+    "content": {
+      "question": "A light ray strikes a plane mirror. If the angle of incidence is 35°, what is the angle of reflection?",
+      "options": ["35°", "70°", "55°", "145°"],
+      "correctIndex": 0,
+      "explanation": "By the Law of Reflection, angle of incidence = angle of reflection. Both angles are measured from the normal to the surface. So if angle of incidence = 35°, angle of reflection = 35°."
+    }
+  },
+  {
+    "id": "sci_008",
+    "type": "quiz",
+    "subject": "Science",
+    "chapter": "Electricity",
+    "difficulty": 2,
+    "xpValue": 15,
+    "content": {
+      "question": "In a closed loop circuit, what does Kirchhoff's Voltage Law (KVL) state?",
+      "options": [
+        "Sum of all voltages = 0",
+        "Sum of all currents = 0",
+        "Voltage is proportional to resistance",
+        "Current divides equally at junctions"
+      ],
+      "correctIndex": 0,
+      "explanation": "KVL states that the algebraic sum of all voltages around any closed loop in a circuit equals zero. This is based on conservation of energy — energy supplied equals energy consumed."
+    }
+  },
+  {
+    "id": "sci_009",
+    "type": "quiz",
+    "subject": "Science",
+    "chapter": "Carbon and its Compounds",
+    "difficulty": 2,
+    "xpValue": 15,
+    "content": {
+      "question": "Which functional group is present in alcohols?",
+      "options": ["-OH (hydroxyl)", "-COOH (carboxyl)", "-CHO (aldehyde)", "-NH₂ (amino)"],
+      "correctIndex": 0,
+      "explanation": "Alcohols contain the hydroxyl functional group (-OH). For example, ethanol (C₂H₅OH) has one -OH group. The -OH group is responsible for many properties of alcohols like their ability to form hydrogen bonds."
+    }
+  },
+  {
+    "id": "sci_010",
+    "type": "memoryHook",
+    "subject": "Science",
+    "chapter": "Light — Reflection and Refraction",
+    "difficulty": 1,
+    "xpValue": 5,
+    "content": {
+      "mnemonic": "CCDI — Concave Converges, Diverges Inverts",
+      "story": "Remember: a **C**oncave mirror **C**onverges light (focuses it) and usually **D**iverges virtual rays to create **I**nverted real images. Convex mirrors always diverge and create virtual, erect images. So: Concave = mostly real & inverted; Convex = always virtual & erect."
+    }
+  },
+  {
+    "id": "sci_011",
+    "type": "memoryHook",
+    "subject": "Science",
+    "chapter": "Carbon and its Compounds",
+    "difficulty": 1,
+    "xpValue": 5,
+    "content": {
+      "mnemonic": "Me Eat Peanut Butter — Meth, Eth, Prop, But",
+      "story": "Carbon chain prefixes in order: **Meth**- (1C), **Eth**- (2C), **Prop**- (3C), **But**- (4C), Pent- (5C), Hex- (6C). Use the sentence **'Me Eat Peanut Butter'** for the first four — the most common ones in CBSE exams!"
+    }
+  },
+  {
+    "id": "sci_012",
+    "type": "mindMapPeek",
+    "subject": "Science",
+    "chapter": "Electricity",
+    "difficulty": 1,
+    "xpValue": 5,
+    "content": {
+      "centralTopic": "Electricity",
+      "connections": [
+        "Ohm's Law (V = IR)",
+        "Series Circuits",
+        "Parallel Circuits",
+        "Kirchhoff's Laws",
+        "Electric Power (P = VI)",
+        "Heating Effect (H = I²Rt)",
+        "Domestic Wiring"
+      ]
+    }
+  }
+]
