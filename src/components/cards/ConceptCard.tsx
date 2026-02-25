@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet, useColorScheme } from 'react-
 import { Ionicons } from '@expo/vector-icons'
 import { darkTheme, lightTheme, type Theme } from '../../constants/theme'
 import type { Card, ConceptContent } from '../../types'
+import MathText from '../ui/MathText'
 
 interface Props {
   card: Card
@@ -42,12 +43,21 @@ export default function ConceptCard({ card, onGotIt }: Props) {
       {/* Middle: topic + body */}
       <View style={styles.middle}>
         <Text style={styles.topic}>{content.title}</Text>
-        <Text style={styles.body}>{content.body}</Text>
+        <MathText
+          text={content.body}
+          textStyle={styles.body}
+          mathColor={theme.colors.textSecondary}
+        />
 
         {content.analogy && (
           <View style={styles.analogyBox}>
             <Ionicons name="bulb-outline" size={18} color={theme.colors.accentTeal} />
-            <Text style={styles.analogyText}>{content.analogy}</Text>
+            <MathText
+              text={content.analogy}
+              textStyle={styles.analogyText}
+              mathColor={theme.colors.accentTeal}
+              style={{ flex: 1 }}
+            />
           </View>
         )}
       </View>
@@ -117,7 +127,6 @@ function createStyles(t: Theme) {
       color: t.colors.accentTeal,
       fontSize: t.fontSize.sm,
       fontFamily: 'DMSans_400Regular',
-      flex: 1,
       lineHeight: 22,
     },
     hint: {

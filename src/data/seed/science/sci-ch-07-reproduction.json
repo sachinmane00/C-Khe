@@ -7,7 +7,151 @@
     "chapterNumber": 7,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 42
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "sci-ch-07-c-01",
+      "type": "concept",
+      "topic": "The Importance of Variation",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "DNA Copying and Variation",
+        "body": "Reproduction involves creating a copy of the DNA (the blueprint of body design). No biochemical reaction is 100% accurate; therefore, DNA copying always results in some variations.\n\n**Significance:** Variation is useful for the survival of species over time, especially when environmental conditions change drastically (e.g., global warming or antibiotic resistance).",
+        "analogy": "Like photocopying a drawing. If you copy the copy repeatedly, tiny errors (variations) creep in. Some errors might make the drawing look better or more interesting!"
+      }
+    },
+    {
+      "id": "sci-ch-07-c-02",
+      "type": "concept",
+      "topic": "Asexual Reproduction",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Modes of Asexual Reproduction",
+        "body": "1. **Fission:** Unicellular organisms split (Binary in Amoeba, Multiple in Plasmodium).\n2. **Fragmentation:** Simple multicellular organisms break into pieces (Spirogyra).\n3. **Regeneration:** Ability to give rise to new individuals from body parts (Planaria, Hydra).\n4. **Budding:** A small outgrowth (bud) develops into a new individual (Hydra, Yeast).\n5. **Vegetative Propagation:** New plants grow from roots, stems, or leaves (Bryophyllum).\n6. **Spore Formation:** Survival in harsh conditions via thick-walled spores (Rhizopus/Bread Mould)."
+      }
+    },
+    
+
+
+
+    {
+      "id": "sci-ch-07-e-01",
+      "type": "examTip",
+      "topic": "Regeneration vs Fragmentation",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Explain the difference—this is a common 2-mark question:",
+        "exactPhrase": "Fragmentation occurs in simple organisms like Spirogyra where the body simply breaks into pieces upon maturing. Regeneration is carried out by specialized cells and is the ability of an organism to regrow lost parts or whole individuals from accidental cuts (e.g., Planaria)."
+      }
+    },
+    {
+      "id": "sci-ch-07-c-03",
+      "type": "concept",
+      "topic": "Sexual Reproduction in Plants",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Structure of a Flower",
+        "body": "- **Sepals:** Protect the flower in the bud stage.\n- **Petals:** Attract insects for pollination.\n- **Stamen (Male):** Consists of Anther (produces pollen) and Filament.\n- **Carpel/Pistil (Female):** Consists of Stigma (sticky top), Style (tube), and Ovary (contains ovules/eggs).\n\n**Pollination:** Transfer of pollen from anther to stigma (Self or Cross)."
+      }
+    },
+    
+    {
+      "id": "sci-ch-07-e-02",
+      "type": "examTip",
+      "topic": "Double Fertilization",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Describe the process after pollination:",
+        "exactPhrase": "After pollen lands on the stigma, a pollen tube grows through the style to the ovary. The male germ cell fuses with the female germ cell (ovum) to form a Zygote. The zygote develops into an embryo, the ovule develops into a seed, and the ovary ripens into a fruit."
+      }
+    },
+    
+
+
+    {
+      "id": "sci-ch-07-c-04",
+      "type": "concept",
+      "topic": "Male Reproductive System",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "The Male System",
+        "body": "- **Testes:** Produce sperm and Testosterone. Located in the **Scrotum** because sperm formation requires a temperature lower than body temperature.\n- **Vas Deferens:** Passage for sperm.\n- **Prostate & Seminal Vesicles:** Add secretions to provide nutrition and a fluid medium for easier transport of sperm."
+      }
+    },
+    
+
+
+    {
+      "id": "sci-ch-07-c-05",
+      "type": "concept",
+      "topic": "Female Reproductive System",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "The Female System",
+        "body": "- **Ovaries:** Produce eggs and Estrogen/Progesterone.\n- **Fallopian Tube (Oviduct):** Site of fertilization.\n- **Uterus (Womb):** Where the embryo implants and develops.\n- **Placenta:** A special tissue that provides nutrition ($O_2$ and glucose) and removes waste ($CO_2$) from the developing foetus."
+      }
+    },
+    
+
+
+    {
+      "id": "sci-ch-07-e-03",
+      "type": "examTip",
+      "topic": "What happens when the egg is not fertilized?",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Explain Menstruation for a 2 or 3-mark question:",
+        "exactPhrase": "If the egg is not fertilized, the thick and spongy lining of the uterus is no longer needed. This lining slowly breaks and comes out through the vagina as blood and mucous. This cycle takes place roughly every month and is known as menstruation."
+      }
+    },
+    {
+      "id": "sci-ch-07-c-06",
+      "type": "concept",
+      "topic": "Reproductive Health",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Contraceptive Methods",
+        "body": "1. **Mechanical Barrier:** Condoms or Diaphragms (prevent sperm from reaching egg; prevent STDs).\n2. **Chemical Methods:** Oral pills (change hormonal balance to stop egg release).\n3. **IUCDs:** Copper-T (placed in uterus to prevent implantation).\n4. **Surgical Methods:** Vasectomy (blocking vas deferens) and Tubectomy (blocking fallopian tubes)."
+      }
+    },
+    {
+      "id": "sci-ch-07-e-04",
+      "type": "examTip",
+      "topic": "STDs",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Identify the types for 1-mark classification:",
+        "exactPhrase": "Sexually Transmitted Diseases (STDs) can be Bacterial (Gonorrhoea, Syphilis) or Viral (Warts, HIV-AIDS)."
+      }
+    },
+    {
+      "id": "sci-ch-07-q-01",
+      "type": "quiz",
+      "topic": "Placenta Function",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "Which of the following is NOT a function of the placenta?",
+        "options": [
+          "Providing glucose and oxygen to the embryo",
+          "Removing waste generated by the embryo",
+          "Site of fertilization",
+          "Providing a large surface area for exchange of materials"
+        ],
+        "correctIndex": 2,
+        "explanation": "Fertilization occurs in the Fallopian Tube (Oviduct). The placenta is a specialized tissue that forms after implantation to facilitate the exchange of nutrients and waste between the mother and the foetus."
+      }
+    }
+  ]
 }

@@ -9,5 +9,168 @@
     "lastUpdated": "2026-02-25",
     "totalCards": 0
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "sci-ch-05-c-01",
+      "type": "concept",
+      "topic": "Introduction to Life Processes",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "What are Life Processes?",
+        "body": "The basic functions performed by living organisms to maintain their life on earth are called life processes. \n\n**Core Processes:**\n1. Nutrition (Obtaining energy)\n2. Respiration (Releasing energy)\n3. Transportation (Moving materials)\n4. Excretion (Removing waste)\n\n**Note:** Even when we are asleep or sitting still, these maintenance processes must continue to prevent damage and breakdown.",
+        "analogy": "Like a car engine that needs fuel (nutrition), oxygen (respiration), a cooling system (transportation), and an exhaust pipe (excretion) to keep running smoothly."
+      }
+    },
+    {
+      "id": "sci-ch-05-c-02",
+      "type": "concept",
+      "topic": "Autotrophic Nutrition",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Photosynthesis",
+        "body": "The process by which green plants make their own food ($C_6H_{12}O_6$) using $CO_2$ and $H_2O$ in the presence of sunlight and chlorophyll.\n\n**The Equation:**\n$6CO_2 + 12H_2O \\xrightarrow[Chlorophyll]{Sunlight} C_6H_{12}O_6 + 6O_2 + 6H_2O$\n\n**Events in Photosynthesis:**\n1. Absorption of light energy by chlorophyll.\n2. Conversion of light energy to chemical energy and splitting of water molecules.\n3. Reduction of $CO_2$ to carbohydrates."
+      }
+    },
+    {
+      "id": "sci-ch-05-e-01",
+      "type": "examTip",
+      "topic": "Stomata Function",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Explain the opening and closing of stomatal pores:",
+        "exactPhrase": "The opening and closing of the pore is a function of the guard cells. The guard cells swell when water flows into them, causing the stomatal pore to open. Similarly, the pore closes if the guard cells shrink."
+      }
+    },
+    {
+      "id": "sci-ch-05-c-03",
+      "type": "concept",
+      "topic": "Human Digestive System",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Nutrition in Humans",
+        "body": "Humans follow **Holozoic** nutrition (ingesting complex food).\n- **Mouth:** Salivary amylase breaks starch into sugar.\n- **Stomach:** HCl (acidic medium), Pepsin (breaks proteins), and Mucus (protects lining).\n- **Small Intestine:** Site of complete digestion. Receives Bile (from liver) to emulsify fats and Pancreatic juice (Trypsin/Lipase) to break proteins/fats.\n- **Villi:** Finger-like projections that increase surface area for absorption."
+      }
+    },
+    {
+      "id": "sci-ch-05-e-02",
+      "type": "examTip",
+      "topic": "Role of Bile Juice",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Common 2-mark question on the liver's role:",
+        "exactPhrase": "Bile juice performs two functions: 1. It makes the acidic food coming from the stomach alkaline so that pancreatic enzymes can act. 2. Bile salts break down large fat globules into smaller globules (emulsification), increasing enzyme efficiency."
+      }
+    },
+    {
+      "id": "sci-ch-05-c-04",
+      "type": "concept",
+      "topic": "Respiration",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Breakdown of Glucose (The Flowchart)",
+        "body": "Glucose (6-carbon) is first broken into Pyruvate (3-carbon) in the **Cytoplasm**.\n\n**Three Pathways:**\n1. **Aerobic (in Mitochondria):** In presence of $O_2$. Gives $CO_2$ + $H_2O$ + **Lots of Energy**.\n2. **Anaerobic (in Yeast):** Absence of $O_2$. Gives Ethanol + $CO_2$ + Low Energy.\n3. **Lack of $O_2$ (in Muscle Cells):** Gives **Lactic Acid** + Low Energy (causes cramps)."
+      }
+    },
+    {
+      "id": "sci-ch-05-e-03",
+      "type": "examTip",
+      "topic": "Alveoli Function",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Explain why lungs are designed with millions of sacs:",
+        "exactPhrase": "Alveoli are tiny balloon-like structures that provide a very large surface area for the exchange of gases. Their walls are extremely thin and contain an extensive network of blood vessels to facilitate rapid diffusion of $O_2$ and $CO_2$."
+      }
+    },
+    {
+      "id": "sci-ch-05-c-05",
+      "type": "concept",
+      "topic": "Transportation in Humans",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "The Heart and Double Circulation",
+        "body": "The human heart has 4 chambers to prevent mixing of oxygenated and deoxygenated blood.\n\n**Double Circulation:**\n1. **Pulmonary Circuit:** Blood goes to lungs to get oxygen.\n2. **Systemic Circuit:** Oxygenated blood is pumped to the entire body.\n\n**Key Components:** Arteries (carry blood away from heart, thick walls) and Veins (carry blood towards heart, have valves)."
+      }
+    },
+    {
+      "id": "sci-ch-05-e-04",
+      "type": "examTip",
+      "topic": "Why are Valves important?",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Standard 1-mark 'Reasoning' question:",
+        "exactPhrase": "Valves ensure that blood does not flow backwards when the atria or ventricles contract."
+      }
+    },
+    {
+      "id": "sci-ch-05-c-06",
+      "type": "concept",
+      "topic": "Transportation in Plants",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Xylem vs. Phloem",
+        "body": "- **Xylem:** Transports water and minerals from roots upwards. Works on **Transpiration Pull** (suction created by evaporation from leaves).\n- **Phloem:** Transports food (sucrose) from leaves to all parts of the plant. This process is called **Translocation** and requires energy (ATP)."
+      }
+    },
+    {
+      "id": "sci-ch-05-e-05",
+      "type": "examTip",
+      "topic": "Definition — Transpiration",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Exact definition for board exams:",
+        "exactPhrase": "Transpiration is the loss of water in the form of vapour from the aerial parts of the plant. It helps in the absorption and upward movement of water and minerals and also helps in temperature regulation."
+      }
+    },
+    {
+      "id": "sci-ch-05-c-07",
+      "type": "concept",
+      "topic": "Excretion in Humans",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "The Nephron",
+        "body": "The functional unit of the kidney is the **Nephron**.\n1. **Filtration:** Occurs in the Bowman's Capsule/Glomerulus.\n2. **Reabsorption:** Useful substances like glucose, amino acids, and salts are reabsorbed in the tubular part.\n3. **Urine Formation:** The remaining fluid (urea, excess water) is collected as urine."
+      }
+    },
+    {
+      "id": "sci-ch-05-q-01",
+      "type": "quiz",
+      "topic": "Aquatic vs Terrestrial Breathing",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "Why is the breathing rate of aquatic organisms much faster than that of terrestrial organisms?",
+        "options": [
+          "Water is heavier than air",
+          "The amount of dissolved oxygen in water is fairly low compared to air",
+          "Aquatic organisms have smaller lungs",
+          "To help them swim faster"
+        ],
+        "correctIndex": 1,
+        "explanation": "Because the concentration of oxygen dissolved in water is much lower than the oxygen in the atmosphere, aquatic animals (like fish) must breathe faster to get enough oxygen for their needs."
+      }
+    },
+    {
+      "id": "sci-ch-05-m-01",
+      "type": "memoryHook",
+      "topic": "Plant Transport",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "X-W and P-F",
+        "explanation": "X-W: **X**ylem carries **W**ater. \nP-F: **P**hloem carries **F**ood (Ph-F sound)."
+      }
+    }
+  ]
 }

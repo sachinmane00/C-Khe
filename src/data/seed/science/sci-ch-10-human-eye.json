@@ -3,11 +3,149 @@
     "board": "CBSE",
     "class": "10",
     "subject": "Science",
-    "chapter": "Human Eye and the Colourful World",
+    "chapter": "Human Eye and the Colorful World",
     "chapterNumber": 10,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 38
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "sci-ch-10-c-01",
+      "type": "concept",
+      "topic": "Anatomy of the Human Eye",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "The Human Eye",
+        "body": "The eye is a natural optical instrument. \n- **Cornea:** Outer thin membrane where most refraction occurs.\n- **Iris & Pupil:** Iris controls the size of the pupil; Pupil regulates the amount of light entering.\n- **Crystalline Lens:** Fibrous, jelly-like material that fine-tunes the focus.\n- **Retina:** The 'screen' containing light-sensitive cells (rods and cones).\n- **Optic Nerve:** Transmits electrical signals to the brain."
+      }
+    },
+    
+
+
+    {
+      "id": "sci-ch-10-e-01",
+      "type": "examTip",
+      "topic": "Power of Accommodation",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Define this precisely for a 2-mark question:",
+        "exactPhrase": "The ability of the eye lens to adjust its focal length with the help of ciliary muscles is called accommodation. For distant objects, ciliary muscles relax (lens becomes thin). For nearby objects, ciliary muscles contract (lens becomes thick)."
+      }
+    },
+    {
+      "id": "sci-ch-10-e-02",
+      "type": "examTip",
+      "topic": "Near Point and Far Point",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Note the standard values for a normal human eye:",
+        "exactPhrase": "The minimum distance at which objects can be seen most distinctly without strain is called the Least Distance of Distinct Vision (Near Point), which is 25 cm. The Far Point for a normal eye is Infinity."
+      }
+    },
+    {
+      "id": "sci-ch-10-c-02",
+      "type": "concept",
+      "topic": "Defects of Vision — Myopia",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Myopia (Near-sightedness)",
+        "body": "A person can see nearby objects clearly but cannot see distant objects distinctly.\n- **Cause:** Excessive curvature of the eye lens or elongation of the eyeball.\n- **Image formation:** Image is formed **in front** of the retina.\n- **Correction:** Use a **Concave lens** of suitable power."
+      }
+    },
+    
+    {
+      "id": "sci-ch-10-c-03",
+      "type": "concept",
+      "topic": "Defects of Vision — Hypermetropia",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Hypermetropia (Far-sightedness)",
+        "body": "A person can see distant objects clearly but cannot see nearby objects distinctly.\n- **Cause:** Focal length of the eye lens is too long or the eyeball has become too small.\n- **Image formation:** Image is formed **behind** the retina.\n- **Correction:** Use a **Convex lens** of suitable power."
+      }
+    },
+    
+    {
+      "id": "sci-ch-10-e-03",
+      "type": "examTip",
+      "topic": "Presbyopia",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Common question for elderly vision issues:",
+        "exactPhrase": "Presbyopia is the gradual weakening of ciliary muscles and diminishing flexibility of the eye lens due to aging. A person often requires bi-focal lenses (upper part concave for distance, lower part convex for reading)."
+      }
+    },
+    {
+      "id": "sci-ch-10-c-04",
+      "type": "concept",
+      "topic": "Dispersion through a Prism",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Glass Prism and VIBGYOR",
+        "body": "When white light passes through a glass prism, it splits into its seven constituent colors. This is called **Dispersion**.\n- **Sequence:** Violet, Indigo, Blue, Green, Yellow, Orange, Red.\n- **Reason:** Different colors of light bend through different angles. Red bends the least, and Violet bends the most."
+      }
+    },
+    
+
+
+    {
+      "id": "sci-ch-10-e-04",
+      "type": "examTip",
+      "topic": "Newton's Double Prism Experiment",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Describe how to get white light back from a spectrum:",
+        "exactPhrase": "Isaac Newton used a second identical prism in an inverted position with respect to the first. The first prism dispersed white light, and the second inverted prism recombined the spectrum back into a beam of white light."
+      }
+    },
+    
+    {
+      "id": "sci-ch-10-e-05",
+      "type": "examTip",
+      "topic": "Atmospheric Refraction Phenomena",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Identify these for 'Give Reason' questions:",
+        "exactPhrase": "1. **Twinkling of stars:** Due to the continuously changing atmosphere, the apparent position of the star fluctuates. 2. **Advanced sunrise/Delayed sunset:** We see the sun 2 minutes before it actually rises and 2 minutes after it sets due to atmospheric refraction."
+      }
+    },
+    {
+      "id": "sci-ch-10-c-05",
+      "type": "concept",
+      "topic": "Tyndall Effect & Scattering",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Scattering of Light",
+        "body": "The Tyndall Effect is the scattering of light by colloidal particles. \n- **Blue sky:** Fine particles in the atmosphere scatter blue light (shorter wavelength) more strongly than red.\n- **Red Sunset:** Light travels a longer distance; blue is scattered away, leaving only the red light (longer wavelength) to reach our eyes."
+      }
+    },
+    {
+      "id": "sci-ch-10-q-01",
+      "type": "quiz",
+      "topic": "Color of Danger Signals",
+      "difficulty": 1,
+      "xpValue": 15,
+      "content": {
+        "question": "Why are danger signal lights always red in color?",
+        "options": [
+          "Red is the brightest color",
+          "Red is least scattered by fog or smoke",
+          "Red has the shortest wavelength",
+          "Red light travels the fastest in air"
+        ],
+        "correctIndex": 1,
+        "explanation": "Red has the longest wavelength in the visible spectrum and is scattered the least by air molecules, fog, or smoke. This allows it to be seen from a long distance even in poor weather."
+      }
+    }
+  ]
 }

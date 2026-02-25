@@ -7,7 +7,83 @@
     "chapterNumber": 6,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 28
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "mth-ch-06-c-01",
+      "type": "concept",
+      "topic": "Congruency vs Similarity",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "What are Similar Triangles?",
+        "body": "Two triangles are similar if:\n1. Their corresponding angles are equal.\n2. Their corresponding sides are in the same ratio (proportional).\n\n**Note:** All congruent triangles are similar, but all similar triangles are NOT necessarily congruent.",
+        "analogy": "Congruent is like two identical twins (same size, same shape). Similar is like a photograph of a person vs. the actual person (same shape, different size)."
+      }
+    },
+    {
+      "id": "mth-ch-06-e-01",
+      "type": "examTip",
+      "topic": "Basic Proportionality Theorem (Thales Theorem)",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "This is a 5-mark theorem. You must state and prove it exactly:",
+        "exactPhrase": "If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio. In \\(\\triangle ABC\\), if \\(DE \\parallel BC\\), then \\(AD/DB = AE/EC\\)."
+      }
+    },
+    
+    {
+      "id": "mth-ch-06-c-02",
+      "type": "concept",
+      "topic": "Criteria for Similarity",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "AA, SSS, and SAS Criteria",
+        "body": "1. **AA (Angle-Angle):** If two angles of one triangle are equal to two angles of another.\n2. **SSS (Side-Side-Side):** If the three sides of one triangle are proportional to the three sides of another.\n3. **SAS (Side-Angle-Side):** If one angle is equal and the sides including that angle are proportional."
+      }
+    },
+    {
+      "id": "mth-ch-06-e-02",
+      "type": "examTip",
+      "topic": "Internal Bisector Theorem",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Useful for high-level 3-mark geometry problems:",
+        "exactPhrase": "The internal bisector of an angle of a triangle divides the opposite side internally in the ratio of the sides containing the angle."
+      }
+    },
+    {
+      "id": "mth-ch-06-q-01",
+      "type": "quiz",
+      "topic": "BPT Application",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "In \\(\\triangle ABC\\), \\(DE \\parallel BC\\). If \\(AD = 3\\) cm, \\(DB = 4\\) cm, and \\(AE = 6\\) cm, find \\(EC\\).",
+        "options": [
+          "4.5 cm",
+          "8 cm",
+          "9 cm",
+          "12 cm"
+        ],
+        "correctIndex": 1,
+        "explanation": "By BPT, \\(AD/DB = AE/EC\\). Substituting the values: \\(3/4 = 6/EC\\). Cross-multiplying gives \\(3 \\times EC = 24\\), so \\(EC = 8\\) cm."
+      }
+    },
+    {
+      "id": "mth-ch-06-m-01",
+      "type": "memoryHook",
+      "topic": "Similarity Symbols",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "The S-Squiggle vs. The C-Equal",
+        "explanation": "Congruent is \\(\\cong\\) (The equal sign means 'same size'). Similar is \\(\\sim\\) (Just the squiggle means 'same shape only')."
+      }
+    }
+  ]
 }

@@ -7,7 +7,106 @@
     "chapterNumber": 4,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 22
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "mth-ch-04-c-01",
+      "type": "concept",
+      "topic": "Standard Form",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "What is a Quadratic Equation?",
+        "body": "A quadratic equation in the variable $x$ is an equation of the form $ax^2 + bx + c = 0$, where $a, b, c$ are real numbers and **$a \neq 0$**.\n\n- The degree of the equation is always 2.\n- The values of $x$ that satisfy the equation are called the **roots** (or zeroes) of the equation.",
+        "analogy": "It's like a scale. To keep the 'Quadratic' identity, the $x^2$ term must always be there. If $a$ becomes zero, the $x^2$ disappears, and it turns into a boring linear equation."
+      }
+    },
+    {
+      "id": "mth-ch-04-c-02",
+      "type": "concept",
+      "topic": "Solution by Factorisation",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Splitting the Middle Term",
+        "body": "To solve by factorisation:\n1. Find two numbers whose **sum** is $b$ and **product** is $ac$.\n2. Split the middle term $bx$ into two terms using these numbers.\n3. Factor by grouping.\n4. Set each factor to zero to find the roots."
+      }
+    },
+    {
+      "id": "mth-ch-04-e-01",
+      "type": "examTip",
+      "topic": "The Quadratic Formula",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Use this formula when factorisation is difficult or the roots are irrational:",
+        "exactPhrase": "For the equation $ax^2 + bx + c = 0$, the roots are given by: $$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$ Note: This is also known as Shreedharacharya's Formula."
+      }
+    },
+    {
+      "id": "mth-ch-04-c-03",
+      "type": "concept",
+      "topic": "Nature of Roots",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "The Discriminant ($D$)",
+        "body": "The expression $b^2 - 4ac$ is called the discriminant. It decides the nature of the roots without solving the equation:\n1. If $D > 0$: Two distinct real roots.\n2. If $D = 0$: Two equal real roots.\n3. If $D < 0$: No real roots (roots are imaginary).",
+        "analogy": "The Discriminant is like a 'DNA test' for the equation. Before you even see the roots, $D$ tells you if they are twins ($D=0$), different ($D>0$), or non-existent in the real world ($D<0$)."
+      }
+    },
+    
+    {
+      "id": "mth-ch-04-e-02",
+      "type": "examTip",
+      "topic": "Condition for Real Roots",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "If a question says 'the equation has real roots', use this inequality:",
+        "exactPhrase": "For real roots, $D \\geq 0$ (This includes both distinct and equal cases). If it says 'distinct real roots', use $D > 0$."
+      }
+    },
+    {
+      "id": "mth-ch-04-e-03",
+      "type": "examTip",
+      "topic": "Word Problem: Time and Work",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Essential setup for 4-mark tap/tank problems:",
+        "exactPhrase": "If tap A takes $x$ hours to fill a tank, its 1-hour work is $1/x$. If tap B takes $(x-10)$ hours, its 1-hour work is $1/(x-10)$. Combined work per hour = $1/x + 1/(x-10) = 1/(\text{Total Time})$."
+      }
+    },
+    {
+      "id": "mth-ch-04-q-01",
+      "type": "quiz",
+      "topic": "Finding the Discriminant",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "What is the nature of the roots for the equation $2x^2 - 4x + 3 = 0$?",
+        "options": [
+          "Real and distinct",
+          "Real and equal",
+          "No real roots",
+          "Rational and equal"
+        ],
+        "correctIndex": 2,
+        "explanation": "Calculate $D = b^2 - 4ac$. Here $a=2, b=-4, c=3$. $D = (-4)^2 - 4(2)(3) = 16 - 24 = -8$. Since $D < 0$, the equation has no real roots."
+      }
+    },
+    {
+      "id": "mth-ch-04-m-01",
+      "type": "memoryHook",
+      "topic": "The Quadratic Formula",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "The Negative Boy Story",
+        "explanation": "A **Negative Boy** ($-b$) was **Undecided** ($\\pm$) to go to a **Radical** ($\\sqrt$) party. He was a **Square** ($b^2$) so he **lost** ($-$) **4 Awesome Chickens** ($4ac$). The whole thing was **Over** ($/$) at **2 AM** ($2a$)."
+      }
+    }
+  ]
 }

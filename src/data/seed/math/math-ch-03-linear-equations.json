@@ -7,7 +7,106 @@
     "chapterNumber": 3,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 25
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "mth-ch-03-c-01",
+      "type": "concept",
+      "topic": "Geometric Meaning of Solutions",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Lines on a Plane",
+        "body": "A pair of linear equations represents two straight lines. The solution is the point where they meet.\n\n1. **Intersecting Lines:** Exactly one solution (Unique).\n2. **Parallel Lines:** No solution (Inconsistent).\n3. **Coincident Lines:** Infinitely many solutions (Dependent/Consistent).",
+        "analogy": "Think of two train tracks. If they cross, there's one meeting point. If they are perfectly parallel, they never meet. If one track is built directly on top of the other, they meet everywhere!"
+      }
+    },
+    {
+      "id": "mth-ch-03-e-01",
+      "type": "examTip",
+      "topic": "The Ratio Test",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "For equations $a_1x + b_1y + c_1 = 0$ and $a_2x + b_2y + c_2 = 0$, use these ratios to predict the graph:",
+        "exactPhrase": "1. Intersecting: $a_1/a_2 \\neq b_1/b_2$. 2. Coincident: $a_1/a_2 = b_1/b_2 = c_1/c_2$. 3. Parallel: $a_1/a_2 = b_1/b_2 \\neq c_1/c_2$."
+      }
+    },
+    
+    {
+      "id": "mth-ch-03-c-02",
+      "type": "concept",
+      "topic": "Substitution Method",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Algebraic Solution: Substitution",
+        "body": "Step 1: Express one variable in terms of the other from one equation (e.g., $y = 3 - x$).\nStep 2: Substitute this value into the *other* equation.\nStep 3: Solve for the remaining variable.\nStep 4: Plug that result back in to find the second variable."
+      }
+    },
+    {
+      "id": "mth-ch-03-c-03",
+      "type": "concept",
+      "topic": "Elimination Method",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Algebraic Solution: Elimination",
+        "body": "Step 1: Multiply equations by constants so that coefficients of one variable (either $x$ or $y$) become equal.\nStep 2: Add or Subtract the equations to 'eliminate' that variable.\nStep 3: Solve the resulting single-variable equation.\nStep 4: Back-substitute to find the other variable.",
+        "analogy": "It's like 'canceling out' a common enemy to focus on one target at a time."
+      }
+    },
+    {
+      "id": "mth-ch-03-e-02",
+      "type": "examTip",
+      "topic": "Consistency vs Inconsistency",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Key terminology for 1-mark questions:",
+        "exactPhrase": "A pair of equations is **Consistent** if it has at least one solution (intersecting or coincident). It is **Inconsistent** if it has no solution (parallel lines)."
+      }
+    },
+    {
+      "id": "mth-ch-03-e-03",
+      "type": "examTip",
+      "topic": "Upstream and Downstream Logic",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "The most common 4-mark word problem. Use these specific relative speeds:",
+        "exactPhrase": "Let speed of boat be $x$ km/h and speed of stream be $y$ km/h. Speed Downstream = $(x + y)$ km/h. Speed Upstream = $(x - y)$ km/h. Note: Boat speed $x$ must always be greater than stream speed $y$."
+      }
+    },
+    {
+      "id": "mth-ch-03-q-01",
+      "type": "quiz",
+      "topic": "Ratio Test for Parallel Lines",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "For what value of $k$ will the equations $3x - y - 5 = 0$ and $6x - 2y - k = 0$ have no solution?",
+        "options": [
+          "$k = 10$",
+          "$k \\neq 10$",
+          "$k = 0$",
+          "$k \\neq 0$"
+        ],
+        "correctIndex": 1,
+        "explanation": "For 'no solution', the lines must be parallel. Condition: $a_1/a_2 = b_1/b_2 \\neq c_1/c_2$. Here, $3/6 = -1/-2 = 1/2$. So we need $-5/-k \\neq 1/2$, which means $5/k \\neq 1/2$, or $k \\neq 10$. If $k=10$, the lines are coincident (infinite solutions)."
+      }
+    },
+    {
+      "id": "mth-ch-03-m-01",
+      "type": "memoryHook",
+      "topic": "Upstream/Downstream Direction",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "Down is Double, Up is Uphill",
+        "explanation": "Downstream: Speed **adds** up (Double speed). Upstream: You are fighting the water, so speed **subtracts** (Uphill battle)."
+      }
+    }
+  ]
 }

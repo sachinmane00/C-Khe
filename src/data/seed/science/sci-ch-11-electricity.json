@@ -7,7 +7,163 @@
     "chapterNumber": 11,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 38
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "sci-ch-11-c-01",
+      "type": "concept",
+      "topic": "Electric Current and Circuit",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Electric Current ($I$)",
+        "body": "Electric current is the rate of flow of electric charges through a conductor.\n\n**Formula:** $I = \\frac{Q}{t}$\n**Unit:** Ampere (A). \n1 Ampere = 1 Coulomb / 1 Second.\n\n**Direction:** Conventionally, the direction of current is taken as the direction of flow of positive charges (opposite to the flow of electrons).",
+        "analogy": "Current is like the flow of water in a pipe. The amount of water passing a point every second is the 'current'."
+      }
+    },
+    {
+      "id": "sci-ch-11-e-01",
+      "type": "examTip",
+      "topic": "Definition — 1 Ampere",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Examiners often ask to 'Define the unit of current':",
+        "exactPhrase": "One Ampere is constituted by the flow of one Coulomb of charge per second. It is measured by an instrument called an Ammeter, which is always connected in series in a circuit."
+      }
+    },
+    {
+      "id": "sci-ch-11-c-02",
+      "type": "concept",
+      "topic": "Electric Potential",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Potential Difference ($V$)",
+        "body": "The work done to move a unit charge from one point to another in an electric circuit.\n\n**Formula:** $V = \\frac{W}{Q}$\n**Unit:** Volt (V). \nMeasured by a **Voltmeter**, which is always connected in **parallel** across the points where the potential difference is to be measured.",
+        "analogy": "Potential difference is like the 'pressure' that pushes the water through the pipe. No pressure difference = no flow."
+      }
+    },
+    {
+      "id": "sci-ch-11-c-03",
+      "type": "concept",
+      "topic": "Ohm's Law",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Ohm's Law",
+        "body": "At a constant temperature, the current ($I$) flowing through a conductor is directly proportional to the potential difference ($V$) across its ends.\n\n**Equation:** $V \\propto I \\Rightarrow V = IR$\nWhere $R$ is the **Resistance** of the conductor."
+      }
+    },
+    
+    {
+      "id": "sci-ch-11-e-02",
+      "type": "examTip",
+      "topic": "Factors affecting Resistance",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "A 3-mark favorite. Mention all four factors:",
+        "exactPhrase": "The resistance ($R$) of a uniform metallic conductor is: 1. Directly proportional to its length ($L$). 2. Inversely proportional to its area of cross-section ($A$). 3. Dependent on the nature of the material. 4. Dependent on the temperature. Formula: $R = \\rho \\frac{L}{A}$ (where $\\rho$ is resistivity)."
+      }
+    },
+    {
+      "id": "sci-ch-11-c-04",
+      "type": "concept",
+      "topic": "Resistivity",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Resistivity ($\\rho$)",
+        "body": "Resistivity is a characteristic property of the material. It does not change with the change in length or area of the conductor.\n\n- **Metals/Alloys:** Low resistivity ($10^{-8}$ to $10^{-6} \\Omega m$).\n- **Insulators:** High resistivity ($10^{12}$ to $10^{17} \\Omega m$).\n- **Alloys:** Used in heating devices because they have higher resistivity and do not oxidize (burn) at high temperatures."
+      }
+    },
+    {
+      "id": "sci-ch-11-c-05",
+      "type": "concept",
+      "topic": "Resistors in Series",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Series Combination",
+        "body": "When resistors are joined end-to-end.\n1. **Current:** Same through each resistor.\n2. **Potential Difference:** Divided ($V = V_1 + V_2 + V_3$).\n3. **Equivalent Resistance:** $R_s = R_1 + R_2 + R_3$\n\nTotal resistance is always **greater** than the individual resistances."
+      }
+    },
+    
+    {
+      "id": "sci-ch-11-c-06",
+      "type": "concept",
+      "topic": "Resistors in Parallel",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Parallel Combination",
+        "body": "When resistors are connected between the same two points.\n1. **Current:** Divided ($I = I_1 + I_2 + I_3$).\n2. **Potential Difference:** Same across each resistor.\n3. **Equivalent Resistance:** $\\frac{1}{R_p} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\frac{1}{R_3}$\n\nTotal resistance is always **lesser** than the smallest individual resistance."
+      }
+    },
+    
+    {
+      "id": "sci-ch-11-e-03",
+      "type": "examTip",
+      "topic": "Advantages of Parallel Circuit",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Explain why we use parallel circuits at home:",
+        "exactPhrase": "Parallel circuits are used in domestic wiring because: 1. If one appliance fails, others continue to work. 2. Each appliance gets the same voltage. 3. Each appliance can be operated with its own independent switch."
+      }
+    },
+    {
+      "id": "sci-ch-11-c-07",
+      "type": "concept",
+      "topic": "Heating Effect of Current",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Joule's Law of Heating",
+        "body": "When an electric current flows through a resistor, heat is produced.\n\n**Formula:** $H = I^2Rt$\n**Law Statement:** Heat produced is directly proportional to: 1. Square of current ($I^2$). 2. Resistance ($R$). 3. Time ($t$) for which current flows."
+      }
+    },
+    {
+      "id": "sci-ch-11-e-04",
+      "type": "examTip",
+      "topic": "Electric Fuse",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Standard 1-mark 'safety' question:",
+        "exactPhrase": "An electric fuse is a safety device connected in series with the circuit. It consists of a wire made of a metal/alloy with a low melting point. If current exceeds a safe limit, the fuse wire melts and breaks the circuit."
+      }
+    },
+    {
+      "id": "sci-ch-11-c-08",
+      "type": "concept",
+      "topic": "Electric Power",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Electric Power ($P$)",
+        "body": "The rate at which electric energy is dissipated or consumed in a circuit.\n\n**Formulas:** \n1. $P = VI$\n2. $P = I^2R$\n3. $P = \\frac{V^2}{R}$\n**Unit:** Watt (W). \n**Commercial Unit:** Kilowatt-hour (kWh). \n$1 kWh = 3.6 \\times 10^6$ Joules."
+      }
+    },
+    {
+      "id": "sci-ch-11-q-01",
+      "type": "quiz",
+      "topic": "Numerical — Power/Voltage",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "An electric bulb is rated 220 V and 100 W. When it is operated on 110 V, the power consumed will be:",
+        "options": [
+          "100 W",
+          "75 W",
+          "50 W",
+          "25 W"
+        ],
+        "correctIndex": 3,
+        "explanation": "Resistance of the bulb $R = V^2/P = (220)^2/100 = 484 \\Omega$. At 110 V, the new power $P' = V'^2/R = (110)^2/484 = 12100/484 = 25 W$. Note: Resistance remains constant even if voltage changes."
+      }
+    }
+  ]
 }

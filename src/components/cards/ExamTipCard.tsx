@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet, useColorScheme } from 'react-
 import { Ionicons } from '@expo/vector-icons'
 import { darkTheme, lightTheme, type Theme } from '../../constants/theme'
 import type { Card, ExamTipContent } from '../../types'
+import MathText from '../ui/MathText'
 
 interface Props {
   card: Card
@@ -26,10 +27,18 @@ export default function ExamTipCard({ card, onBookmark }: Props) {
       </View>
 
       <View style={styles.quoteBox}>
-        <Text style={styles.quoteText}>{content.exactPhrase}</Text>
+        <MathText
+          text={content.exactPhrase}
+          textStyle={styles.quoteText}
+          mathColor={theme.colors.textPrimary}
+        />
       </View>
 
-      <Text style={styles.instruction}>{content.instruction}</Text>
+      <MathText
+        text={content.instruction}
+        textStyle={styles.instruction}
+        mathColor={theme.colors.textSecondary}
+      />
     </View>
   )
 }

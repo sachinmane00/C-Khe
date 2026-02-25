@@ -7,7 +7,117 @@
     "chapterNumber": 1,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 18
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "mth-ch-01-c-01",
+      "type": "concept",
+      "topic": "The Fundamental Theorem of Arithmetic",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Prime Factorization",
+        "body": "Every composite number can be expressed (factorized) as a product of primes, and this factorization is unique, apart from the order in which the prime factors occur.\n\n**Example:** $140 = 2 \times 2 \times 5 \times 7 = 2^2 \times 5 \times 7$.\nNo matter how you start, you will always end up with two 2s, one 5, and one 7.",
+        "analogy": "Primes are the 'atoms' of the number world. Just as a water molecule is always $H_2O$, the number 12 is always $2^2 \times 3$. You can't change the ingredients!"
+      }
+    },
+    {
+      "id": "mth-ch-01-e-01",
+      "type": "examTip",
+      "topic": "HCF and LCM using Prime Factorization",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Use these precise logic steps for 2-mark questions:",
+        "exactPhrase": "1. HCF: Product of the smallest power of each common prime factor in the numbers. 2. LCM: Product of the greatest power of each prime factor involved in the numbers."
+      }
+    },
+    {
+      "id": "mth-ch-01-e-02",
+      "type": "examTip",
+      "topic": "Relationship between HCF and LCM",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "This formula is a goldmine for 1-mark MCQs. Note: It only works for TWO numbers.",
+        "exactPhrase": "For any two positive integers $a$ and $b$: $HCF(a, b) \times LCM(a, b) = a \times b$."
+      }
+    },
+    {
+      "id": "mth-ch-01-c-02",
+      "type": "concept",
+      "topic": "Irrational Numbers",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "What is an Irrational Number?",
+        "body": "A number is called irrational if it cannot be written in the form $p/q$, where $p$ and $q$ are integers and $q \neq 0$.\n\n**Key Theorem:** Let $p$ be a prime number. If $p$ divides $a^2$, then $p$ divides $a$, where $a$ is a positive integer. (This is the backbone of all irrationality proofs!)"
+      }
+    },
+    {
+      "id": "mth-ch-01-e-03",
+      "type": "examTip",
+      "topic": "Proof of Irrationality",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "This is a guaranteed 3-mark question (e.g., Prove $\\sqrt{2}$ is irrational). Use the 'Method of Contradiction':",
+        "exactPhrase": "1. Assume the opposite (that $\\sqrt{2}$ is rational, i.e., $\\sqrt{2} = r/s$). 2. Simplify to show that $r$ and $s$ have no common factors other than 1 (co-prime). 3. Perform algebraic steps to show that both $r$ and $s$ are divisible by 2. 4. This contradicts the co-prime assumption, therefore $\\sqrt{2}$ must be irrational."
+      }
+    },
+    {
+      "id": "mth-ch-01-c-03",
+      "type": "concept",
+      "topic": "Factor Trees",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Visualizing Factorization",
+        "body": "A factor tree is a tool used to break down a composite number into its prime factors. You continue branching out until every 'leaf' on the tree is a prime number.",
+        "analogy": "Like tracing your family tree back until you find the original ancestors who started the family."
+      }
+    },
+    
+    {
+      "id": "mth-ch-01-e-04",
+      "type": "examTip",
+      "topic": "Checking if $4^n$ can end with zero",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "A classic 'Reasoning' question in Math:",
+        "exactPhrase": "For a number to end with the digit 0, its prime factorization must contain both 2 and 5. The prime factorization of $4^n$ is $(2^2)^n = 2^{2n}$. Since 5 is not a prime factor, $4^n$ can never end with the digit zero for any natural number $n$."
+      }
+    },
+    {
+      "id": "mth-ch-01-q-01",
+      "type": "quiz",
+      "topic": "HCF and LCM Calculation",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "If two positive integers $a$ and $b$ are written as $a = x^3y^2$ and $b = xy^3$, where $x, y$ are prime numbers, then $HCF(a, b)$ is:",
+        "options": [
+          "$xy$",
+          "$xy^2$",
+          "$x^3y^3$",
+          "$x^2y^2$"
+        ],
+        "correctIndex": 1,
+        "explanation": "To find HCF, we take the lowest power of common factors. For $x$, the powers are 3 and 1 (lowest is $x^1$). For $y$, the powers are 2 and 3 (lowest is $y^2$). Therefore, $HCF = xy^2$."
+      }
+    },
+    {
+      "id": "mth-ch-01-m-01",
+      "type": "memoryHook",
+      "topic": "LCM vs HCF Logic",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "L-G and H-S",
+        "explanation": "LCM = Least Common Multiple, but use the **G**reatest power. \nHCF = Highest Common Factor, but use the **S**mallest power. It's an 'Opposite' rule!"
+      }
+    }
+  ]
 }

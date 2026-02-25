@@ -7,7 +7,93 @@
     "chapterNumber": 5,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 22
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "mth-ch-05-c-01",
+      "type": "concept",
+      "topic": "Definition of AP",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "What is an AP?",
+        "body": "An Arithmetic Progression is a sequence of numbers in which each term is obtained by adding a fixed number to the preceding term.\n\n- **First Term:** denoted by $a$.\n- **Common Difference:** denoted by $d$. ($d$ can be positive, negative, or zero).",
+        "analogy": "Like a staircase where every step is exactly the same height. If the first step is 5cm and every next step adds 10cm, the sequence is 5, 15, 25, 35..."
+      }
+    },
+    {
+      "id": "mth-ch-05-e-01",
+      "type": "examTip",
+      "topic": "The nth Term Formula",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Use this to find any specific term in the sequence:",
+        "exactPhrase": "The $n^{th}$ term of an AP with first term $a$ and common difference $d$ is given by: $$a_n = a + (n - 1)d$$"
+      }
+    },
+    {
+      "id": "mth-ch-05-c-02",
+      "type": "concept",
+      "topic": "Sum of First n Terms",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Sum Formula ($S_n$)",
+        "body": "There are two ways to calculate the sum of an AP:\n1. When $d$ is known: $$S_n = \\frac{n}{2}[2a + (n - 1)d]$$\n2. When the last term ($l$) is known: $$S_n = \\frac{n}{2}[a + l]$$"
+      }
+    },
+    {
+      "id": "mth-ch-05-e-02",
+      "type": "examTip",
+      "topic": "Finding d",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Common mistake alert: Always subtract the *previous* term from the *current* one.",
+        "exactPhrase": "Common difference $d = a_2 - a_1 = a_3 - a_2$. Always check at least two pairs to confirm the sequence is an AP."
+      }
+    },
+    {
+      "id": "mth-ch-05-e-03",
+      "type": "examTip",
+      "topic": "Arithmetic Mean",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "If $a, b, c$ are in AP, the middle term is the average:",
+        "exactPhrase": "$b = \\frac{a + c}{2}$. This $b$ is called the Arithmetic Mean of $a$ and $c$."
+      }
+    },
+    {
+      "id": "mth-ch-05-q-01",
+      "type": "quiz",
+      "topic": "Identifying AP",
+      "difficulty": 1,
+      "xpValue": 15,
+      "content": {
+        "question": "Which of the following sequences is an Arithmetic Progression?",
+        "options": [
+          "2, 4, 8, 16...",
+          "$\\sqrt{3}, \\sqrt{6}, \\sqrt{9}, \\sqrt{12}$...",
+          "$\\sqrt{2}, \\sqrt{8}, \\sqrt{18}, \\sqrt{32}$...",
+          "1, 3, 9, 27..."
+        ],
+        "correctIndex": 2,
+        "explanation": "Option (C) is $\\sqrt{2}, 2\\sqrt{2}, 3\\sqrt{2}, 4\\sqrt{2}$... here $d = \\sqrt{2}$ (constant). In (A) and (D) the terms are multiplied (GP), and in (B) the differences are not equal."
+      }
+    },
+    {
+      "id": "mth-ch-05-m-01",
+      "type": "memoryHook",
+      "topic": "Term vs Sum",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "An is a Spot, Sn is a Lot",
+        "explanation": "$a_n$ tells you the value at a specific **spot** (like the 10th step). $S_n$ tells you the total **lot** (the sum of all steps combined)."
+      }
+    }
+  ]
 }

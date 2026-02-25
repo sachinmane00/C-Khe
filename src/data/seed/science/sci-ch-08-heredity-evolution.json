@@ -3,11 +3,122 @@
     "board": "CBSE",
     "class": "10",
     "subject": "Science",
-    "chapter": "Heredity and Evolution",
+    "chapter": "Heredity",
     "chapterNumber": 8,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 25
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "sci-ch-08-c-01",
+      "type": "concept",
+      "topic": "Introduction to Heredity",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Heredity vs. Variation",
+        "body": "**Heredity:** The transmission of characters (traits) from parents to offspring.\n**Variation:** The differences among the individuals of a species. \n\nSexual reproduction leads to greater variation because it involves the combination of DNA from two different individuals. This variation is the basis for the survival of species in changing environments.",
+        "analogy": "Heredity is why you look like your parents; Variation is why you don't look *exactly* like your siblings."
+      }
+    },
+    {
+      "id": "sci-ch-08-e-01",
+      "type": "examTip",
+      "topic": "Father of Genetics",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Mention the scientist and his study material for 1-mark questions:",
+        "exactPhrase": "Gregor Johann Mendel is known as the 'Father of Genetics'. He conducted his experiments on the Garden Pea (Pisum sativum), choosing seven pairs of contrasting characters."
+      }
+    },
+    {
+      "id": "sci-ch-08-c-02",
+      "type": "concept",
+      "topic": "Monohybrid Cross",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Inheritance of One Trait",
+        "body": "A cross between two plants with one pair of contrasting characters (e.g., Tall vs Short).\n\n- **F1 Generation:** All plants are Tall (Only the dominant trait is expressed).\n- **F2 Generation:** Tall and Short plants appear in a **3:1 ratio** (Phenotype) and **1:2:1 ratio** (Genotype).\n\n**Conclusion:** Traits are inherited but may not always be expressed in the first generation."
+      }
+    },
+    
+    {
+      "id": "sci-ch-08-e-02",
+      "type": "examTip",
+      "topic": "Dominant vs Recessive Traits",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Define these clearly for a 2-mark distinction:",
+        "exactPhrase": "A Dominant trait (e.g., Tallness, 'T') is one that expresses itself even in the presence of a contrasting trait. A Recessive trait (e.g., Dwarfness, 't') is one that can only express itself when both alleles are identical (tt)."
+      }
+    },
+    {
+      "id": "sci-ch-08-c-03",
+      "type": "concept",
+      "topic": "Dihybrid Cross",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Inheritance of Two Traits",
+        "body": "A cross involving two pairs of contrasting characters (e.g., Round-Yellow seeds vs Wrinkled-Green seeds).\n\n**Law of Independent Assortment:** Mendel found that the inheritance of one trait is independent of the inheritance of another. In the F2 generation, new combinations (Round-Green and Wrinkled-Yellow) appeared alongside parental types.\n\n**F2 Phenotypic Ratio:** 9 : 3 : 3 : 1"
+      }
+    },
+    
+    {
+      "id": "sci-ch-08-e-03",
+      "type": "examTip",
+      "topic": "Mechanism of Heredity (Protein Synthesis)",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Explain how 'genes' actually work to control traits:",
+        "exactPhrase": "A section of DNA that provides information for one protein is called a Gene. If the gene for tallness works efficiently, a lot of plant growth hormone is produced, making the plant tall. If the gene has an alteration, less protein/hormone is made, and the plant remains short."
+      }
+    },
+    {
+      "id": "sci-ch-08-c-04",
+      "type": "concept",
+      "topic": "Sex Determination",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "How is Sex Determined in Humans?",
+        "body": "Humans have 23 pairs of chromosomes. 22 pairs are autosomes, and 1 pair is the **Sex Chromosome**.\n- **Females:** Have two 'X' chromosomes (XX).\n- **Males:** Have one 'X' and one 'Y' chromosome (XY).\n\nAll children inherit an 'X' from their mother. The sex of the child depends on whether they inherit an 'X' (results in a girl) or a 'Y' (results in a boy) from their father."
+      }
+    },
+    
+    {
+      "id": "sci-ch-08-e-04",
+      "type": "examTip",
+      "topic": "Whose 'fault' is the gender?",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Use this to answer social/reasoning questions about child gender:",
+        "exactPhrase": "In humans, the sex of the child is determined by the father. This is because mothers only produce eggs with X chromosomes, while fathers produce two types of sperms—50% with X and 50% with Y. Therefore, the gender depends purely on which sperm fertilizes the egg."
+      }
+    },
+    {
+      "id": "sci-ch-08-q-01",
+      "type": "quiz",
+      "topic": "Monohybrid F2 Ratio",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "What is the genotypic ratio of the F2 generation in a monohybrid cross?",
+        "options": [
+          "3:1",
+          "9:3:3:1",
+          "1:2:1",
+          "1:1"
+        ],
+        "correctIndex": 2,
+        "explanation": "3:1 is the *phenotypic* ratio (outward appearance). 1:2:1 is the *genotypic* ratio, representing 1 pure dominant (TT), 2 hybrid dominant (Tt), and 1 pure recessive (tt)."
+      }
+    }
+  ]
 }

@@ -7,7 +7,148 @@
     "chapterNumber": 12,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 32
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "sci-ch-12-c-01",
+      "type": "concept",
+      "topic": "Magnetic Field Lines",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Properties of Magnetic Field Lines",
+        "body": "A magnetic field is the region around a magnet where its force can be detected.\n\n**Key Properties:**\n1. They emerge from the North pole and merge at the South pole (outside the magnet).\n2. Inside the magnet, the direction is from South to North.\n3. They are closed curves.\n4. The degree of closeness represents the strength of the field.\n5. **Two field lines never intersect** (at the point of intersection, a compass would show two directions, which is impossible).",
+        "analogy": "Think of field lines like invisible 'lanes' of force. The closer the lanes, the more 'crowded' and strong the force is."
+      }
+    },
+    
+
+
+    {
+      "id": "sci-ch-12-e-01",
+      "type": "examTip",
+      "topic": "Right-Hand Thumb Rule",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Use this to find the direction of magnetic field around a straight conductor:",
+        "exactPhrase": "Imagine you are holding a current-carrying straight conductor in your right hand such that the thumb points towards the direction of current. Then your fingers will wrap around the conductor in the direction of the field lines of the magnetic field."
+      }
+    },
+    
+
+
+    {
+      "id": "sci-ch-12-c-02",
+      "type": "concept",
+      "topic": "Solenoid",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Magnetic Field due to a Solenoid",
+        "body": "A solenoid is a coil of many circular turns of insulated copper wire wrapped closely in the shape of a cylinder.\n\n- The magnetic field inside a long straight solenoid is **uniform** (represented by parallel straight lines).\n- One end behaves as a North pole and the other as a South pole.\n- It is used to magnetize a piece of magnetic material, like soft iron, forming an **Electromagnet**."
+      }
+    },
+    
+    {
+      "id": "sci-ch-12-e-02",
+      "type": "examTip",
+      "topic": "Factors affecting Electromagnets",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "List these for a 2-mark question on increasing magnetic strength:",
+        "exactPhrase": "The strength of the magnetic field produced by a solenoid depends on: 1. The number of turns in the coil. 2. The magnitude of the current flowing through it. 3. The nature of the core material (using soft iron increases strength)."
+      }
+    },
+    {
+      "id": "sci-ch-12-c-03",
+      "type": "concept",
+      "topic": "Force on a Current-Carrying Conductor",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Lorentz Force",
+        "body": "A current-carrying conductor placed in a magnetic field experiences a mechanical force. \n- The force is maximum when the direction of current is **perpendicular** to the magnetic field.\n- This principle is the basis for the **Electric Motor**."
+      }
+    },
+    {
+      "id": "sci-ch-12-e-03",
+      "type": "examTip",
+      "topic": "Fleming's Left-Hand Rule",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "This rule is vital for Motor-related questions. Know what each finger represents:",
+        "exactPhrase": "Stretch the thumb, forefinger, and middle finger of your left hand such that they are mutually perpendicular. If the First finger points in direction of Magnetic Field, Second finger in direction of Current, then the Thumb will point in the direction of Motion (Force)."
+      }
+    },
+    
+
+
+    {
+      "id": "sci-ch-12-m-01",
+      "type": "memoryHook",
+      "topic": "Left Hand Rule Fingers",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "Father, Mother, Child (F-M-C)",
+        "explanation": "Thumb = **F**ather (**F**orce/Motion)\nForefinger = **M**other (**M**agnetic Field)\nMiddle finger = **C**hild (**C**urrent)"
+      }
+    },
+    {
+      "id": "sci-ch-12-c-04",
+      "type": "concept",
+      "topic": "Domestic Electric Circuits",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Household Wiring",
+        "body": "In our homes, we receive 220 V AC power.\n- **Live Wire (Red):** Positive potential.\n- **Neutral Wire (Black):** Zero potential.\n- **Earth Wire (Green):** Safety wire connected to a metal plate deep in the earth.\n\nAll appliances are connected in **Parallel** so they receive the same voltage."
+      }
+    },
+    
+    {
+      "id": "sci-ch-12-e-04",
+      "type": "examTip",
+      "topic": "Short Circuit and Overloading",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Define these for a 2-mark 'Defects' question:",
+        "exactPhrase": "Short-circuiting occurs when the live wire and neutral wire come into direct contact (due to damaged insulation), causing current to rise abruptly. Overloading occurs when too many high-power appliances are connected to a single socket or the supply voltage increases accidentally."
+      }
+    },
+    {
+      "id": "sci-ch-12-e-05",
+      "type": "examTip",
+      "topic": "Function of Earth Wire",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Explain why metallic appliances must be earthed:",
+        "exactPhrase": "The earth wire provides a low-resistance conducting path for the current. It ensures that any leakage of current to the metallic body of an appliance keeps its potential to that of the earth, protecting the user from a severe electric shock."
+      }
+    },
+    {
+      "id": "sci-ch-12-q-01",
+      "type": "quiz",
+      "topic": "Direction of Force",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "An electron enters a magnetic field at right angles to it. The direction of force acting on the electron will be:",
+        "options": [
+          "In the same direction as the electron",
+          "Opposite to the direction of the electron",
+          "Determined by Fleming's Left-Hand Rule, keeping in mind current is opposite to electron flow",
+          "Zero, because electrons are not affected by magnets"
+        ],
+        "correctIndex": 2,
+        "explanation": "We use Fleming's Left-Hand Rule. However, 'Current' in the rule is conventional current. Since electrons are negative, the direction of current is taken as **opposite** to the direction of electron motion."
+      }
+    }
+  ]
 }

@@ -7,7 +7,119 @@
     "chapterNumber": 13,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 22
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "sci-ch-13-c-01",
+      "type": "concept",
+      "topic": "Ecosystem Components",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "What is an Ecosystem?",
+        "body": "An ecosystem consists of all the living organisms (Biotic) in an area interacting with the non-living (Abiotic) constituents of the environment.\n\n- **Biotic:** Plants, animals, microorganisms.\n- **Abiotic:** Temperature, rainfall, wind, soil, minerals.\n- **Types:** Natural (Forests, Ponds) and Artificial/Man-made (Gardens, Crop-fields).",
+        "analogy": "An ecosystem is like a giant machine where every part, from the smallest screw (bacteria) to the engine (sunlight), has a specific job to keep the machine running."
+      }
+    },
+    {
+      "id": "sci-ch-13-c-02",
+      "type": "concept",
+      "topic": "Trophic Levels",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Food Chains and Webs",
+        "body": "A food chain represents the sequence of who eats whom in an ecosystem.\n\n- **Producers:** Autotrophs (Green plants) that fix solar energy.\n- **Consumers:** Herbivores (Primary), Small Carnivores (Secondary), Large Carnivores (Tertiary).\n- **Decomposers:** Fungi and Bacteria that break down dead remains, replenishing the soil nutrients."
+      }
+    },
+    
+
+
+    {
+      "id": "sci-ch-13-e-01",
+      "type": "examTip",
+      "topic": "The 10 Percent Law",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "This is a frequent numerical-style question. State the law clearly:",
+        "exactPhrase": "Only 10% of the energy available at one trophic level is transferred to the next trophic level. The remaining 90% is lost as heat to the environment, used for digestion, or other life processes. This limits the number of trophic levels in a food chain to 3 or 4."
+      }
+    },
+    
+    {
+      "id": "sci-ch-13-e-02",
+      "type": "examTip",
+      "topic": "Biological Magnification",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Explain why top predators have the most toxins:",
+        "exactPhrase": "Biological Magnification is the progressive accumulation of non-biodegradable chemicals (like pesticides) at each trophic level. As human beings occupy the top level in any food chain, the maximum concentration of these chemicals gets accumulated in our bodies."
+      }
+    },
+    {
+      "id": "sci-ch-13-c-03",
+      "type": "concept",
+      "topic": "Ozone Layer Depletion",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "The Ozone Layer ($O_3$)",
+        "body": "Ozone is a molecule formed by three atoms of oxygen. It shields the surface of the earth from ultraviolet (UV) radiation from the sun.\n\n**Depletion:** Caused by Chlorofluorocarbons (CFCs) used in refrigerants and fire extinguishers.\n**Formation:** $O_2 \\xrightarrow{UV} O + O$; then $O + O_2 \\rightarrow O_3$."
+      }
+    },
+    {
+      "id": "sci-ch-13-e-03",
+      "type": "examTip",
+      "topic": "UNEP and Montreal Protocol",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Mention the global effort for 1-mark questions:",
+        "exactPhrase": "In 1987, the United Nations Environment Programme (UNEP) succeeded in forging an agreement to freeze CFC production at 1986 levels. This is known as the Montreal Protocol."
+      }
+    },
+    {
+      "id": "sci-ch-13-c-04",
+      "type": "concept",
+      "topic": "Waste Management",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Biodegradable vs Non-Biodegradable",
+        "body": "- **Biodegradable:** Substances that are broken down by biological processes (action of bacteria/saprophytes). E.g., paper, vegetable peels, wood.\n- **Non-Biodegradable:** Substances that are not broken down by biological processes and persist in the environment for a long time. E.g., plastics, glass, DDT."
+      }
+    },
+    {
+      "id": "sci-ch-13-q-01",
+      "type": "quiz",
+      "topic": "Flow of Energy",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "The flow of energy in an ecosystem is always:",
+        "options": [
+          "Unidirectional",
+          "Bidirectional",
+          "Cyclic",
+          "Random"
+        ],
+        "correctIndex": 0,
+        "explanation": "Energy flow is unidirectional because energy captured by autotrophs does not revert back to solar input, and energy passed to herbivores does not come back to producers. It is lost as heat at each step."
+      }
+    },
+    {
+      "id": "sci-ch-13-m-01",
+      "type": "memoryHook",
+      "topic": "Waste Disposal - 3 R's",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "RRR - Reduce, Reuse, Recycle",
+        "explanation": "Reduce the waste you create, Reuse items whenever possible, and Recycle materials like plastic and paper to save energy and the environment."
+      }
+    }
+  ]
 }

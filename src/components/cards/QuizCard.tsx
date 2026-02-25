@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react'
 import { View, Text, TouchableOpacity, StyleSheet, useColorScheme } from 'react-native'
 import { darkTheme, lightTheme, type Theme } from '../../constants/theme'
 import type { Card, QuizContent } from '../../types'
+import MathText from '../ui/MathText'
 
 interface Props {
   card: Card
@@ -43,7 +44,11 @@ export default function QuizCard({ card, onAnswer }: Props) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.question}>{content.question}</Text>
+      <MathText
+        text={content.question}
+        textStyle={styles.question}
+        mathColor={theme.colors.textPrimary}
+      />
 
       <View style={styles.options}>
         {content.options.map((option, index) => (
@@ -57,7 +62,12 @@ export default function QuizCard({ card, onAnswer }: Props) {
             <View style={styles.optionLabelBox}>
               <Text style={styles.optionLabel}>{OPTION_LABELS[index]}</Text>
             </View>
-            <Text style={styles.optionText}>{option}</Text>
+            <MathText
+              text={option}
+              textStyle={styles.optionText}
+              mathColor={theme.colors.textPrimary}
+              style={{ flex: 1 }}
+            />
           </TouchableOpacity>
         ))}
       </View>
@@ -65,7 +75,11 @@ export default function QuizCard({ card, onAnswer }: Props) {
       {isAnswered && (
         <View style={styles.explanationBox}>
           <Text style={styles.explanationTitle}>Explanation</Text>
-          <Text style={styles.explanationText}>{content.explanation}</Text>
+          <MathText
+            text={content.explanation}
+            textStyle={styles.explanationText}
+            mathColor={theme.colors.textSecondary}
+          />
         </View>
       )}
     </View>
@@ -114,7 +128,6 @@ function createStyles(t: Theme) {
       color: t.colors.textPrimary,
       fontSize: t.fontSize.md,
       fontFamily: 'DMSans_400Regular',
-      flex: 1,
     },
     explanationBox: {
       backgroundColor: t.colors.surface,

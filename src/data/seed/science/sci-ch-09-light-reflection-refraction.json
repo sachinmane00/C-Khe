@@ -7,7 +7,157 @@
     "chapterNumber": 9,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 45
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "sci-ch-09-c-01",
+      "type": "concept",
+      "topic": "Nature of Light",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "What is Light?",
+        "body": "Light is a form of energy that enables us to see objects. It travels in straight lines (Rectilinear propagation). \n\n**Reflection:** Bouncing back of light when it strikes a polished surface.\n**Refraction:** Bending of light when it travels from one medium to another.",
+        "analogy": "Reflection is like a ball bouncing off a wall. Refraction is like a car slowing down and turning slightly when it hits a patch of sand on the road."
+      }
+    },
+    {
+      "id": "sci-ch-09-e-01",
+      "type": "examTip",
+      "topic": "Laws of Reflection",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "State these two laws exactly as written:",
+        "exactPhrase": "1. The angle of incidence is equal to the angle of reflection (∠i = ∠r). 2. The incident ray, the normal to the mirror at the point of incidence and the reflected ray, all lie in the same plane."
+      }
+    },
+    {
+      "id": "sci-ch-09-c-02",
+      "type": "concept",
+      "topic": "Spherical Mirrors",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Concave vs. Convex Mirrors",
+        "body": "- **Concave (Converging):** Reflecting surface is curved inwards. It can form both real and virtual images.\n- **Convex (Diverging):** Reflecting surface is curved outwards. It always forms a virtual, erect, and diminished image.\n\n**Principal Focus (F):** The point where rays parallel to the axis meet (concave) or appear to diverge from (convex)."
+      }
+    },
+    
+    {
+      "id": "sci-ch-09-e-02",
+      "type": "examTip",
+      "topic": "Mirror Formula and Magnification",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Memorize these equations and the sign convention (Cartesian):",
+        "exactPhrase": "Mirror Formula: $$\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}$$\nMagnification: $$m = \\frac{h'}{h} = -\\frac{v}{u}$$\nNote: $u$ is always negative. For real images, $v$ is negative. For virtual images, $v$ is positive."
+      }
+    },
+    {
+      "id": "sci-ch-09-m-01",
+      "type": "memoryHook",
+      "topic": "Concave Image Formation",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "hook": "The Only Virtual Exception",
+        "explanation": "A concave mirror forms a Real & Inverted image in every position EXCEPT when the object is between **P and F**. In this case, the image is Virtual, Erect, and Enlarged (used as a shaving/makeup mirror)."
+      }
+    },
+    
+
+
+    {
+      "id": "sci-ch-09-e-03",
+      "type": "examTip",
+      "topic": "Uses of Mirrors",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Explain WHY a certain mirror is used for 2-mark questions:",
+        "exactPhrase": "Convex mirrors are used as rear-view mirrors in vehicles because they always give an erect image and have a wider field of view. Concave mirrors are used by dentists or in solar furnaces because they can produce a magnified image or concentrate sunlight at a point."
+      }
+    },
+    {
+      "id": "sci-ch-09-c-03",
+      "type": "concept",
+      "topic": "Refraction of Light",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Refraction and Snell's Law",
+        "body": "When light enters a denser medium (like glass from air), it bends **towards** the normal. When it enters a rarer medium, it bends **away** from the normal.\n\n**Snell’s Law:** The ratio of the sine of the angle of incidence to the sine of the angle of refraction is constant for a given pair of media ($$\\frac{\\sin i}{\\sin r} = n$$)."
+      }
+    },
+    
+
+
+    {
+      "id": "sci-ch-09-e-04",
+      "type": "examTip",
+      "topic": "Refractive Index",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Definition for numerical problems:",
+        "exactPhrase": "The refractive index of medium 2 with respect to medium 1 ($n_{21}$) is the ratio of the speed of light in medium 1 ($v_1$) to the speed of light in medium 2 ($v_2$). $$n_{21} = \\frac{v_1}{v_2}$$. Absolute refractive index uses vacuum/air as medium 1."
+      }
+    },
+    {
+      "id": "sci-ch-09-c-04",
+      "type": "concept",
+      "topic": "Spherical Lenses",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Convex and Concave Lenses",
+        "body": "- **Convex Lens (Converging):** Thicker in the middle. Forms real/virtual images depending on position.\n- **Concave Lens (Diverging):** Thinner in the middle. Always forms virtual, erect, and diminished images.",
+        "analogy": "A convex lens is like a magnifying glass. A concave lens is like the 'spy hole' in a front door."
+      }
+    },
+    
+    {
+      "id": "sci-ch-09-e-05",
+      "type": "examTip",
+      "topic": "Lens Formula and Power",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Crucial equations for the long-answer numerical:",
+        "exactPhrase": "Lens Formula: $$\\frac{1}{v} - \\frac{1}{u} = \\frac{1}{f}$$\nMagnification: $$m = \\frac{h'}{h} = \\frac{v}{u}$$\nPower of Lens: $$P = \\frac{1}{f(in\\ meters)}$$. Unit of Power is **Dioptre (D)**. Power is (+) for convex and (-) for concave."
+      }
+    },
+    {
+      "id": "sci-ch-09-q-01",
+      "type": "quiz",
+      "topic": "Ray through Optical Centre",
+      "difficulty": 1,
+      "xpValue": 15,
+      "content": {
+        "question": "A ray of light passing through the optical centre of a lens will:",
+        "options": [
+          "Bend towards the focus",
+          "Pass through without any deviation",
+          "Become parallel to the principal axis",
+          "Reflect back on the same path"
+        ],
+        "correctIndex": 1,
+        "explanation": "By definition, the optical centre (O) is the point on a lens through which light rays pass without undergoing any refraction or deviation."
+      }
+    },
+    {
+      "id": "sci-ch-09-e-06",
+      "type": "examTip",
+      "topic": "Refractive Index of Diamond",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Explain the meaning of the value 2.42:",
+        "exactPhrase": "The refractive index of diamond is 2.42. This means that the speed of light in diamond is $$\\frac{1}{2.42}$$ times the speed of light in vacuum."
+      }
+    }
+  ]
 }

@@ -9,5 +9,135 @@
     "lastUpdated": "2026-02-25",
     "totalCards": 0
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "sci-ch-06-c-01",
+      "type": "concept",
+      "topic": "The Neuron",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Structure of a Neuron",
+        "body": "The neuron (nerve cell) is the functional unit of the nervous system.\n- **Dendrites:** Receive information.\n- **Cell Body (Cyton):** Processes the signal.\n- **Axon:** Transmits electrical impulse away from the cell body.\n- **Nerve Ending:** Releases chemicals to cross the gap to the next neuron.\n\n**Synapse:** The functional gap between two neurons where electrical signals are converted into chemical signals (neurotransmitters).",
+        "analogy": "A neuron is like a relay race runner. The dendrites catch the baton (signal), the axon is the runner sprinting, and the synapse is the hand-off to the next runner."
+      }
+    },
+    {
+      "id": "sci-ch-06-e-01",
+      "type": "examTip",
+      "topic": "Reflex Arc",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Draw the pathway and label the components for a 3-mark question:",
+        "exactPhrase": "A reflex arc is the neural pathway that controls a reflex action. The sequence is: Stimulus → Receptor (Sense organ) → Sensory Neuron → Spinal Cord (Relay Neuron) → Motor Neuron → Effector (Muscle/Gland) → Response. Note: Reflex actions are involuntary and monitored by the spinal cord, not the brain initially."
+      }
+    },
+    {
+      "id": "sci-ch-06-c-02",
+      "type": "concept",
+      "topic": "The Human Brain",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Regions of the Brain",
+        "body": "The brain is divided into three main parts:\n1. **Forebrain (Cerebrum):** Main thinking part; controls voluntary actions, memory, and hunger.\n2. **Midbrain:** Controls involuntary actions and reflex movements of the head/neck.\n3. **Hindbrain:** \n   - **Cerebellum:** Precision and balance (e.g., walking in a straight line).\n   - **Medulla:** Involuntary actions like blood pressure, salivation, and vomiting.\n   - **Pons:** Regulates respiration."
+      }
+    },
+    {
+      "id": "sci-ch-06-e-02",
+      "type": "examTip",
+      "topic": "Protection of the Brain",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Standard 1-mark question on anatomy:",
+        "exactPhrase": "The brain is protected by a bony box called the cranium (skull). Inside, it is contained in a fluid-filled balloon (Cerebrospinal fluid) which provides shock absorption."
+      }
+    },
+    {
+      "id": "sci-ch-06-c-03",
+      "type": "concept",
+      "topic": "Coordination in Plants",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Nastic vs. Tropic Movements",
+        "body": "Plants lack a nervous system but use hormones for coordination.\n1. **Nastic Movements:** Immediate response to stimulus, not dependent on direction (e.g., drooping of *Mimosa pudica* leaves on touch).\n2. **Tropic Movements:** Directional growth movements.\n   - **Phototropism:** Growth towards light.\n   - **Geotropism:** Growth towards gravity (roots).\n   - **Hydrotropism:** Growth towards water.\n   - **Chemotropism:** Growth towards chemicals (e.g., pollen tube growth)."
+      }
+    },
+    {
+      "id": "sci-ch-06-e-03",
+      "type": "examTip",
+      "topic": "Plant Hormones (Phytohormones)",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Memorize the function of each for 2-mark match-the-following or direct questions:",
+        "exactPhrase": "1. **Auxin:** Helps in cell elongation (responsible for phototropism). 2. **Gibberellins:** Help in the growth of the stem. 3. **Cytokinins:** Promote rapid cell division (found in fruits/seeds). 4. **Abscisic Acid:** Growth inhibitor; causes wilting of leaves."
+      }
+    },
+    {
+      "id": "sci-ch-06-c-04",
+      "type": "concept",
+      "topic": "Animal Hormones",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Endocrine Glands and Functions",
+        "body": "- **Pituitary (Master Gland):** Growth Hormone (deficiency = dwarfism).\n- **Thyroid:** Thyroxin (regulates metabolism; requires Iodine).\n- **Adrenal:** Adrenaline (Prepare for 'Fight or Flight').\n- **Pancreas:** Insulin (regulates blood sugar levels).\n- **Testes/Ovaries:** Testosterone/Oestrogen (puberty changes)."
+      }
+    },
+    {
+      "id": "sci-ch-06-e-04",
+      "type": "examTip",
+      "topic": "Iodine and Goitre",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Reasoning question (1 mark):",
+        "exactPhrase": "Iodine is necessary for the thyroid gland to make thyroxin hormone. In case of iodine deficiency, the thyroid gland swells, leading to a disease called Goitre."
+      }
+    },
+    {
+      "id": "sci-ch-06-e-05",
+      "type": "examTip",
+      "topic": "Feedback Mechanism",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Explain how hormone timing is regulated:",
+        "exactPhrase": "The timing and amount of hormone released are regulated by feedback mechanisms. For example, if blood sugar levels rise, they are detected by cells of the pancreas which respond by producing more insulin. As blood sugar falls, insulin secretion is reduced."
+      }
+    },
+    {
+      "id": "sci-ch-06-q-01",
+      "type": "quiz",
+      "topic": "Function of Cerebellum",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "Which part of the brain is responsible for maintaining posture and equilibrium of the body?",
+        "options": [
+          "Cerebrum",
+          "Cerebellum",
+          "Medulla",
+          "Hypothalamus"
+        ],
+        "correctIndex": 1,
+        "explanation": "The cerebellum, located in the hindbrain, is responsible for the precision of voluntary actions and maintaining the posture and balance of the body. Walking in a straight line or picking up a pencil is controlled here."
+      }
+    },
+    {
+      "id": "sci-ch-06-m-01",
+      "type": "memoryHook",
+      "topic": "Plant Hormones",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "ABC - Abscisic acid stops growth",
+        "explanation": "A is for **A**bscisic Acid, B is for **B**rakes, C is for **C**ease growth. It is the only inhibitor among the major plant hormones."
+      }
+    }
+  ]
 }

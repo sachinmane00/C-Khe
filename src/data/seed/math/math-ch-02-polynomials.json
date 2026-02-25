@@ -7,7 +7,83 @@
     "chapterNumber": 2,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 20
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "mth-ch-02-c-01",
+      "type": "concept",
+      "topic": "Geometrical Meaning of Zeroes",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Zeroes on a Graph",
+        "body": "The zeroes of a polynomial $p(x)$ are the $x$-coordinates of the points where the graph of $y = p(x)$ intersects the **x-axis**.\n\n- **Linear Polynomial:** Intersects the x-axis at exactly one point.\n- **Quadratic Polynomial:** Can intersect at 0, 1, or 2 points (forms a shape called a **Parabola**).",
+        "analogy": "If the x-axis is 'ground level,' the zeroes are the exact spots where your roller coaster track touches or crosses the ground."
+      }
+    },
+    
+    {
+      "id": "mth-ch-02-e-01",
+      "type": "examTip",
+      "topic": "Relationship: Quadratic Zeroes",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "If $\\alpha$ and $\\beta$ are the zeroes of $ax^2 + bx + c$, memorize these two relationships:",
+        "exactPhrase": "1. Sum of zeroes: $\\alpha + \\beta = -b/a = -(\\text{Coefficient of } x) / (\\text{Coefficient of } x^2)$. 2. Product of zeroes: $\\alpha\\beta = c/a = (\\text{Constant term}) / (\\text{Coefficient of } x^2)$."
+      }
+    },
+    {
+      "id": "mth-ch-02-c-02",
+      "type": "concept",
+      "topic": "Forming a Quadratic Polynomial",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Building a Polynomial from Zeroes",
+        "body": "If you are given the sum ($S$) and product ($P$) of the zeroes, you can write the polynomial directly.\\n\\n**Formula:** $k[x^2 - (S)x + P]$\\nwhere $S = \\alpha + \\beta$ and $P = \\alpha\\beta$."
+      }
+    },
+    {
+      "id": "mth-ch-02-e-02",
+      "type": "examTip",
+      "topic": "The 'Zero' Condition",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Common 1-mark trap question:",
+        "exactPhrase": "A polynomial of degree $n$ can have at most $n$ zeroes. For example, a cubic polynomial (degree 3) can have 0, 1, 2, or 3 zeroes, but never 4."
+      }
+    },
+    {
+      "id": "mth-ch-02-q-01",
+      "type": "quiz",
+      "topic": "Finding the Product of Zeroes",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "Find the product of the zeroes of the polynomial $4x^2 - 4x + 1$.",
+        "options": [
+          "1",
+          "-1",
+          "1/4",
+          "4"
+        ],
+        "correctIndex": 2,
+        "explanation": "Using the formula Product $= c/a$. Here $c = 1$ and $a = 4$. Therefore, the product is $1/4$. Option (A) is the sum if you forgot the sign; Option (B) is the sum $-b/a$."
+      }
+    },
+    {
+      "id": "mth-ch-02-m-01",
+      "type": "memoryHook",
+      "topic": "Signs in Formulas",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "Sum is Sinister (Negative)",
+        "explanation": "Remember that the **S**um formula starts with a **S**inister minus sign: $-b/a$. The product is positive $c/a$."
+      }
+    }
+  ]
 }
