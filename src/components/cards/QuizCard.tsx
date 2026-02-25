@@ -84,7 +84,7 @@ function createStyles(t: Theme) {
     question: {
       color: t.colors.textPrimary,
       fontSize: t.fontSize.lg,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
       lineHeight: 30,
     },
     options: {
@@ -108,12 +108,12 @@ function createStyles(t: Theme) {
     optionLabel: {
       color: '#F1F5F9',
       fontSize: t.fontSize.sm,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
     },
     optionText: {
       color: t.colors.textPrimary,
       fontSize: t.fontSize.md,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
       flex: 1,
     },
     explanationBox: {
@@ -125,12 +125,12 @@ function createStyles(t: Theme) {
     explanationTitle: {
       color: t.colors.accentTeal,
       fontSize: t.fontSize.sm,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
     },
     explanationText: {
       color: t.colors.textSecondary,
       fontSize: t.fontSize.sm,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
       lineHeight: 22,
     },
   })

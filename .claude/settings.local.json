@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:zustand.docs.pmnd.rs)",
+      "WebFetch(domain:docs.expo.dev)",
+      "WebFetch(domain:docs.swmansion.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:blog.logrocket.com)",
+      "WebFetch(domain:dev.to)",
+      "WebFetch(domain:www.dhiwise.com)",
+      "WebSearch",
+      "Bash(cd /c/Users/sachi/Documents/snaplearn && npx expo start --tunnel 2>&1)",
+      "Bash(cd /c/Users/sachi/Documents/snaplearn && npx expo install react-native-reanimated --fix 2>&1)",
+      "Bash(netstat -ano)",
+      "Bash(cmd:*)",
+      "Bash(cd /c/Users/sachi/Documents/snaplearn && npx expo start --tunnel --clear 2>&1)",
+      "Bash(cd /c/Users/sachi/Documents/snaplearn && npm install babel-preset-expo --save-dev 2>&1)",
+      "Bash(cd /c/Users/sachi/Documents/snaplearn && npx expo install --fix 2>&1)",
+      "Bash(xargs -I{} cmd //c \"taskkill /PID {} /F\")",
+      "Bash(echo cache cleared:*)",
+      "Bash(cd /c/Users/sachi/Documents/snaplearn && npm install 2>&1)",
+      "Bash(cd /c/Users/sachi/Documents/snaplearn && npm install babel-preset-expo --save-dev 2>&1 && npx expo install react-native-reanimated react-native-gesture-handler --fix 2>&1)",
+      "Bash(cd:*)",
+      "Bash(while read pid)",
+      "Bash(do cmd //c \"taskkill /PID $pid /F\")",
+      "Bash(done)",
+      "mcp__ide__getDiagnostics",
+      "Bash(cd /c/Users/sachi/Documents/snaplearn && npx expo install @expo-google-fonts/roboto expo-font expo-splash-screen 2>&1)",
+      "Bash(head:*)",
+      "Bash(cd /c/Users/sachi/Documents/snaplearn && npx expo install @react-navigation/native-stack 2>&1)",
+      "Bash(cd \"C:/Users/sachi/Documents/snaplearn\" && CI=1 npx expo start --tunnel --clear 2>&1)",
+      "Bash(cmd //c \"taskkill /PID 12564 /F\" && sleep 2 && cd \"C:/Users/sachi/Documents/snaplearn\" && CI=1 npx expo start --tunnel --clear 2>&1)",
+      "Bash(cat:*)",
+      "Bash(cd /c/Users/sachi/Documents/snaplearn && npx tsc --noEmit 2>&1)",
+      "Bash(tail:*)"
+    ]
+  }
+}

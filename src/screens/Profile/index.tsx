@@ -52,7 +52,7 @@ function createStyles(t: Theme) {
     title: {
       color: t.colors.textPrimary,
       fontSize: t.fontSize.xl,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
     },
     body: {
       flex: 1,
@@ -74,17 +74,17 @@ function createStyles(t: Theme) {
     statVal: {
       color: t.colors.accentPurple,
       fontSize: t.fontSize.xxl,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
     },
     statLabel: {
       color: t.colors.textSecondary,
       fontSize: t.fontSize.sm,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
     },
     comingSoon: {
       textAlign: 'center',
       fontSize: t.fontSize.md,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
     },
   })
 }

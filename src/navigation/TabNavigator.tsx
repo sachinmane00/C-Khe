@@ -49,10 +49,9 @@ export default function TabNavigator() {
           tabBarActiveTintColor: theme.colors.accentPurple,
           tabBarInactiveTintColor: theme.colors.textSecondary,
           tabBarLabelStyle: {
-            fontFamily: 'Roboto_500Medium',
+            fontFamily: 'SpaceGrotesk_500Medium',
             fontSize: 11,
           },
-          contentStyle: { paddingBottom: 160 },
         }}
       >
         <Tab.Screen

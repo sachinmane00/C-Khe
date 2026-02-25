@@ -167,7 +167,7 @@ function createStyles(t: Theme) {
     emoji: { fontSize: 22 },
     headerTitle: {
       fontSize: t.fontSize.xl,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
     },
     searchBtn: {
       padding: t.spacing.sm,
@@ -196,17 +196,17 @@ function createStyles(t: Theme) {
     },
     chapterTitle: {
       fontSize: t.fontSize.md,
-      fontFamily: 'Roboto_500Medium',
+      fontFamily: 'SpaceGrotesk_500Medium',
     },
     chapterSub: {
       fontSize: t.fontSize.sm,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
     },
     emptyText: {
       textAlign: 'center',
       marginTop: 40,
       fontSize: t.fontSize.md,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
     },
   })
 }

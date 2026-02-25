@@ -53,7 +53,7 @@ function createStyles(t: Theme) {
     headerText: {
       color: t.colors.gold,
       fontSize: t.fontSize.sm,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
       flex: 1,
       marginRight: t.spacing.sm,
     },
@@ -65,13 +65,13 @@ function createStyles(t: Theme) {
     quoteText: {
       color: t.colors.textPrimary,
       fontSize: t.fontSize.lg,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
       lineHeight: 30,
     },
     instruction: {
       color: t.colors.textSecondary,
       fontSize: t.fontSize.sm,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
       lineHeight: 22,
     },
   })

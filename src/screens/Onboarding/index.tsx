@@ -198,12 +198,12 @@ function createStyles(t: Theme) {
     stepTitle: {
       color: t.colors.textPrimary,
       fontSize: t.fontSize.xl,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
     },
     stepSubtitle: {
       color: t.colors.textSecondary,
       fontSize: t.fontSize.md,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
     },
     // ── Board grid ──
     boardGrid: {
@@ -235,7 +235,7 @@ function createStyles(t: Theme) {
     boardLabel: {
       color: t.colors.textSecondary,
       fontSize: t.fontSize.sm,
-      fontFamily: 'Roboto_500Medium',
+      fontFamily: 'SpaceGrotesk_500Medium',
       textAlign: 'center',
     },
     boardLabelSelected: {
@@ -250,7 +250,7 @@ function createStyles(t: Theme) {
     comingSoonText: {
       color: t.colors.textSecondary,
       fontSize: t.fontSize.xs,
-      fontFamily: 'Roboto_500Medium',
+      fontFamily: 'SpaceGrotesk_500Medium',
     },
     // ── Class chips ──
     chipRow: {
@@ -279,7 +279,7 @@ function createStyles(t: Theme) {
     chipText: {
       color: t.colors.textSecondary,
       fontSize: t.fontSize.md,
-      fontFamily: 'Roboto_500Medium',
+      fontFamily: 'SpaceGrotesk_500Medium',
     },
     chipTextSelected: {
       color: t.colors.accentPurple,
@@ -287,7 +287,7 @@ function createStyles(t: Theme) {
     chipSoon: {
       color: t.colors.gold,
       fontSize: t.fontSize.xs,
-      fontFamily: 'Roboto_500Medium',
+      fontFamily: 'SpaceGrotesk_500Medium',
       backgroundColor: `${t.colors.gold}20`,
       borderRadius: t.borderRadius.sm,
       paddingHorizontal: 4,
@@ -306,7 +306,7 @@ function createStyles(t: Theme) {
     primaryBtnText: {
       color: '#F1F5F9',
       fontSize: t.fontSize.md,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
     },
   })
 }

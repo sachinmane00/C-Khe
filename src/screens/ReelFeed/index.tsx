@@ -214,13 +214,6 @@ export default function ReelFeed({ navigation, route }: Props) {
         </TouchableOpacity>
       )}
 
-      {/* Chapter title pill */}
-      {canGoBack && chapterTitle && (
-        <View style={[styles.chapterPill, { top: insets.top + 14 }]} pointerEvents="none">
-          <Text style={styles.chapterPillText} numberOfLines={1}>{chapterTitle}</Text>
-        </View>
-      )}
-
       {/* Streak badge */}
       <View style={[styles.streakBadgeWrapper, { top: insets.top + 12 }]}>
         <StreakBadge streak={streak} />
@@ -262,17 +255,17 @@ function createStyles(t: Theme) {
     },
     comingSoonTitle: {
       fontSize: t.fontSize.lg,
-      fontFamily: 'Roboto_500Medium',
+      fontFamily: 'SpaceGrotesk_500Medium',
       textAlign: 'center',
     },
     comingSoonChapter: {
       fontSize: t.fontSize.xl,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
       textAlign: 'center',
     },
     comingSoonSub: {
       fontSize: t.fontSize.md,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
       textAlign: 'center',
     },
     backPillBtn: {
@@ -286,7 +279,7 @@ function createStyles(t: Theme) {
     },
     backPillBtnText: {
       fontSize: t.fontSize.md,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
     },
     // ── Reel overlays ──
     progressTrack: {
@@ -315,23 +308,7 @@ function createStyles(t: Theme) {
       color: '#F1F5F9',
       fontSize: 28,
       lineHeight: 32,
-      fontFamily: 'Roboto_400Regular',
-    },
-    chapterPill: {
-      position: 'absolute',
-      left: 56,
-      right: 56,
-      zIndex: 9,
-      backgroundColor: 'rgba(0,0,0,0.35)',
-      borderRadius: 999,
-      paddingHorizontal: 12,
-      paddingVertical: 5,
-      alignItems: 'center',
-    },
-    chapterPillText: {
-      color: '#F1F5F9',
-      fontSize: 13,
-      fontFamily: 'Roboto_500Medium',
+      fontFamily: 'DMSans_400Regular',
     },
     streakBadgeWrapper: {
       position: 'absolute',

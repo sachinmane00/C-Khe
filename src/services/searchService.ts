@@ -27,7 +27,7 @@ export function searchCards(query: string, cards: Card[]): SearchResult[] {
     let best = 0
     let matchedOn = ''
 
-    const content = card.content as Record<string, unknown>
+    const content = card.content as unknown as Record<string, unknown>
 
     // Score each searchable text field
     const fieldsToScore: Array<[string, string]> = [

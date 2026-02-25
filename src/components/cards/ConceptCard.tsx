@@ -80,12 +80,12 @@ function createStyles(t: Theme) {
     subjectChipText: {
       color: '#F1F5F9',
       fontSize: t.fontSize.xs,
-      fontFamily: 'Roboto_500Medium',
+      fontFamily: 'SpaceGrotesk_500Medium',
     },
     chapterLabel: {
       color: t.colors.textSecondary,
       fontSize: t.fontSize.sm,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
       flex: 1,
     },
     middle: {
@@ -97,12 +97,12 @@ function createStyles(t: Theme) {
     topic: {
       color: t.colors.textPrimary,
       fontSize: t.fontSize.xl,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
     },
     body: {
       color: t.colors.textSecondary,
       fontSize: t.fontSize.md,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
       lineHeight: 26,
     },
     analogyBox: {
@@ -116,14 +116,14 @@ function createStyles(t: Theme) {
     analogyText: {
       color: t.colors.accentTeal,
       fontSize: t.fontSize.sm,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
       flex: 1,
       lineHeight: 22,
     },
     hint: {
       color: t.colors.textSecondary,
       fontSize: t.fontSize.xs,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
       textAlign: 'center',
     },
   })

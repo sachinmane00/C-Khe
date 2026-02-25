@@ -199,13 +199,13 @@ const styles = StyleSheet.create({
   input: {
     flex: 1,
     fontSize: 16,
-    fontFamily: 'Roboto_400Regular',
+    fontFamily: 'DMSans_400Regular',
     padding: 0,
   },
   cancelBtn: { paddingVertical: 4 },
   cancelText: {
     fontSize: 15,
-    fontFamily: 'Roboto_500Medium',
+    fontFamily: 'SpaceGrotesk_500Medium',
   },
   recentSection: {
     padding: 16,
@@ -219,11 +219,11 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 15,
-    fontFamily: 'Roboto_700Bold',
+    fontFamily: 'SpaceGrotesk_700Bold',
   },
   clearText: {
     fontSize: 13,
-    fontFamily: 'Roboto_400Regular',
+    fontFamily: 'DMSans_400Regular',
   },
   recentRow: {
     flexDirection: 'row',
@@ -233,7 +233,7 @@ const styles = StyleSheet.create({
   },
   recentText: {
     fontSize: 15,
-    fontFamily: 'Roboto_400Regular',
+    fontFamily: 'DMSans_400Regular',
   },
   emptyState: {
     alignItems: 'center',
@@ -243,12 +243,12 @@ const styles = StyleSheet.create({
   },
   emptyText: {
     fontSize: 15,
-    fontFamily: 'Roboto_700Bold',
+    fontFamily: 'SpaceGrotesk_700Bold',
     textAlign: 'center',
   },
   emptyHint: {
     fontSize: 13,
-    fontFamily: 'Roboto_400Regular',
+    fontFamily: 'DMSans_400Regular',
     textAlign: 'center',
   },
   list: {
@@ -263,6 +263,6 @@ const styles = StyleSheet.create({
   },
   loadingText: {
     fontSize: 14,
-    fontFamily: 'Roboto_400Regular',
+    fontFamily: 'DMSans_400Regular',
   },
 })

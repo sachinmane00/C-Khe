@@ -47,12 +47,12 @@ function createStyles(t: Theme) {
     text: {
       color: '#F1F5F9',
       fontSize: t.fontSize.xxl,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
     },
     subtext: {
       color: '#F1F5F9',
       fontSize: t.fontSize.md,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
       marginTop: t.spacing.xs,
     },
   })

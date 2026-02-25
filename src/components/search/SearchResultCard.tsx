@@ -41,7 +41,7 @@ export default function SearchResultCard({ result, onPress }: Props) {
   if (result.type === 'card' && result.card) {
     const card = result.card
     const config = cardTypeConfig[card.type]
-    const content = card.content as Record<string, unknown>
+    const content = card.content as unknown as Record<string, unknown>
     const preview =
       (content.topic as string | undefined) ??
       (content.question as string | undefined) ??
@@ -94,10 +94,10 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 15,
-    fontFamily: 'Roboto_500Medium',
+    fontFamily: 'SpaceGrotesk_500Medium',
   },
   sub: {
     fontSize: 13,
-    fontFamily: 'Roboto_400Regular',
+    fontFamily: 'DMSans_400Regular',
   },
 })

@@ -158,11 +158,11 @@ const styles = StyleSheet.create({
   },
   pct: {
     fontSize: 12,
-    fontFamily: 'Roboto_700Bold',
+    fontFamily: 'SpaceGrotesk_700Bold',
   },
   label: {
     fontSize: 12,
-    fontFamily: 'Roboto_500Medium',
+    fontFamily: 'SpaceGrotesk_500Medium',
     marginTop: 2,
   },
 })

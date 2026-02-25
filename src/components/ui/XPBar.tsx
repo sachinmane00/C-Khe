@@ -78,7 +78,7 @@ function createStyles(t: Theme) {
     levelText: {
       color: '#F1F5F9',
       fontSize: t.fontSize.sm,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
     },
     trackWrapper: {
       flex: 1,
@@ -98,7 +98,7 @@ function createStyles(t: Theme) {
     xpLabel: {
       color: t.colors.textSecondary,
       fontSize: t.fontSize.xs,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
       textAlign: 'right',
     },
   })

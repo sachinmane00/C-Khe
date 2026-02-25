@@ -53,6 +53,6 @@ const styles = StyleSheet.create({
   placeholder: {
     flex: 1,
     fontSize: 15,
-    fontFamily: 'Roboto_400Regular',
+    fontFamily: 'DMSans_400Regular',
   },
 })

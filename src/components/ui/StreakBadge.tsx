@@ -98,7 +98,7 @@ function createStyles(t: Theme) {
       borderWidth: 1,
     },
     text: {
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
     },
   })
 }

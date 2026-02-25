@@ -29,13 +29,6 @@ export default function Dashboard({ navigation }: Props) {
   const { xp, streak, subjectProgress } = useUserStore()
   const { setSubject } = useContentStore()
 
-  // Section 2: subject with lowest progress
-  const reviewSubject: Subject = useMemo(() => {
-    return allSubjects.reduce((lowest, s) =>
-      (subjectProgress[s] ?? 0) < (subjectProgress[lowest] ?? 0) ? s : lowest
-    )
-  }, [subjectProgress])
-
   // Daily challenge: count cards studied today (approximate from XP)
   const dailyCards = Math.min(10, Math.floor(xp / 5) % 10)
 
@@ -99,26 +92,7 @@ export default function Dashboard({ navigation }: Props) {
           })}
         </ScrollView>
 
-        {/* ── Section 2: Quick 5-min Review ── */}
-        <Text style={styles.sectionTitle}>Quick 5-min Review</Text>
-        <TouchableOpacity
-          style={[styles.reviewBanner, { backgroundColor: `${subjectMeta[reviewSubject].color}20` }]}
-          onPress={() => goToSubjectDrillDown(reviewSubject)}
-          activeOpacity={0.8}
-        >
-          <Text style={styles.reviewEmoji}>{subjectMeta[reviewSubject].emoji}</Text>
-          <View style={styles.reviewText}>
-            <Text style={[styles.reviewTitle, { color: subjectMeta[reviewSubject].color }]}>
-              {reviewSubject} — Quick Review
-            </Text>
-            <Text style={styles.reviewSub}>
-              {seedData[reviewSubject].length} cards · ~5 min · Tap to start
-            </Text>
-          </View>
-          <Text style={[styles.reviewArrow, { color: subjectMeta[reviewSubject].color }]}>→</Text>
-        </TouchableOpacity>
-
-        {/* ── Section 3: Daily Challenge ── */}
+        {/* ── Section 2: Daily Challenge ── */}
         <Text style={styles.sectionTitle}>Daily Challenge</Text>
         <View style={styles.challengeCard}>
           <View style={styles.challengeHeader}>
@@ -168,7 +142,7 @@ function createStyles(t: Theme) {
     sectionTitle: {
       color: t.colors.textPrimary,
       fontSize: t.fontSize.lg,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
       paddingHorizontal: t.spacing.md,
       marginTop: t.spacing.md,
       marginBottom: t.spacing.sm,
@@ -187,40 +161,12 @@ function createStyles(t: Theme) {
     },
     subjectName: {
       fontSize: t.fontSize.sm,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
     },
     cardCount: {
       color: t.colors.textSecondary,
       fontSize: t.fontSize.xs,
-      fontFamily: 'Roboto_400Regular',
-    },
-    reviewBanner: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      marginHorizontal: t.spacing.md,
-      borderRadius: t.borderRadius.md,
-      padding: t.spacing.md,
-      gap: t.spacing.md,
-    },
-    reviewEmoji: {
-      fontSize: 36,
-    },
-    reviewText: {
-      flex: 1,
-      gap: 4,
-    },
-    reviewTitle: {
-      fontSize: t.fontSize.md,
-      fontFamily: 'Roboto_700Bold',
-    },
-    reviewSub: {
-      color: t.colors.textSecondary,
-      fontSize: t.fontSize.sm,
-      fontFamily: 'Roboto_400Regular',
-    },
-    reviewArrow: {
-      fontSize: t.fontSize.xl,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'DMSans_400Regular',
     },
     challengeCard: {
       marginHorizontal: t.spacing.md,
@@ -237,17 +183,17 @@ function createStyles(t: Theme) {
     challengeDate: {
       color: t.colors.textSecondary,
       fontSize: t.fontSize.sm,
-      fontFamily: 'Roboto_400Regular',
+      fontFamily: 'DMSans_400Regular',
     },
     challengeCount: {
       color: t.colors.accentPurple,
       fontSize: t.fontSize.md,
-      fontFamily: 'Roboto_700Bold',
+      fontFamily: 'SpaceGrotesk_700Bold',
     },
     challengeGoal: {
       color: t.colors.textPrimary,
       fontSize: t.fontSize.md,
-      fontFamily: 'Roboto_500Medium',
+      fontFamily: 'SpaceGrotesk_500Medium',
     },
     challengeTrack: {
       height: 8,
