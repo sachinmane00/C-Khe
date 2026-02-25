@@ -41,7 +41,7 @@ export default function ConceptCard({ card, onGotIt }: Props) {
 
       {/* Middle: topic + body */}
       <View style={styles.middle}>
-        <Text style={styles.topic}>{content.topic}</Text>
+        <Text style={styles.topic}>{content.title}</Text>
         <Text style={styles.body}>{content.body}</Text>
 
         {content.analogy && (

@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "board": "CBSE",
+    "class": "10",
+    "subject": "Science",
+    "chapter": "Carbon and its Compounds",
+    "chapterNumber": 4,
+    "version": "1.0",
+    "lastUpdated": "2026-02-25",
+    "totalCards": 40
+  },
+  "cards": [
+    {
+      "id": "sci-ch-04-c-01",
+      "type": "concept",
+      "topic": "Bonding in Carbon",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Covalent Bonding & Tetravalency",
+        "body": "Carbon has an atomic number of 6 (electronic configuration 2,4). It cannot gain 4 electrons ($C^{4-}$) or lose 4 electrons ($C^{4+}$) due to energy constraints. Instead, it **shares** its 4 valence electrons with other atoms to form **covalent bonds**.\n\n**Tetravalency:** Carbon is capable of bonding with four other atoms.",
+        "analogy": "Carbon is like a person with four hands, always looking to shake hands (share electrons) with four others to feel stable."
+      }
+    },
+    {
+      "id": "sci-ch-04-e-01",
+      "type": "examTip",
+      "topic": "Versatile Nature of Carbon",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "This is a guaranteed 2 or 3-mark question. Mention these TWO specific properties:",
+        "exactPhrase": "Carbon forms a large number of compounds due to: 1. **Catenation:** The unique ability to form bonds with other atoms of carbon, giving rise to large molecules (long chains, branched chains, or rings). 2. **Tetravalency:** Having four valence electrons, it can bond with oxygen, hydrogen, nitrogen, and sulphur."
+      }
+    },
+    {
+      "id": "sci-ch-04-c-02",
+      "type": "concept",
+      "topic": "Allotropes of Carbon",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Diamond, Graphite, and Fullerenes",
+        "body": "Allotropes are different physical forms of the same element.\n1. **Diamond:** Each carbon bonded to 4 others in a 3D structure (Hardest substance).\n2. **Graphite:** Each carbon bonded to 3 others in hexagonal layers (Slippery, conducts electricity).\n3. **C-60 (Buckminsterfullerene):** Carbon atoms arranged in the shape of a football.",
+        "analogy": "Same 'Lego' bricks (Carbon atoms), but arranged differently to make a transparent wall (Diamond) or a slippery floor (Graphite)."
+      }
+    },
+    {
+      "id": "sci-ch-04-c-03",
+      "type": "concept",
+      "topic": "Saturated vs Unsaturated Hydrocarbons",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Alkanes, Alkenes, and Alkynes",
+        "body": "- **Saturated (Alkanes):** Single bonds only. General formula: $C_nH_{2n+2}$. (e.g., Methane, Ethane).\n- **Unsaturated (Alkenes):** At least one double bond. General formula: $C_nH_{2n}$. (e.g., Ethene).\n- **Unsaturated (Alkynes):** At least one triple bond. General formula: $C_nH_{2n-2}$. (e.g., Ethyne)."
+      }
+    },
+    {
+      "id": "sci-ch-04-m-01",
+      "type": "memoryHook",
+      "topic": "Hydrocarbon Suffixes",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "A-E-I (Single-Double-Triple)",
+        "explanation": "Alk**a**ne = 1 bond (Single)\nAlk**e**ne = 2 bonds (Double)\nAlkyne (sounds like 'Eye') = 3 bonds (Triple)"
+      }
+    },
+    {
+      "id": "sci-ch-04-c-04",
+      "type": "concept",
+      "topic": "Homologous Series",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Homologous Series",
+        "body": "A series of compounds in which the same functional group substitutes for hydrogen in a carbon chain.\n\n**Characteristics:**\n1. Successive members differ by a $-CH_2$ unit.\n2. Difference in molecular mass is $14u$.\n3. Gradation in physical properties (boiling point increases with mass).\n4. Similar chemical properties."
+      }
+    },
+    {
+      "id": "sci-ch-04-e-02",
+      "type": "examTip",
+      "topic": "Isomerism",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Examiners often ask to draw isomers of Butane or Pentane:",
+        "exactPhrase": "Structural isomers are compounds with the identical molecular formula but different structural arrangements. For example, Butane ($C_4H_{10}$) has two isomers: n-butane (straight chain) and iso-butane (branched chain)."
+      }
+    },
+    {
+      "id": "sci-ch-04-c-05",
+      "type": "concept",
+      "topic": "Functional Groups",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Naming Organic Compounds",
+        "body": "1. **Halogens:** -Cl (chloro), -Br (bromo).\n2. **Alcohols:** -OH (suffix -ol).\n3. **Aldehydes:** -CHO (suffix -al).\n4. **Ketones:** >C=O (suffix -one).\n5. **Carboxylic Acid:** -COOH (suffix -oic acid)."
+      }
+    },
+    {
+      "id": "sci-ch-04-e-03",
+      "type": "examTip",
+      "topic": "Chemical Properties — Combustion",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Saturated vs Unsaturated flame colors:",
+        "exactPhrase": "Saturated hydrocarbons generally give a clean blue flame. Unsaturated hydrocarbons give a yellow flame with lots of black smoke (sooty flame) due to incomplete combustion."
+      }
+    },
+    {
+      "id": "sci-ch-04-e-04",
+      "type": "examTip",
+      "topic": "Addition Reaction (Hydrogenation)",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Industrial application question (Vegetable Ghee):",
+        "exactPhrase": "Unsaturated hydrocarbons add hydrogen in the presence of catalysts like Palladium or Nickel to give saturated hydrocarbons. This is used in the hydrogenation of vegetable oils (liquid) to form vegetable ghee (solid)."
+      }
+    },
+    {
+      "id": "sci-ch-04-c-06",
+      "type": "concept",
+      "topic": "Ethanol Properties",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Reactions of Ethanol ($CH_3CH_2OH$)",
+        "body": "1. **With Sodium:** $2Na + 2CH_3CH_2OH \\rightarrow 2CH_3CH_2ONa + H_2$. (Sodium Ethoxide is formed).\n2. **Dehydration:** Heating ethanol at 443 K with excess conc. $H_2SO_4$ yields Ethene. $H_2SO_4$ acts as a dehydrating agent."
+      }
+    },
+    {
+      "id": "sci-ch-04-e-05",
+      "type": "examTip",
+      "topic": "Esterification Reaction",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "VERY IMPORTANT for 3-mark questions. Mention the smell:",
+        "exactPhrase": "Esterification: Reaction between an acid (Ethanoic acid) and an alcohol (Ethanol) in the presence of an acid catalyst to form an Ester. Esters are sweet-smelling substances used in making perfumes and flavoring agents."
+      }
+    },
+    {
+      "id": "sci-ch-04-e-06",
+      "type": "examTip",
+      "topic": "Saponification",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "The reverse of esterification:",
+        "exactPhrase": "Saponification is the reaction where an ester reacts with an alkali (NaOH) to give back the alcohol and the sodium salt of carboxylic acid (Soap)."
+      }
+    },
+    {
+      "id": "sci-ch-04-c-07",
+      "type": "concept",
+      "topic": "Soaps and Detergents",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "How Soap Cleans (Micelles)",
+        "body": "Soap molecules have two ends:\n1. **Hydrophilic head:** Water-loving (points outwards).\n2. **Hydrophobic tail:** Water-fearing/Oil-loving (points inwards towards the dirt).\n\nThese molecules form a spherical structure called a **Micelle**, trapping the oily dirt in the center.",
+        "analogy": "Like a circle of guards (heads) facing out to the sea (water), holding hands to trap a prisoner (dirt) in the middle."
+      }
+    },
+    {
+      "id": "sci-ch-04-e-07",
+      "type": "examTip",
+      "topic": "Soap in Hard Water (Scum)",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Explain why soap doesn't work in hard water:",
+        "exactPhrase": "Hard water contains Calcium and Magnesium salts. Soap reacts with these to form an insoluble, sticky grey substance called **Scum**. Detergents are used instead because they do not form scum with hard water."
+      }
+    },
+    {
+      "id": "sci-ch-04-q-01",
+      "type": "quiz",
+      "topic": "Oxidation of Ethanol",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "Which reagent is used to convert Ethanol into Ethanoic acid?",
+        "options": [
+          "Conc. H2SO4",
+          "Alkaline KMnO4 (or Acidified K2Cr2O7)",
+          "Nickel Catalyst",
+          "Sodium Metal"
+        ],
+        "correctIndex": 1,
+        "explanation": "Alkaline Potassium Permanganate ($KMnO_4$) is a strong oxidising agent that adds oxygen to ethanol to turn it into ethanoic acid. Conc. $H_2SO_4$ is for dehydration, and Nickel is for hydrogenation."
+      }
+    }
+  ]
+}

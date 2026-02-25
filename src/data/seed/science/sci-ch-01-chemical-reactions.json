@@ -1,0 +1,320 @@
+{
+  "metadata": {
+    "board": "CBSE",
+    "class": "10",
+    "subject": "Science",
+    "chapter": "Chemical Reactions and Equations",
+    "chapterNumber": 1,
+    "version": "1.0",
+    "lastUpdated": "2026-02-25",
+    "totalCards": 25
+  },
+  "cards": [
+    {
+      "id": "sci-ch-01-c-01",
+      "type": "concept",
+      "topic": "Chemical Reactions — Introduction",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "What is a Chemical Reaction?",
+        "body": "A chemical reaction is a process where substances (reactants) undergo internal changes to form new substances (products) with entirely different properties. \n\n**Common Indicators:**\n1. Change in State (e.g., burning wax)\n2. Change in Colour (e.g., rusting of iron)\n3. Evolution of a Gas (e.g., zinc + acid → hydrogen gas)\n4. Change in Temperature (e.g., quicklime + water)\n5. Formation of a Precipitate (an insoluble solid)",
+        "analogy": "Think of it like LEGOs. You take apart a tower (reactants) and use the exact same bricks to build a car (products). The identity of the bricks stays the same, but the structure is brand new!"
+      }
+    },
+    {
+      "id": "sci-ch-01-e-01",
+      "type": "examTip",
+      "topic": "Definition — Chemical Equation",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "If asked to define a chemical equation, use this precise phrasing:",
+        "exactPhrase": "A chemical equation is the symbolic representation of a chemical reaction using symbols and formulae of the substances involved. It provides a shorthand method to describe the change and must always be balanced to satisfy the Law of Conservation of Mass."
+      }
+    },
+    {
+      "id": "sci-ch-01-e-02",
+      "type": "examTip",
+      "topic": "Observation — Magnesium Ribbon",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "This is a frequent 1-mark question. Note the specific colors and precautions:",
+        "exactPhrase": "Magnesium ribbon burns with a dazzling white flame and changes into a white powder called Magnesium Oxide (MgO). Precaution: The ribbon must be cleaned with sandpaper before burning to remove the protective layer of basic magnesium carbonate."
+      }
+    },
+    {
+      "id": "sci-ch-01-c-02",
+      "type": "concept",
+      "topic": "Balancing Equations",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Why and How we Balance Equations",
+        "body": "We balance equations because of the **Law of Conservation of Mass**: Mass can neither be created nor destroyed in a chemical reaction. \n\n**Steps to Balance (Hit & Trial Method):**\n1. Write the word equation.\n2. Convert to chemical symbols.\n3. Count atoms of each element on LHS and RHS.\n4. Start balancing the element with the maximum atoms (usually Oxygen or Hydrogen).\n5. Use coefficients (numbers in front) — **NEVER** change the subscripts in a formula!",
+        "analogy": "Think of a balance scale. If you have 4 'H' atoms on the left, you MUST have 4 'H' atoms on the right, otherwise, the universe's accounting doesn't add up."
+      }
+    },
+    {
+      "id": "sci-ch-01-q-01",
+      "type": "quiz",
+      "topic": "Law of Conservation of Mass",
+      "difficulty": 1,
+      "xpValue": 15,
+      "content": {
+        "question": "Which statement best justifies why a chemical equation must be balanced?",
+        "options": [
+          "To show the physical state of reactants",
+          "To satisfy the Law of Conservation of Mass",
+          "To make the equation look professional",
+          "To indicate the speed of the reaction"
+        ],
+        "correctIndex": 1,
+        "explanation": "The Law of Conservation of Mass states that the total mass of reactants must equal the total mass of products. Therefore, the number of atoms of each element must remain constant. Physical states (s, l, g, aq) are helpful but not the reason for balancing."
+      }
+    },
+    {
+      "id": "sci-ch-01-c-03",
+      "type": "concept",
+      "topic": "Combination Reaction",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Combination Reaction (A + B → AB)",
+        "body": "A reaction in which a single product is formed from two or more reactants.\n\n**Key Example:** Burning of coal.\n$$C(s) + O_2(g) \\rightarrow CO_2(g)$$\n\n**Important Board Example:** Quicklime (Calcium Oxide) reacting with water to form Slaked Lime (Calcium Hydroxide).\n$$CaO(s) + H_2O(l) \\rightarrow Ca(OH)_2(aq) + Heat$$",
+        "analogy": "Like two people getting married to form one couple."
+      }
+    },
+    {
+      "id": "sci-ch-01-e-03",
+      "type": "examTip",
+      "topic": "Whitewashing Chemistry",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "CBSE loves asking about the 'shiny finish' on walls. Learn this sequence:",
+        "exactPhrase": "Slaked lime $[Ca(OH)_2]$ is used for whitewashing. It reacts slowly with $CO_2$ in the air to form a thin layer of Calcium Carbonate $(CaCO_3)$ on the walls. This gives a shiny finish after two to three days."
+      }
+    },
+    {
+      "id": "sci-ch-01-c-04",
+      "type": "concept",
+      "topic": "Decomposition Reaction",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Decomposition Reaction (AB → A + B)",
+        "body": "A reaction where a single reactant breaks down to give simpler products. This usually requires energy in the form of Heat, Light, or Electricity.\n\n1. **Thermal:** Using Heat ($FeSO_4$ crystals turning brown).\n2. **Electrolytic:** Using Electricity (Water splitting into $H_2$ and $O_2$).\n3. **Photolytic:** Using Light ($AgCl$ turning grey in sunlight).",
+        "analogy": "Like a divorce or a group of friends splitting up into individuals."
+      }
+    },
+    {
+      "id": "sci-ch-01-m-01",
+      "type": "memoryHook",
+      "topic": "Decomposition Energy Types",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "THE-PHO-ELE",
+        "explanation": "THErmal (Heat), PHOtolytic (Light/Photo), ELEctrolytic (Electricity). These are the three 'batteries' that can break a compound apart."
+      }
+    },
+    {
+      "id": "sci-ch-01-e-04",
+      "type": "examTip",
+      "topic": "Decomposition of Ferrous Sulphate",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Identify the gases by their smell. This is a common 2-mark 'Observation' question.",
+        "exactPhrase": "When green $FeSO_4 \\cdot 7H_2O$ crystals are heated, they lose water and turn white. On further heating, it decomposes to Ferric Oxide ($Fe_2O_3$), $SO_2$, and $SO_3$. Observation: The green color disappears and a characteristic smell of burning sulphur is evolved."
+      }
+    },
+    {
+      "id": "sci-ch-01-e-05",
+      "type": "examTip",
+      "topic": "Lead Nitrate Decomposition",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Look for 'Brown Fumes' in the question—it's always Nitrogen Dioxide.",
+        "exactPhrase": "Heating Lead Nitrate $[Pb(NO_3)_2]$ results in the emission of brown fumes of Nitrogen Dioxide $(NO_2)$. The remaining residue is yellow Lead Oxide ($PbO$)."
+      }
+    },
+    {
+      "id": "sci-ch-01-c-05",
+      "type": "concept",
+      "topic": "Displacement Reaction",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Displacement Reaction (A + BC → AC + B)",
+        "body": "A reaction where a more reactive element displaces a less reactive element from its compound.\n\n**Classical Example:** Iron nail in Copper Sulphate solution.\n$$Fe(s) + CuSO_4(aq) \\rightarrow FeSO_4(aq) + Cu(s)$$\n**Observation:** The blue color of $CuSO_4$ fades to light green, and a brown coating of copper deposits on the iron nail.",
+        "analogy": "A stronger player taking a weaker player's spot on the team."
+      }
+    },
+    {
+      "id": "sci-ch-01-c-06",
+      "type": "concept",
+      "topic": "Double Displacement Reaction",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Double Displacement Reaction",
+        "body": "Reactions in which there is an exchange of ions between the reactants to form new compounds. Often, an insoluble solid (precipitate) is formed.\n\n**Example:** Sodium Sulphate + Barium Chloride\n$$Na_2SO_4 + BaCl_2 \\rightarrow BaSO_4(s) + 2NaCl(aq)$$\n**Observation:** A white precipitate of $BaSO_4$ is formed immediately.",
+        "analogy": "Two dancing couples swapping partners at the same time."
+      }
+    },
+    {
+      "id": "sci-ch-01-e-06",
+      "type": "examTip",
+      "topic": "Definition — Precipitation Reaction",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Whenever a 'solid forms from liquids', use this definition:",
+        "exactPhrase": "Any reaction that produces an insoluble solid (called a precipitate) that settles out of the solution is called a precipitation reaction."
+      }
+    },
+    {
+      "id": "sci-ch-01-c-07",
+      "type": "concept",
+      "topic": "Exothermic vs Endothermic",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Energy Changes in Reactions",
+        "body": "1. **Exothermic Reactions:** Reactions in which heat is released along with the formation of products. Examples: Burning of natural gas, Respiration.\n2. **Endothermic Reactions:** Reactions in which energy is absorbed. Examples: All decomposition reactions, Photosynthesis.",
+        "analogy": "Exothermic is like a hand warmer (gives out heat). Endothermic is like an ice pack (takes in heat)."
+      }
+    },
+    {
+      "id": "sci-ch-01-e-07",
+      "type": "examTip",
+      "topic": "Respiration as Exothermic",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "A common 'Give Reason' 2-mark question:",
+        "exactPhrase": "Respiration is considered an exothermic reaction because during digestion, carbohydrates are broken down into glucose. This glucose combines with oxygen in our cells to provide energy (heat) to our body."
+      }
+    },
+    {
+      "id": "sci-ch-01-c-08",
+      "type": "concept",
+      "topic": "Redox Reactions",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Oxidation and Reduction (Redox)",
+        "body": "**Oxidation:** Gain of Oxygen OR Loss of Hydrogen.\n**Reduction:** Loss of Oxygen OR Gain of Hydrogen.\n\nIn a **Redox Reaction**, both occur simultaneously.\n**Example:** $$CuO + H_2 \\rightarrow Cu + H_2O$$\n- $CuO$ is reduced to $Cu$ (Loses Oxygen).\n- $H_2$ is oxidized to $H_2O$ (Gains Oxygen).\n- **Oxidising Agent:** $CuO$ (gives oxygen).\n- **Reducing Agent:** $H_2$ (takes oxygen).",
+        "analogy": "Like a game of Hot Potato. One person passes the potato (Oxygen) to another. One loses it, the other gains it."
+      }
+    },
+    {
+      "id": "sci-ch-01-m-02",
+      "type": "memoryHook",
+      "topic": "OIL RIG (Advanced/Optional)",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "hook": "OIL RIG",
+        "explanation": "Oxidation Is Loss (of electrons), Reduction Is Gain (of electrons). Note: This is the higher-level definition but helps you remember which is which!"
+      }
+    },
+    {
+      "id": "sci-ch-01-q-02",
+      "type": "quiz",
+      "topic": "Identifying Reducing Agents",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "In the reaction: ZnO + C → Zn + CO, which substance is the reducing agent?",
+        "options": [
+          "ZnO",
+          "Zn",
+          "C",
+          "CO"
+        ],
+        "correctIndex": 2,
+        "explanation": "Carbon (C) is the reducing agent because it removes oxygen from ZnO to become CO. ZnO is the substance being reduced (and thus is the oxidising agent). Reducing agents are always found on the reactant side."
+      }
+    },
+    {
+      "id": "sci-ch-01-c-09",
+      "type": "concept",
+      "topic": "Corrosion",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Corrosion",
+        "body": "The process in which metals are eaten up gradually by the action of air, moisture, or chemicals (like acids) on their surface.\n\n**Examples:**\n1. **Rusting of Iron:** Reddish-brown coating.\n2. **Copper:** Green coating (Basic Copper Carbonate).\n3. **Silver:** Black coating (Silver Sulphide).",
+        "analogy": "Nature's way of 'reclaiming' refined metals and turning them back into ores."
+      }
+    },
+    {
+      "id": "sci-ch-01-e-08",
+      "type": "examTip",
+      "topic": "Prevention of Corrosion",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "List these for a 2-mark question on prevention:",
+        "exactPhrase": "Corrosion can be prevented by: 1. Painting, 2. Oiling/Greasing, 3. Galvanization (coating with zinc), 4. Chrome plating, or 5. Making alloys."
+      }
+    },
+    {
+      "id": "sci-ch-01-c-10",
+      "type": "concept",
+      "topic": "Rancidity",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Rancidity",
+        "body": "When fats and oils present in food are oxidized, they become rancid. This leads to an unpleasant smell and taste.\n\n**Prevention:**\n1. Adding **Anti-oxidants**.\n2. Keeping food in airtight containers.\n3. Flushing food bags (like chips) with **Nitrogen gas** (which is inert and prevents oxidation).",
+        "analogy": "Old chips tasting 'stale' or 'cardboard-like' because they've 'breathed' too much oxygen."
+      }
+    },
+    {
+      "id": "sci-ch-01-q-03",
+      "type": "quiz",
+      "topic": "Nitrogen in Chips",
+      "difficulty": 1,
+      "xpValue": 15,
+      "content": {
+        "question": "Why are potato chip packets usually flushed with Nitrogen gas?",
+        "options": [
+          "To make the packet look bigger",
+          "To keep the chips crunchy by absorbing moisture",
+          "To prevent oxidation of fats and oils",
+          "To add flavor to the chips"
+        ],
+        "correctIndex": 2,
+        "explanation": "Nitrogen is an inert gas that creates an oxygen-free environment inside the bag, preventing the fats in the chips from turning rancid through oxidation."
+      }
+    },
+    {
+      "id": "sci-ch-01-e-09",
+      "type": "examTip",
+      "topic": "Electrolysis of Water Ratio",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Common 1-mark MCQ regarding the volume of gases:",
+        "exactPhrase": "During the electrolysis of water, the volume of Hydrogen gas collected at the cathode is double the volume of Oxygen gas collected at the anode because the chemical formula of water ($H_2O$) contains two parts hydrogen for every one part oxygen."
+      }
+    },
+    {
+      "id": "sci-ch-01-m-03",
+      "type": "memoryHook",
+      "topic": "Anode vs Cathode Gases",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "hook": "OPA: Oxygen-Positive-Anode",
+        "explanation": "In electrolysis of water, **O**xygen is collected at the **P**ositive terminal called the **A**node. By default, Hydrogen goes to the Negative Cathode."
+      }
+    }
+  ]
+}

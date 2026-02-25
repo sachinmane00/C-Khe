@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import {
-  View, Text, ScrollView, TouchableOpacity,
+  View, Text, Image, ScrollView, TouchableOpacity,
   StyleSheet, useColorScheme,
 } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
@@ -49,7 +49,10 @@ export default function Dashboard({ navigation }: Props) {
       <ScrollView showsVerticalScrollIndicator={false}>
         {/* ── Header ── */}
         <View style={styles.header}>
-          <Text style={styles.logo}>SnapLearn</Text>
+          <Image
+            source={require('../../../assets/icon.png')}
+            style={styles.logo}
+          />
           <StreakBadge streak={streak} size="sm" />
         </View>
 
@@ -158,9 +161,9 @@ function createStyles(t: Theme) {
       paddingVertical: t.spacing.md,
     },
     logo: {
-      color: t.colors.accentPurple,
-      fontSize: t.fontSize.xl,
-      fontFamily: 'Roboto_700Bold',
+      width: 36,
+      height: 36,
+      borderRadius: 8,
     },
     sectionTitle: {
       color: t.colors.textPrimary,

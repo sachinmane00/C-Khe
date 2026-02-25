@@ -1,7 +1,7 @@
-# SnapLearn — Project Context for Claude Code
+# C-Khe — Project Context for Claude Code
 
 ## What this app is
-SnapLearn is a reel-style micro-learning app for CBSE 10th students.
+C-Khe is a reel-style micro-learning app for CBSE 10th students.
 Think Instagram Reels but every swipe = one exam concept.
 Built with React Native (Expo) + TypeScript.
 

@@ -5,7 +5,7 @@ export type Subject = 'Science' | 'Math' | 'SST' | 'English' | 'Hindi'
 export type Difficulty = 1 | 2 | 3
 
 export interface ConceptContent {
-  topic: string
+  title: string
   body: string
   analogy?: string
 }
@@ -23,8 +23,8 @@ export interface QuizContent {
 }
 
 export interface MemoryHookContent {
-  mnemonic: string
-  story: string
+  hook: string
+  explanation: string
 }
 
 export interface MindMapPeekContent {

@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "board": "CBSE",
+    "class": "10",
+    "subject": "Science",
+    "chapter": "Metals and Non-Metals",
+    "chapterNumber": 3,
+    "version": "1.0",
+    "lastUpdated": "2026-02-25",
+    "totalCards": 32
+  },
+  "cards": [
+    {
+      "id": "sci-ch-03-c-01",
+      "type": "concept",
+      "topic": "Physical Properties",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Metals vs. Non-Metals",
+        "body": "**Metals:** Malleable (can be beaten into sheets), Ductile (can be drawn into wires), Sonorous (make sound), and Good conductors of heat/electricity.\n**Non-Metals:** Brittle (break easily), Non-sonorous, and Poor conductors (except Graphite).\n\n**Exceptions (EXAM FAVORITES):**\n1. **Mercury:** Liquid at room temp.\n2. **Gallium/Caesium:** Melt in your palm.\n3. **Iodine:** A non-metal that is lustrous (shiny).\n4. **Alkali Metals (Li, Na, K):** So soft they can be cut with a knife.",
+        "analogy": "Metals are the 'tough guys' of the periodic table, while non-metals are more 'fragile' and varied."
+      }
+    },
+    {
+      "id": "sci-ch-03-e-01",
+      "type": "examTip",
+      "topic": "Amphoteric Oxides",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "This is a recurring 3-mark question. Use this exact definition and both equations:",
+        "exactPhrase": "Amphoteric oxides are metal oxides which show both acidic as well as basic behaviour. They react with both acids and bases to produce salt and water. Examples: Aluminium oxide ($Al_2O_3$) and Zinc oxide ($ZnO$)."
+      }
+    },
+    {
+      "id": "sci-ch-03-c-02",
+      "type": "concept",
+      "topic": "Reaction with Water",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Metals + Water",
+        "body": "Different metals react differently with water:\n1. **Na & K:** React violently with cold water (Exothermic, $H_2$ catches fire).\n2. **Ca:** Reacts with cold water; bubbles of $H_2$ stick to the metal surface making it float.\n3. **Mg:** Reacts only with **hot water**.\n4. **Al, Fe, Zn:** React only with **steam**.\n5. **Pb, Cu, Ag, Au:** Do not react with water at all.",
+        "analogy": "It's like people in a pool: Some jump in any temperature (Sodium), some need a heated pool (Magnesium), and some only like the sauna (Iron/Steam)!"
+      }
+    },
+    {
+      "id": "sci-ch-03-e-02",
+      "type": "examTip",
+      "topic": "Aqua Regia",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Known as 'Royal Water'. Memorize the ratio:",
+        "exactPhrase": "Aqua Regia is a freshly prepared mixture of concentrated Hydrochloric acid (HCl) and concentrated Nitric acid ($HNO_3$) in the ratio of 3:1. It is a highly corrosive, fuming liquid that can dissolve gold and platinum."
+      }
+    },
+    {
+      "id": "sci-ch-03-c-03",
+      "type": "concept",
+      "topic": "The Reactivity Series",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "The Reactivity (Activity) Series",
+        "body": "It is a list of metals arranged in the order of their decreasing activities. Metals at the top (K, Na, Ca) are most reactive and never found free in nature. Metals at the bottom (Au, Ag) are least reactive.",
+        "analogy": "Think of it as a 'Social Hierarchy' of metals. The ones at the top are very social (reactive), and the ones at the bottom are 'loners' (noble)."
+      }
+    },
+    {
+      "id": "sci-ch-03-m-01",
+      "type": "memoryHook",
+      "topic": "Reactivity Series Mnemonic",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "hook": "Please Stop Calling Me A Careless Zebra Instead Try Learning How Copper Saves Gold",
+        "explanation": "P (Potassium), S (Sodium), C (Calcium), M (Magnesium), A (Aluminium), C (Carbon*), Z (Zinc), I (Iron), T (Tin), L (Lead), H (Hydrogen*), C (Copper), S (Silver), G (Gold)."
+      }
+    },
+    {
+      "id": "sci-ch-03-c-04",
+      "type": "concept",
+      "topic": "Ionic Compounds",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Formation of Ionic Bonds",
+        "body": "Ionic compounds are formed by the transfer of electrons from a metal (which becomes a cation) to a non-metal (which becomes an anion).\n\n**Properties:**\n1. High melting/boiling points (due to strong electrostatic forces).\n2. Usually solids and brittle.\n3. Conduct electricity **only** in molten or aqueous state (ions are free to move).",
+        "analogy": "Like a full ownership transfer of a car. One person gives it away (electron), the other takes it completely. Now they are 'bonded' by the transaction."
+      }
+    },
+    {
+      "id": "sci-ch-03-e-03",
+      "type": "examTip",
+      "topic": "Why Ionic Compounds are Solids",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Reasoning question (1-2 marks):",
+        "exactPhrase": "Ionic compounds are solids because of the strong force of attraction between the positive and negative ions, which creates a rigid crystalline structure."
+      }
+    },
+    {
+      "id": "sci-ch-03-c-05",
+      "type": "concept",
+      "topic": "Metallurgy — Basic Terms",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Ores, Minerals, and Gangue",
+        "body": "**Mineral:** Naturally occurring inorganic substance.\n**Ore:** A mineral from which a metal can be extracted profitably.\n**Gangue:** The unwanted impurities (sand, soil, etc.) present in the ore.",
+        "analogy": "Ore is like a chocolate chip cookie. The chocolate chips are the metal you want, and the dough/sand is the gangue you need to remove."
+      }
+    },
+    {
+      "id": "sci-ch-03-e-04",
+      "type": "examTip",
+      "topic": "Roasting vs. Calcination",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "CRITICAL distinction. Draw a table for this in exams:",
+        "exactPhrase": "Roasting is heating sulphide ores in the presence of excess air to convert them into oxides. Calcination is heating carbonate ores in limited air to convert them into oxides."
+      }
+    },
+    {
+      "id": "sci-ch-03-e-05",
+      "type": "examTip",
+      "topic": "Thermite Process",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Application-based question (Railway tracks):",
+        "exactPhrase": "The reaction of Iron(III) oxide ($Fe_2O_3$) with Aluminium is highly exothermic. The heat produced is so great that the iron is obtained in a molten state. This is used to join cracked railway tracks or machine parts."
+      }
+    },
+    {
+      "id": "sci-ch-03-c-06",
+      "type": "concept",
+      "topic": "Electrolytic Refining",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Refining of Copper",
+        "body": "To get 100% pure metal, we use electrolysis.\n- **Anode:** Thick block of Impure metal.\n- **Cathode:** Thin strip of Pure metal.\n- **Electrolyte:** Acidified solution of the metal salt (e.g., $CuSO_4$).\n\n**Process:** Pure metal from the anode dissolves into the electrolyte and deposits onto the cathode. Impurities settle below the anode as **Anode Mud**."
+      }
+    },
+    {
+      "id": "sci-ch-03-c-07",
+      "type": "concept",
+      "topic": "Alloys",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Alloys and Their Uses",
+        "body": "An alloy is a homogeneous mixture of two or more metals, or a metal and a non-metal. It improves properties like hardness and corrosion resistance.\n\n**Common Alloys:**\n- **Steel:** Iron + Carbon (Hard).\n- **Stainless Steel:** Iron + Nickel + Chromium (Doesn't rust).\n- **Brass:** Copper + Zinc.\n- **Bronze:** Copper + Tin.\n- **Solder:** Lead + Tin (Low melting point, used for welding wires).\n- **Amalgam:** Any alloy containing Mercury."
+      }
+    },
+    {
+      "id": "sci-ch-03-q-01",
+      "type": "quiz",
+      "topic": "Anode Mud",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "During the electrolytic refining of copper, where do the insoluble impurities settle?",
+        "options": [
+          "On the cathode",
+          "At the bottom of the beaker",
+          "Below the anode",
+          "Dissolved in the electrolyte"
+"
+        ],
+        "correctIndex": 2,
+        "explanation": "Insoluble impurities settle directly below the anode and are specifically called 'Anode Mud'. They do not reach the cathode, which is where pure metal is deposited."
+      }
+    }
+  ]
+}

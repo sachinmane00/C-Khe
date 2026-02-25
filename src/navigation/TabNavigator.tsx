@@ -6,7 +6,6 @@ import { useNavigation } from '@react-navigation/native'
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { darkTheme, lightTheme } from '../constants/theme'
 import Dashboard from '../screens/Dashboard'
-import ReelFeed from '../screens/ReelFeed'
 import Profile from '../screens/Profile'
 import UniversalSearchBar from '../components/search/UniversalSearchBar'
 import SearchModal from '../components/search/SearchModal'
@@ -53,7 +52,6 @@ export default function TabNavigator() {
             fontFamily: 'Roboto_500Medium',
             fontSize: 11,
           },
-          // Pad screen content so it clears both tab bar and floating search bar
           contentStyle: { paddingBottom: 160 },
         }}
       >
@@ -65,19 +63,6 @@ export default function TabNavigator() {
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="home-outline" size={size} color={color} />
             ),
-          }}
-        />
-        <Tab.Screen
-          name="Study"
-          component={ReelFeed}
-          options={{
-            tabBarLabel: 'Study',
-            tabBarIcon: ({ color, size }) => (
-              <Ionicons name="book-outline" size={size} color={color} />
-            ),
-            tabBarStyle: { display: 'none' },
-            // Full-screen reel — no bottom padding
-            contentStyle: { paddingBottom: 0 },
           }}
         />
         <Tab.Screen

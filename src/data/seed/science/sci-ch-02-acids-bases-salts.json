@@ -1,0 +1,252 @@
+{
+  "metadata": {
+    "board": "CBSE",
+    "class": "10",
+    "subject": "Science",
+    "chapter": "Acids, Bases, and Salts",
+    "chapterNumber": 2,
+    "version": "1.0",
+    "lastUpdated": "2026-02-25",
+    "totalCards": 30
+  },
+  "cards": [
+    {
+      "id": "sci-ch-02-c-01",
+      "type": "concept",
+      "topic": "Introduction to Acids and Bases",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Acids vs. Bases: Physical Properties",
+        "body": "**Acids:** Sour in taste, turn blue litmus red, and release $H^+(aq)$ ions in solution.\n**Bases:** Bitter in taste, soapy to touch, turn red litmus blue, and release $OH^-(aq)$ ions in solution.\n\n**Common Examples:**\n- Acids: HCl (Hydrochloric), $H_2SO_4$ (Sulphuric), Citric acid (Lemons).\n- Bases: NaOH (Sodium Hydroxide), Ca(OH)2 (Calcium Hydroxide).",
+        "analogy": "Acids are like sharp lemons; Bases are like slippery soap."
+      }
+    },
+    {
+      "id": "sci-ch-02-e-01",
+      "type": "examTip",
+      "topic": "Olfactory Indicators",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Examiners often ask how to test for acids/bases if a student is visually impaired. Use this term:",
+        "exactPhrase": "Olfactory indicators are substances whose odour changes in acidic or basic media. Examples: Vanilla essence, Onion, and Clove oil. Their characteristic smell disappears in basic solutions but remains in acidic solutions."
+      }
+    },
+    {
+      "id": "sci-ch-02-m-01",
+      "type": "memoryHook",
+      "topic": "Litmus Paper Colors",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "ABR and BRB",
+        "explanation": "ABR: Acid turns Blue to Red. \nBRB: Base turns Red to Blue (B for Base, B for Blue)."
+      }
+    },
+    {
+      "id": "sci-ch-02-c-02",
+      "type": "concept",
+      "topic": "Chemical Properties — Reaction with Metals",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Acid/Base + Metal Reaction",
+        "body": "When an acid reacts with a metal, it produces a Salt and Hydrogen gas.\n**Equation:** $Acid + Metal \\rightarrow Salt + Hydrogen$\n**Example:** $Zn + H_2SO_4 \\rightarrow ZnSO_4 + H_2(g)$\n\n**Note:** Bases also react with some metals (like Zinc and Aluminum) to form salt and hydrogen gas.\n**Key Base Example:** $2NaOH + Zn \\rightarrow Na_2ZnO_2$ (Sodium Zincate) $+ H_2(g)$"
+      }
+    },
+    {
+      "id": "sci-ch-02-e-02",
+      "type": "examTip",
+      "topic": "The Pop Test",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "This is the standard laboratory test for Hydrogen gas:",
+        "exactPhrase": "To test for Hydrogen gas, bring a burning candle near the mouth of the test tube. The gas burns with a characteristic 'pop' sound."
+      }
+    },
+    {
+      "id": "sci-ch-02-c-03",
+      "type": "concept",
+      "topic": "Reaction with Carbonates",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Acids + Metal Carbonates",
+        "body": "Acids react with metal carbonates or metal hydrogencarbonates to produce Salt, Water, and Carbon Dioxide gas.\n\n**Equation:** $Na_2CO_3 + 2HCl \\rightarrow 2NaCl + H_2O + CO_2$\n**Observation:** Brisk effervescence is seen due to $CO_2$ release.",
+        "analogy": "The 'fizz' when you put vinegar on baking soda is $CO_2$ escaping!"
+      }
+    },
+    {
+      "id": "sci-ch-02-e-03",
+      "type": "examTip",
+      "topic": "The Limewater Test",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Essential for identifying CO2. Mention the effect of 'excess' gas:",
+        "exactPhrase": "When $CO_2$ is passed through limewater, it turns milky due to the formation of white precipitate $CaCO_3$. If excess $CO_2$ is passed, the milkiness disappears because soluble Calcium Hydrogencarbonate $[Ca(HCO_3)_2]$ is formed."
+      }
+    },
+    {
+      "id": "sci-ch-02-c-04",
+      "type": "concept",
+      "topic": "Neutralization Reaction",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Neutralization",
+        "body": "The reaction between an acid and a base to give a salt and water is known as a neutralization reaction. \n\n**General Form:** $Base + Acid \\rightarrow Salt + Water$\n**Ionic Level:** $H^+(aq) + OH^-(aq) \\rightarrow H_2O(l)$"
+      }
+    },
+    {
+      "id": "sci-ch-02-e-04",
+      "type": "examTip",
+      "topic": "Nature of Metallic/Non-Metallic Oxides",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Memorize this trend for 1-mark classification questions:",
+        "exactPhrase": "Metallic oxides (like MgO, CuO) are basic in nature because they react with acids to form salt and water. Non-metallic oxides (like $CO_2$, $SO_2$) are acidic in nature because they react with bases to form salt and water."
+      }
+    },
+    {
+      "id": "sci-ch-02-c-05",
+      "type": "concept",
+      "topic": "Acid/Base in Water",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "The Role of Water",
+        "body": "Acids produce $H^+$ ions only in the presence of water. $H^+$ ions cannot exist alone; they combine with water to form Hydronium ions ($H_3O^+$).\n\n**Caution:** Mixing water into concentrated acid is highly exothermic. Always add **Acid to Water** slowly with constant stirring, never the other way around!",
+        "analogy": "Think of acid like a concentrated syrup. You add the syrup to the big glass of water, not the water to the syrup, to prevent it from splashing/exploding."
+      }
+    },
+    {
+      "id": "sci-ch-02-q-01",
+      "type": "quiz",
+      "topic": "Dilution Safety",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "Why is it recommended that acid should be added to water and not water to acid?",
+        "options": [
+          "To speed up the reaction",
+          "Water is a better solvent than acid",
+          "To prevent the large amount of heat generated from causing the mixture to splash out",
+          "Acid does not dissolve if added second"
+        ],
+        "correctIndex": 2,
+        "explanation": "The process of dissolving an acid in water is highly exothermic. Adding water to concentrated acid can cause the mixture to flash-boil and splash out, potentially causing burns or breaking the glass container."
+      }
+    },
+    {
+      "id": "sci-ch-02-c-06",
+      "type": "concept",
+      "topic": "The pH Scale",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Understanding pH",
+        "body": "The pH scale measures the concentration of hydrogen ions $[H^+]$ in a solution. It ranges from 0 to 14.\n- **pH < 7:** Acidic (Higher $H^+$ concentration)\n- **pH = 7:** Neutral (Pure water)\n- **pH > 7:** Basic (Lower $H^+$ concentration, higher $OH^-$ concentration)",
+        "analogy": "A pH of 1 is like battery acid (super sour/stinging); a pH of 14 is like heavy-duty drain cleaner."
+      }
+    },
+    {
+      "id": "sci-ch-02-e-05",
+      "type": "examTip",
+      "topic": "pH in Daily Life — Tooth Decay",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Common 2-mark question on biology-chemistry link:",
+        "exactPhrase": "Tooth decay starts when the pH of the mouth is lower than 5.5. Bacteria in the mouth produce acids by degradation of sugar. Toothpaste, which is basic, neutralizes the excess acid and prevents decay."
+      }
+    },
+    {
+      "id": "sci-ch-02-c-07",
+      "type": "concept",
+      "topic": "Chlor-Alkali Process",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Manufacturing Sodium Hydroxide (NaOH)",
+        "body": "When electricity is passed through an aqueous solution of Sodium Chloride (called **Brine**), it decomposes to form NaOH, Chlorine, and Hydrogen.\n\n**Equation:** $2NaCl(aq) + 2H_2O(l) \\rightarrow 2NaOH(aq) + Cl_2(g) + H_2(g)$\n- $Cl_2$ is formed at the **Anode**.\n- $H_2$ is formed at the **Cathode**.\n- $NaOH$ solution is formed near the cathode."
+      }
+    },
+    {
+      "id": "sci-ch-02-e-06",
+      "type": "examTip",
+      "topic": "Bleaching Powder",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Know the formula and the chemical name:",
+        "exactPhrase": "Bleaching Powder is Calcium Oxychloride ($CaOCl_2$). It is produced by the action of chlorine on dry slaked lime $[Ca(OH)_2]$. Uses: Bleaching cotton/linen, disinfecting drinking water."
+      }
+    },
+    {
+      "id": "sci-ch-02-e-07",
+      "type": "examTip",
+      "topic": "Baking Soda vs Baking Powder",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Board examiners love this distinction. Be very careful with the composition:",
+        "exactPhrase": "Baking Soda is Sodium Hydrogencarbonate ($NaHCO_3$). Baking Powder is a mixture of baking soda and a mild edible acid like tartaric acid. When heated, $NaHCO_3$ releases $CO_2$ which makes cakes 'rise' and become spongy."
+      }
+    },
+    {
+      "id": "sci-ch-02-e-08",
+      "type": "examTip",
+      "topic": "Washing Soda",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Learn the exact number of water molecules:",
+        "exactPhrase": "Washing Soda is Sodium Carbonate Decahydrate ($Na_2CO_3 \\cdot 10H_2O$). It is obtained by recrystallization of sodium carbonate. It is a basic salt used for removing permanent hardness of water."
+      }
+    },
+    {
+      "id": "sci-ch-02-c-08",
+      "type": "concept",
+      "topic": "Plaster of Paris (POP)",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Plaster of Paris and Gypsum",
+        "body": "When Gypsum is heated at **373 K**, it loses water molecules to become Plaster of Paris (Calcium Sulphate Hemihydrate).\n\n**Equation:** $CaSO_4 \\cdot 2H_2O \\xrightarrow{373K} CaSO_4 \\cdot \\frac{1}{2}H_2O + 1\\frac{1}{2}H_2O$\n\nOn mixing POP with water, it changes back to Gypsum, forming a hard solid mass."
+      }
+    },
+    {
+      "id": "sci-ch-02-e-09",
+      "type": "examTip",
+      "topic": "Storage of POP",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Common 'Reasoning' question:",
+        "exactPhrase": "Plaster of Paris should be stored in a moisture-proof container because it absorbs moisture from the air and sets into a hard solid mass of Gypsum, making it useless."
+      }
+    },
+    {
+      "id": "sci-ch-02-q-02",
+      "type": "quiz",
+      "topic": "Water of Crystallisation",
+      "difficulty": 3,
+      "xpValue": 15,
+      "content": {
+        "question": "What happens to the color of Copper Sulphate crystals ($CuSO_4 \\cdot 5H_2O$) on heating?",
+        "options": [
+          "It turns from blue to green",
+          "It turns from blue to white",
+          "It remains blue but turns into a liquid",
+          "It turns black"
+        ],
+        "correctIndex": 1,
+        "explanation": "Copper sulphate crystals contain 'Water of Crystallisation' which gives them their blue color. On heating, the water is lost, and the salt turns white (anhydrous copper sulphate). Adding water again restores the blue color."
+      }
+    }
+  ]
+}
