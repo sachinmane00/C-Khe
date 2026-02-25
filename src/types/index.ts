@@ -37,6 +37,7 @@ export interface Card {
   type: CardType
   subject: Subject
   chapter: string
+  topic?: string
   difficulty: Difficulty
   xpValue: number
   content: ConceptContent | ExamTipContent | QuizContent | MemoryHookContent | MindMapPeekContent
@@ -50,3 +51,21 @@ export interface UserStats {
   badges: string[]
   subjectProgress: Record<Subject, number>
 }
+
+export interface Chapter {
+  id: string
+  subject: Subject
+  title: string
+  topics: string[]
+  cardCount: number
+}
+
+export interface SearchResult {
+  type: 'card' | 'chapter'
+  card?: Card
+  chapter?: Chapter
+  relevanceScore: number
+  matchedOn: string
+}
+
+export type SearchState = 'idle' | 'searching' | 'done' | 'error'

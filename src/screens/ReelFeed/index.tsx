@@ -1,9 +1,13 @@
 import React, { useState, useRef, useMemo, useEffect } from 'react'
-import { View, FlatList, Dimensions, StyleSheet, useColorScheme, TouchableOpacity, Text } from 'react-native'
+import {
+  View, FlatList, Dimensions, StyleSheet, useColorScheme,
+  TouchableOpacity, Text,
+} from 'react-native'
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 import { darkTheme, lightTheme, type Theme } from '../../constants/theme'
 import { useUserStore } from '../../store/userStore'
 import { useContentStore } from '../../store/contentStore'
+import { seedData, subjectMeta } from '../../data/seed'
 import ConceptCard from '../../components/cards/ConceptCard'
 import ExamTipCard from '../../components/cards/ExamTipCard'
 import QuizCard from '../../components/cards/QuizCard'
@@ -29,20 +33,71 @@ export default function ReelFeed({ navigation, route }: Props) {
   const theme = scheme === 'dark' ? darkTheme : lightTheme
 
   const { streak, addXP, updateStreak } = useUserStore()
-  const { cards, bookmarkCard, markTooEasy, setSubject } = useContentStore()
+  const { cards, bookmarkCard, markTooEasy, setSubject, setCards } = useContentStore()
 
   const [activeIndex, setActiveIndex] = useState(0)
   const [showBookmarkFlash, setShowBookmarkFlash] = useState(false)
   const [xpPopup, setXpPopup] = useState({ visible: false, amount: 0 })
+  const [cardsReady, setCardsReady] = useState(false)
 
   const activeIndexRef = useRef(0)
+  const insets = useSafeAreaInsets()
+  const pageHeight = SCREEN_HEIGHT - insets.top
 
-  // Load subject from route params on mount
+  // Stable param refs — extracted once
+  const params = route?.params
+  const chapterTitle = params?.chapterTitle
+  const subject = params?.subject as Subject | undefined
+  const hasChapterId = Boolean(params?.chapterId)
+  const subjectEmoji = subject ? (subjectMeta[subject]?.emoji ?? '📚') : '📚'
+
+  // ── Init: clear store and load the right cards ──────────────────────────
   useEffect(() => {
-    const subject = route?.params?.subject
-    if (subject) setSubject(subject)
-  }, [route?.params?.subject])
+    setCards([])
+    setCardsReady(false)
+    setActiveIndex(0)
+    activeIndexRef.current = 0
 
+    // Injected card array (from search result)
+    if (params?.cards && params.cards.length > 0) {
+      setCards(params.cards)
+      setCardsReady(true)
+      return
+    }
+
+    // Chapter drill-down: filter seed cards
+    if (params?.chapterId && params?.chapterTitle && params?.subject) {
+      const allSubjectCards: Card[] = seedData[params.subject] ?? []
+      const searchTitle = params.chapterTitle.toLowerCase()
+      const filtered = allSubjectCards.filter((c) => {
+        const cardChapter = c.chapter.toLowerCase()
+        const cardTopic = (c.topic ?? '').toLowerCase()
+        if (cardChapter === searchTitle) return true
+        if (cardChapter.includes(searchTitle) || searchTitle.includes(cardChapter)) return true
+        const keywords = searchTitle.split(' ').filter((w) => w.length > 4)
+        return keywords.some((kw) => cardChapter.includes(kw) || cardTopic.includes(kw))
+      })
+      console.log(
+        `[ReelFeed] chapter filter "${params.chapterTitle}" → ${filtered.length}/${allSubjectCards.length} cards`
+      )
+
+      setCards(filtered)
+      setCardsReady(true)
+      return
+    }
+
+    // Subject-only: load full subject cards
+    if (params?.subject) {
+      setSubject(params.subject)
+      setCardsReady(true)
+      return
+    }
+
+    // Default: keep whatever was in the store
+    setCardsReady(true)
+  }, []) // run once on mount
+
+  // ── FlatList handlers ────────────────────────────────────────────────────
   const onViewableItemsChanged = useRef(({ viewableItems }: any) => {
     if (viewableItems.length > 0 && viewableItems[0].index !== null) {
       const newIdx = viewableItems[0].index as number
@@ -73,7 +128,6 @@ export default function ReelFeed({ navigation, route }: Props) {
 
   function renderItem({ item: card }: { item: Card }) {
     let cardContent: React.ReactNode = null
-
     switch (card.type) {
       case 'concept':
         cardContent = <ConceptCard card={card} onGotIt={() => handleXP(card)} />
@@ -87,7 +141,6 @@ export default function ReelFeed({ navigation, route }: Props) {
       default:
         return null
     }
-
     return (
       <View style={[styles.cardScreen, { height: pageHeight, paddingTop: theme.spacing.xxl + 4 }]}>
         {cardContent}
@@ -96,11 +149,42 @@ export default function ReelFeed({ navigation, route }: Props) {
   }
 
   const canGoBack = navigation?.canGoBack?.() ?? false
-  const insets = useSafeAreaInsets()
-  // Page height = visible FlatList frame after top safe-area inset
-  const pageHeight = SCREEN_HEIGHT - insets.top
   const styles = useMemo(() => createStyles(theme), [theme])
 
+  // ── Blank while initialising ─────────────────────────────────────────────
+  if (!cardsReady) {
+    return <SafeAreaView style={styles.screen} edges={['top']} />
+  }
+
+  // ── Coming soon screen (chapter has no cards yet) ─────────────────────────
+  if (cardsReady && cards.length === 0 && hasChapterId) {
+    return (
+      <SafeAreaView style={styles.screen} edges={['top']}>
+        <View style={styles.centeredState}>
+          <Text style={styles.bigEmoji}>{subjectEmoji}</Text>
+          <Text style={[styles.comingSoonTitle, { color: theme.colors.textPrimary }]}>
+            Cards coming soon for
+          </Text>
+          <Text style={[styles.comingSoonChapter, { color: theme.colors.accentPurple }]} numberOfLines={2}>
+            {chapterTitle}
+          </Text>
+          <Text style={[styles.comingSoonSub, { color: theme.colors.textSecondary }]}>
+            We're adding more content every week!
+          </Text>
+          {canGoBack && (
+            <TouchableOpacity
+              style={[styles.backPillBtn, { backgroundColor: theme.colors.accentPurple }]}
+              onPress={() => navigation!.goBack()}
+            >
+              <Text style={[styles.backPillBtnText, { color: '#F1F5F9' }]}>Go Back</Text>
+            </TouchableOpacity>
+          )}
+        </View>
+      </SafeAreaView>
+    )
+  }
+
+  // ── Main reel feed ───────────────────────────────────────────────────────
   return (
     <SafeAreaView style={styles.screen} edges={['top']}>
       <FlatList
@@ -116,19 +200,29 @@ export default function ReelFeed({ navigation, route }: Props) {
       />
 
       {/* Progress bar */}
-      <View style={styles.progressTrack} pointerEvents="none">
+      <View style={[styles.progressTrack, { top: insets.top }]} pointerEvents="none">
         <View style={[styles.progressFill, { width: progressWidth }]} />
       </View>
 
-      {/* Back button — only when pushed from Dashboard */}
+      {/* Back button */}
       {canGoBack && (
-        <TouchableOpacity style={styles.backBtn} onPress={() => navigation!.goBack()}>
+        <TouchableOpacity
+          style={[styles.backBtn, { top: insets.top + 10 }]}
+          onPress={() => navigation!.goBack()}
+        >
           <Text style={styles.backIcon}>‹</Text>
         </TouchableOpacity>
       )}
 
+      {/* Chapter title pill */}
+      {canGoBack && chapterTitle && (
+        <View style={[styles.chapterPill, { top: insets.top + 14 }]} pointerEvents="none">
+          <Text style={styles.chapterPillText} numberOfLines={1}>{chapterTitle}</Text>
+        </View>
+      )}
+
       {/* Streak badge */}
-      <View style={styles.streakBadgeWrapper}>
+      <View style={[styles.streakBadgeWrapper, { top: insets.top + 12 }]}>
         <StreakBadge streak={streak} />
       </View>
 
@@ -154,9 +248,49 @@ function createStyles(t: Theme) {
       height: SCREEN_HEIGHT,
       padding: t.spacing.md,
     },
+    // ── Coming soon screen ──
+    centeredState: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: t.spacing.xl,
+      gap: t.spacing.md,
+    },
+    bigEmoji: {
+      fontSize: 72,
+      marginBottom: t.spacing.sm,
+    },
+    comingSoonTitle: {
+      fontSize: t.fontSize.lg,
+      fontFamily: 'Roboto_500Medium',
+      textAlign: 'center',
+    },
+    comingSoonChapter: {
+      fontSize: t.fontSize.xl,
+      fontFamily: 'Roboto_700Bold',
+      textAlign: 'center',
+    },
+    comingSoonSub: {
+      fontSize: t.fontSize.md,
+      fontFamily: 'Roboto_400Regular',
+      textAlign: 'center',
+    },
+    backPillBtn: {
+      borderRadius: t.borderRadius.md,
+      paddingVertical: t.spacing.sm,
+      paddingHorizontal: t.spacing.lg,
+      alignItems: 'center',
+      justifyContent: 'center',
+      minWidth: 120,
+      marginTop: t.spacing.md,
+    },
+    backPillBtnText: {
+      fontSize: t.fontSize.md,
+      fontFamily: 'Roboto_700Bold',
+    },
+    // ── Reel overlays ──
     progressTrack: {
       position: 'absolute',
-      top: 0,
       left: 0,
       right: 0,
       height: 3,
@@ -168,7 +302,6 @@ function createStyles(t: Theme) {
     },
     backBtn: {
       position: 'absolute',
-      top: 10,
       left: 12,
       zIndex: 10,
       width: 36,
@@ -184,9 +317,24 @@ function createStyles(t: Theme) {
       lineHeight: 32,
       fontFamily: 'Roboto_400Regular',
     },
+    chapterPill: {
+      position: 'absolute',
+      left: 56,
+      right: 56,
+      zIndex: 9,
+      backgroundColor: 'rgba(0,0,0,0.35)',
+      borderRadius: 999,
+      paddingHorizontal: 12,
+      paddingVertical: 5,
+      alignItems: 'center',
+    },
+    chapterPillText: {
+      color: '#F1F5F9',
+      fontSize: 13,
+      fontFamily: 'Roboto_500Medium',
+    },
     streakBadgeWrapper: {
       position: 'absolute',
-      top: 12,
       right: 16,
       zIndex: 10,
     },

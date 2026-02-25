@@ -1,67 +1,107 @@
-import React from 'react'
-import { useColorScheme } from 'react-native'
+import React, { useState } from 'react'
+import { View, useColorScheme } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Ionicons } from '@expo/vector-icons'
+import { useNavigation } from '@react-navigation/native'
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { darkTheme, lightTheme } from '../constants/theme'
 import Dashboard from '../screens/Dashboard'
 import ReelFeed from '../screens/ReelFeed'
 import Profile from '../screens/Profile'
-import type { TabParamList } from './types'
+import UniversalSearchBar from '../components/search/UniversalSearchBar'
+import SearchModal from '../components/search/SearchModal'
+import type { TabParamList, RootStackParamList } from './types'
+import type { SearchResult } from '../types'
 
 const Tab = createBottomTabNavigator<TabParamList>()
 
 export default function TabNavigator() {
   const scheme = useColorScheme()
   const theme = scheme === 'dark' ? darkTheme : lightTheme
+  const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
+
+  const [searchVisible, setSearchVisible] = useState(false)
+
+  function handleResultPress(result: SearchResult) {
+    setSearchVisible(false)
+
+    if (result.type === 'chapter' && result.chapter) {
+      navigation.navigate('SubjectDrillDown', { subject: result.chapter.subject })
+      return
+    }
+
+    if (result.type === 'card' && result.card) {
+      navigation.navigate('ReelFeed', {
+        subject: result.card.subject,
+        cards: [result.card],
+      })
+    }
+  }
 
   return (
-    <Tab.Navigator
-      screenOptions={{
-        headerShown: false,
-        tabBarStyle: {
-          backgroundColor: theme.colors.surface,
-          borderTopColor: `${theme.colors.textSecondary}20`,
-        },
-        tabBarActiveTintColor: theme.colors.accentPurple,
-        tabBarInactiveTintColor: theme.colors.textSecondary,
-        tabBarLabelStyle: {
-          fontFamily: 'Roboto_500Medium',
-          fontSize: 11,
-        },
-      }}
-    >
-      <Tab.Screen
-        name="Home"
-        component={Dashboard}
-        options={{
-          tabBarLabel: 'Home',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="home-outline" size={size} color={color} />
-          ),
+    <View style={{ flex: 1, backgroundColor: theme.colors.background }}>
+      <Tab.Navigator
+        screenOptions={{
+          headerShown: false,
+          tabBarStyle: {
+            backgroundColor: theme.colors.surface,
+            borderTopColor: `${theme.colors.textSecondary}20`,
+          },
+          tabBarActiveTintColor: theme.colors.accentPurple,
+          tabBarInactiveTintColor: theme.colors.textSecondary,
+          tabBarLabelStyle: {
+            fontFamily: 'Roboto_500Medium',
+            fontSize: 11,
+          },
+          // Pad screen content so it clears both tab bar and floating search bar
+          contentStyle: { paddingBottom: 160 },
         }}
+      >
+        <Tab.Screen
+          name="Home"
+          component={Dashboard}
+          options={{
+            tabBarLabel: 'Home',
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons name="home-outline" size={size} color={color} />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="Study"
+          component={ReelFeed}
+          options={{
+            tabBarLabel: 'Study',
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons name="book-outline" size={size} color={color} />
+            ),
+            tabBarStyle: { display: 'none' },
+            // Full-screen reel — no bottom padding
+            contentStyle: { paddingBottom: 0 },
+          }}
+        />
+        <Tab.Screen
+          name="Profile"
+          component={Profile}
+          options={{
+            tabBarLabel: 'Profile',
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons name="person-outline" size={size} color={color} />
+            ),
+          }}
+        />
+      </Tab.Navigator>
+
+      {/* Search bar self-positions absolutely via insets inside the component */}
+      <UniversalSearchBar onPress={() => setSearchVisible(true)} />
+
+      {/* Search modal */}
+      <SearchModal
+        visible={searchVisible}
+        onClose={() => setSearchVisible(false)}
+        activeSubject={null}
+        onResultPress={handleResultPress}
       />
-      <Tab.Screen
-        name="Study"
-        component={ReelFeed}
-        options={{
-          tabBarLabel: 'Study',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="book-outline" size={size} color={color} />
-          ),
-          // Hide tab bar for full-screen reel experience
-          tabBarStyle: { display: 'none' },
-        }}
-      />
-      <Tab.Screen
-        name="Profile"
-        component={Profile}
-        options={{
-          tabBarLabel: 'Profile',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person-outline" size={size} color={color} />
-          ),
-        }}
-      />
-    </Tab.Navigator>
+    </View>
   )
 }

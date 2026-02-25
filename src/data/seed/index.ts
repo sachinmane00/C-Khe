@@ -1,10 +1,12 @@
 import science from './cbse10_science.json'
+import scienceFull from './cbse10_science_full.json'
 import math from './cbse10_math.json'
+import mathFull from './cbse10_math_full.json'
 import type { Card, Subject } from '../../types'
 
 export const seedData: Record<Subject, Card[]> = {
-  Science: science as Card[],
-  Math: math as Card[],
+  Science: [...science, ...scienceFull] as Card[],
+  Math: [...math, ...mathFull] as Card[],
   SST: [],
   English: [],
   Hindi: [],

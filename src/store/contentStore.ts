@@ -13,6 +13,7 @@ interface ContentStore {
   bookmarkCard: (id: string) => void
   markTooEasy: (id: string) => void
   setSubject: (subject: Subject) => void
+  setCards: (cards: Card[]) => void
   cardCountFor: (subject: Subject) => number
 }
 
@@ -28,6 +29,9 @@ export const useContentStore = create<ContentStore>()((set) => ({
 
   setSubject: (subject) =>
     set({ cards: seedData[subject], currentIndex: 0, activeSubject: subject }),
+
+  setCards: (cards) =>
+    set({ cards, currentIndex: 0 }),
 
   nextCard: () =>
     set((s) => ({

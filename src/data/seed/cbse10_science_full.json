@@ -1,0 +1,352 @@
+[
+  {
+    "id": "sci-light-001",
+    "type": "concept",
+    "subject": "Science",
+    "chapter": "Light — Reflection and Refraction",
+    "topic": "Laws of Reflection",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "topic": "Laws of Reflection",
+      "body": "The angle of incidence equals the angle of reflection, and both angles are measured from the normal at the point of incidence. The incident ray, reflected ray, and normal all lie in the same plane.",
+      "analogy": "Like a ball bouncing off a flat wall — the angle it hits is the same angle it bounces back."
+    }
+  },
+  {
+    "id": "sci-light-002",
+    "type": "concept",
+    "subject": "Science",
+    "chapter": "Light — Reflection and Refraction",
+    "topic": "Concave and Convex Mirrors",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "topic": "Concave and Convex Mirrors",
+      "body": "Concave mirrors curve inward and converge light — used in torches, headlights, and shaving mirrors. Convex mirrors curve outward and diverge light — used in rear-view mirrors of vehicles as they give a wider field of view.",
+      "analogy": "A concave mirror is like a bowl facing you; a convex mirror is like the back of the spoon."
+    }
+  },
+  {
+    "id": "sci-light-003",
+    "type": "examTip",
+    "subject": "Science",
+    "chapter": "Light — Reflection and Refraction",
+    "topic": "Sign Convention for Mirrors",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "exactPhrase": "The focal length of a concave mirror is negative according to the new Cartesian sign convention.",
+      "instruction": "Write this in mirror formula questions. Distances measured in the direction of incident light are positive; those against it are negative. For concave mirrors, f is negative; for convex, f is positive."
+    }
+  },
+  {
+    "id": "sci-light-004",
+    "type": "quiz",
+    "subject": "Science",
+    "chapter": "Light — Reflection and Refraction",
+    "topic": "Uses of Mirrors",
+    "difficulty": 1,
+    "xpValue": 15,
+    "content": {
+      "question": "Which type of mirror is used in the headlights of cars?",
+      "options": ["Concave mirror", "Convex mirror", "Plane mirror", "Parabolic mirror"],
+      "correctIndex": 0,
+      "explanation": "Concave mirrors are used in headlights because they converge light into a powerful parallel beam when the bulb is placed at the focus, giving a strong beam of light ahead."
+    }
+  },
+  {
+    "id": "sci-light-005",
+    "type": "memoryHook",
+    "subject": "Science",
+    "chapter": "Light — Reflection and Refraction",
+    "topic": "Concave Mirror Image — COLD",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "mnemonic": "COLD",
+      "story": "COLD = Concave mirror, Object beyond C gives a real, inverted, and diminished image. Object at C: same size. Object between C and F: enlarged. Object between F and pole: virtual, erect, enlarged. Remember: COLD helps recall that concave mirrors can produce real images when Object is beyond the focal point."
+    }
+  },
+  {
+    "id": "sci-elec-001",
+    "type": "concept",
+    "subject": "Science",
+    "chapter": "Electricity",
+    "topic": "Ohm's Law",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "topic": "Ohm's Law",
+      "body": "Ohm's Law states that the current (I) through a conductor is directly proportional to the voltage (V) across it, provided temperature remains constant: V = IR, where R is resistance measured in ohms (Ω).",
+      "analogy": "Think of electricity like water in a pipe: voltage is water pressure, current is flow rate, and resistance is how narrow the pipe is."
+    }
+  },
+  {
+    "id": "sci-elec-002",
+    "type": "concept",
+    "subject": "Science",
+    "chapter": "Electricity",
+    "topic": "Series and Parallel Circuits",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "topic": "Series and Parallel Circuits",
+      "body": "In a series circuit, components are connected end-to-end; total resistance = sum of individual resistances, and same current flows through all. In a parallel circuit, components share the same two nodes; total resistance is less than the smallest, and same voltage appears across all.",
+      "analogy": "Series is like one lane on a highway — all cars follow the same path. Parallel is like multiple lanes — traffic splits."
+    }
+  },
+  {
+    "id": "sci-elec-003",
+    "type": "examTip",
+    "subject": "Science",
+    "chapter": "Electricity",
+    "topic": "Series vs Parallel — Key Rule",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "exactPhrase": "In a series circuit, current is the same through all resistors. In a parallel circuit, voltage is the same across all resistors.",
+      "instruction": "Write this rule in circuit analysis questions before solving. It helps set up the equations correctly. For series: I is constant, voltages add. For parallel: V is constant, currents add."
+    }
+  },
+  {
+    "id": "sci-elec-004",
+    "type": "quiz",
+    "subject": "Science",
+    "chapter": "Electricity",
+    "topic": "Resistors in Series",
+    "difficulty": 2,
+    "xpValue": 15,
+    "content": {
+      "question": "Three resistors each of 2Ω are connected in series. What is the total resistance?",
+      "options": ["2 Ω", "4 Ω", "6 Ω", "8 Ω"],
+      "correctIndex": 2,
+      "explanation": "In series, total resistance = R1 + R2 + R3 = 2 + 2 + 2 = 6 Ω."
+    }
+  },
+  {
+    "id": "sci-elec-005",
+    "type": "memoryHook",
+    "subject": "Science",
+    "chapter": "Electricity",
+    "topic": "SIPS Mnemonic",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "mnemonic": "SIPS — PVCC",
+      "story": "Series: Same current, Individual voltages add up (SIPS). Parallel: Same Voltage, Individual Currents add up (PVCC). Picture sipping through one straw (series — same flow) vs multiple straws in the same glass (parallel — same level)."
+    }
+  },
+  {
+    "id": "sci-chem-001",
+    "type": "concept",
+    "subject": "Science",
+    "chapter": "Chemical Reactions and Equations",
+    "topic": "Types of Chemical Reactions",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "topic": "Types of Chemical Reactions",
+      "body": "Five main types: Combination (A+B→AB), Decomposition (AB→A+B), Displacement (A+BC→AC+B), Double Displacement (AB+CD→AD+CB), and Redox (simultaneous oxidation and reduction). Each type has distinct reactants and products.",
+      "analogy": "Think of reactions like people at a party: combining is friends joining, decomposition is a group splitting up, displacement is someone taking another's spot."
+    }
+  },
+  {
+    "id": "sci-chem-002",
+    "type": "concept",
+    "subject": "Science",
+    "chapter": "Chemical Reactions and Equations",
+    "topic": "Balancing Chemical Equations",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "topic": "Balancing Chemical Equations",
+      "body": "Chemical equations must be balanced to satisfy the Law of Conservation of Mass — matter is neither created nor destroyed. Adjust coefficients (not subscripts) until the number of atoms of each element is equal on both sides.",
+      "analogy": "Like balancing a seesaw — both sides must have the same total weight (atoms)."
+    }
+  },
+  {
+    "id": "sci-chem-003",
+    "type": "examTip",
+    "subject": "Science",
+    "chapter": "Chemical Reactions and Equations",
+    "topic": "Balanced Equation Rule",
+    "difficulty": 1,
+    "xpValue": 10,
+    "content": {
+      "exactPhrase": "A balanced chemical equation has equal number of atoms of each element on both sides of the equation.",
+      "instruction": "State this law before any balancing problem. Also note: change only coefficients (numbers before formulas), never subscripts (numbers within formulas)."
+    }
+  },
+  {
+    "id": "sci-chem-004",
+    "type": "quiz",
+    "subject": "Science",
+    "chapter": "Chemical Reactions and Equations",
+    "topic": "Decomposition Reaction",
+    "difficulty": 2,
+    "xpValue": 15,
+    "content": {
+      "question": "Which of the following is a decomposition reaction?",
+      "options": [
+        "2H₂ + O₂ → 2H₂O",
+        "2H₂O → 2H₂ + O₂",
+        "Fe + S → FeS",
+        "NaOH + HCl → NaCl + H₂O"
+      ],
+      "correctIndex": 1,
+      "explanation": "2H₂O → 2H₂ + O₂ is a decomposition reaction because one compound (water) breaks down into simpler substances (hydrogen and oxygen). Option A is combination, C is combination, D is double displacement."
+    }
+  },
+  {
+    "id": "sci-chem-005",
+    "type": "memoryHook",
+    "subject": "Science",
+    "chapter": "Chemical Reactions and Equations",
+    "topic": "OIL RIG — Redox",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "mnemonic": "OIL RIG",
+      "story": "OIL RIG = Oxidation Is Loss (of electrons), Reduction Is Gain (of electrons). Imagine oil floating up (loss) and a rig drilling down (gain). The substance that gets oxidised is the reducing agent; the one reduced is the oxidising agent."
+    }
+  },
+  {
+    "id": "sci-life-001",
+    "type": "concept",
+    "subject": "Science",
+    "chapter": "Life Processes",
+    "topic": "Types of Nutrition",
+    "difficulty": 1,
+    "xpValue": 10,
+    "content": {
+      "topic": "Types of Nutrition",
+      "body": "Autotrophic nutrition: organisms make their own food using sunlight (photosynthesis) — plants and some bacteria. Heterotrophic nutrition: organisms depend on others for food — animals and fungi. Heterotrophs include herbivores, carnivores, omnivores, saprophytes, and parasites.",
+      "analogy": "Autotrophs are like home cooks who grow their own food; heterotrophs are like people who buy food from others."
+    }
+  },
+  {
+    "id": "sci-life-002",
+    "type": "concept",
+    "subject": "Science",
+    "chapter": "Life Processes",
+    "topic": "Aerobic and Anaerobic Respiration",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "topic": "Aerobic and Anaerobic Respiration",
+      "body": "Aerobic respiration uses oxygen: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy (38 ATP). Anaerobic respiration occurs without oxygen, producing lactic acid (in muscles) or ethanol + CO₂ (in yeast). Aerobic releases far more energy.",
+      "analogy": "Aerobic is like a car engine with proper fuel — efficient. Anaerobic is like pushing the car — exhausting, less effective."
+    }
+  },
+  {
+    "id": "sci-life-003",
+    "type": "examTip",
+    "subject": "Science",
+    "chapter": "Life Processes",
+    "topic": "Stomata Structure",
+    "difficulty": 1,
+    "xpValue": 10,
+    "content": {
+      "exactPhrase": "Stomata are tiny pores present on the surface of leaves. They are surrounded by guard cells which regulate their opening and closing.",
+      "instruction": "Include this definition in any question about transpiration or gas exchange in plants. Add that stomata open during the day for photosynthesis and close at night to reduce water loss."
+    }
+  },
+  {
+    "id": "sci-life-004",
+    "type": "quiz",
+    "subject": "Science",
+    "chapter": "Life Processes",
+    "topic": "Cell Organelles",
+    "difficulty": 1,
+    "xpValue": 15,
+    "content": {
+      "question": "Which organelle is called the 'powerhouse of the cell'?",
+      "options": ["Nucleus", "Mitochondria", "Chloroplast", "Ribosome"],
+      "correctIndex": 1,
+      "explanation": "Mitochondria are called the powerhouse of the cell because they produce ATP (energy) through cellular respiration. They have a double membrane and their own DNA."
+    }
+  },
+  {
+    "id": "sci-life-005",
+    "type": "memoryHook",
+    "subject": "Science",
+    "chapter": "Life Processes",
+    "topic": "Photosynthesis Equation",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "mnemonic": "6+6 makes 6+6",
+      "story": "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂. Remember: 6 carbon dioxide + 6 water → 1 glucose + 6 oxygen. In sunlight, with chlorophyll. Think '6 and 6 go in, sugar and 6 oxygens come out.' Plants breathe in CO₂ like we breathe in O₂ — they're the opposite of us!"
+    }
+  },
+  {
+    "id": "sci-carb-001",
+    "type": "concept",
+    "subject": "Science",
+    "chapter": "Carbon and its Compounds",
+    "topic": "Covalent Bonding in Carbon",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "topic": "Covalent Bonding in Carbon",
+      "body": "Carbon has 4 valence electrons and forms 4 covalent bonds by sharing electrons. It exhibits catenation (bonding with other carbon atoms) forming long chains and rings. This, along with tetravalency, allows carbon to form millions of compounds — the basis of organic chemistry.",
+      "analogy": "Carbon is like a social person with 4 hands — always ready to hold hands with 4 others, including other carbon atoms."
+    }
+  },
+  {
+    "id": "sci-carb-002",
+    "type": "concept",
+    "subject": "Science",
+    "chapter": "Carbon and its Compounds",
+    "topic": "Homologous Series",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "topic": "Homologous Series",
+      "body": "A homologous series is a group of organic compounds with the same functional group, differing by CH₂. Alkanes (CₙH₂ₙ₊₂): single bonds. Alkenes (CₙH₂ₙ): one double bond. Alkynes (CₙH₂ₙ₋₂): one triple bond. Each series shows a gradual change in properties.",
+      "analogy": "Like shirt sizes — S, M, L, XL follow the same design but differ by a fixed amount of fabric (CH₂ unit)."
+    }
+  },
+  {
+    "id": "sci-carb-003",
+    "type": "examTip",
+    "subject": "Science",
+    "chapter": "Carbon and its Compounds",
+    "topic": "Carbon Valency and Catenation",
+    "difficulty": 2,
+    "xpValue": 10,
+    "content": {
+      "exactPhrase": "Carbon has valency 4. It can form single, double or triple bonds with other carbon atoms — this property is called catenation.",
+      "instruction": "Always mention both tetravalency and catenation when explaining why carbon forms so many compounds. Also add that carbon can form straight chains, branched chains, and rings."
+    }
+  },
+  {
+    "id": "sci-carb-004",
+    "type": "quiz",
+    "subject": "Science",
+    "chapter": "Carbon and its Compounds",
+    "topic": "Alkane Series",
+    "difficulty": 1,
+    "xpValue": 15,
+    "content": {
+      "question": "What is the next member after ethane (C₂H₆) in the alkane homologous series?",
+      "options": ["Methane", "Propane", "Butane", "Pentane"],
+      "correctIndex": 1,
+      "explanation": "Each successive alkane adds one CH₂ unit. Methane (CH₄) → Ethane (C₂H₆) → Propane (C₃H₈) → Butane (C₄H₁₀). So the next member after ethane is propane."
+    }
+  },
+  {
+    "id": "sci-carb-005",
+    "type": "memoryHook",
+    "subject": "Science",
+    "chapter": "Carbon and its Compounds",
+    "topic": "First 4 Alkanes Mnemonic",
+    "difficulty": 1,
+    "xpValue": 10,
+    "content": {
+      "mnemonic": "Many Elephants Prefer Bananas",
+      "story": "Many Elephants Prefer Bananas = Methane, Ethane, Propane, Butane — the first four alkanes. Extend to: Many Elephants Prefer Bananas, Please! = Methane, Ethane, Propane, Butane, Pentane. A hungry elephant is a perfect study partner."
+    }
+  }
+]

@@ -29,10 +29,9 @@ export default function Dashboard({ navigation }: Props) {
   const { xp, streak, subjectProgress } = useUserStore()
   const { setSubject } = useContentStore()
 
-  // Section 2: subject with lowest progress that has cards
+  // Section 2: subject with lowest progress
   const reviewSubject: Subject = useMemo(() => {
-    const available = allSubjects.filter((s) => seedData[s].length > 0)
-    return available.reduce((lowest, s) =>
+    return allSubjects.reduce((lowest, s) =>
       (subjectProgress[s] ?? 0) < (subjectProgress[lowest] ?? 0) ? s : lowest
     )
   }, [subjectProgress])
@@ -40,9 +39,9 @@ export default function Dashboard({ navigation }: Props) {
   // Daily challenge: count cards studied today (approximate from XP)
   const dailyCards = Math.min(10, Math.floor(xp / 5) % 10)
 
-  function goToReelFeed(subject: Subject) {
+  function goToSubjectDrillDown(subject: Subject) {
     setSubject(subject)
-    navigation.navigate('ReelFeed', { subject })
+    navigation.navigate('SubjectDrillDown', { subject })
   }
 
   return (
@@ -65,7 +64,6 @@ export default function Dashboard({ navigation }: Props) {
             const meta = subjectMeta[subject]
             const count = seedData[subject].length
             const progress = subjectProgress[subject] ?? 0
-            const hasCards = count > 0
 
             return (
               <TouchableOpacity
@@ -73,15 +71,12 @@ export default function Dashboard({ navigation }: Props) {
                 style={[
                   styles.subjectCard,
                   {
-                    backgroundColor: hasCards
-                      ? `${meta.color}18`
-                      : theme.colors.surface,
-                    borderColor: hasCards ? meta.color : theme.colors.surface,
-                    opacity: hasCards ? 1 : 0.5,
+                    backgroundColor: `${meta.color}18`,
+                    borderColor: meta.color,
                   },
                 ]}
-                onPress={() => hasCards && goToReelFeed(subject)}
-                activeOpacity={hasCards ? 0.75 : 1}
+                onPress={() => goToSubjectDrillDown(subject)}
+                activeOpacity={0.75}
               >
                 <ProgressRing
                   progress={progress}
@@ -90,11 +85,11 @@ export default function Dashboard({ navigation }: Props) {
                   strokeWidth={6}
                   emoji={meta.emoji}
                 />
-                <Text style={[styles.subjectName, { color: hasCards ? meta.color : theme.colors.textSecondary }]}>
+                <Text style={[styles.subjectName, { color: meta.color }]}>
                   {subject}
                 </Text>
                 <Text style={styles.cardCount}>
-                  {hasCards ? `${count} cards` : 'Coming soon'}
+                  {count > 0 ? `${count} cards` : 'AI ready'}
                 </Text>
               </TouchableOpacity>
             )
@@ -105,7 +100,7 @@ export default function Dashboard({ navigation }: Props) {
         <Text style={styles.sectionTitle}>Quick 5-min Review</Text>
         <TouchableOpacity
           style={[styles.reviewBanner, { backgroundColor: `${subjectMeta[reviewSubject].color}20` }]}
-          onPress={() => goToReelFeed(reviewSubject)}
+          onPress={() => goToSubjectDrillDown(reviewSubject)}
           activeOpacity={0.8}
         >
           <Text style={styles.reviewEmoji}>{subjectMeta[reviewSubject].emoji}</Text>

@@ -1,9 +1,15 @@
-import type { Subject } from '../types'
+import type { Card, Subject } from '../types'
 
 export type RootStackParamList = {
   Onboarding: undefined
   Tabs: undefined
-  ReelFeed: { subject?: Subject }
+  SubjectDrillDown: { subject: Subject }
+  ReelFeed: {
+    subject?: Subject
+    chapterId?: string
+    chapterTitle?: string
+    cards?: Card[]
+  }
 }
 
 export type TabParamList = {

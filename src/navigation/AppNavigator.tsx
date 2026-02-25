@@ -6,6 +6,7 @@ import { darkTheme, lightTheme } from '../constants/theme'
 import Onboarding, { ONBOARDING_KEY } from '../screens/Onboarding'
 import TabNavigator from './TabNavigator'
 import ReelFeed from '../screens/ReelFeed'
+import SubjectDrillDown from '../screens/SubjectDrillDown'
 import type { RootStackParamList } from './types'
 
 const Stack = createNativeStackNavigator<RootStackParamList>()
@@ -22,7 +23,6 @@ export default function AppNavigator() {
     })
   }, [])
 
-  // Wait until AsyncStorage check completes
   if (initialRoute === null) return <View style={{ flex: 1, backgroundColor: theme.colors.background }} />
 
   return (
@@ -33,12 +33,14 @@ export default function AppNavigator() {
       <Stack.Screen name="Onboarding" component={Onboarding} />
       <Stack.Screen name="Tabs" component={TabNavigator} />
       <Stack.Screen
+        name="SubjectDrillDown"
+        component={SubjectDrillDown}
+        options={{ animation: 'slide_from_right' }}
+      />
+      <Stack.Screen
         name="ReelFeed"
         component={ReelFeed}
-        options={{
-          animation: 'slide_from_bottom',
-          headerShown: false,
-        }}
+        options={{ animation: 'slide_from_bottom' }}
       />
     </Stack.Navigator>
   )
