@@ -7,7 +7,52 @@
     "chapterNumber": 14,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 12
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "mth-ch-14-c-01",
+      "type": "concept",
+      "topic": "Basic Probability",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Theoretical Probability",
+        "body": "The probability of an event \\(P(E)\\) is given by:\n\n\\[ P(E) = \\frac{\\text{Number of outcomes favorable to E}}{\\text{Number of all possible outcomes}} \\]\n\n**Range:** The probability of an event is always between 0 and 1."
+      }
+    },
+    {
+      "id": "mth-ch-14-e-01",
+      "type": "examTip",
+      "topic": "Complementary Events",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Use this for 'not' questions:",
+        "exactPhrase": "The sum of the probability of an event and its complement (not E) is always 1. \\(P(E) + P(\\bar{E}) = 1\\)."
+      }
+    },
+    {
+      "id": "mth-ch-14-e-02",
+      "type": "examTip",
+      "topic": "Sure and Impossible Events",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Definition for 1-mark theory questions:",
+        "exactPhrase": "A sure event has a probability of 1. An impossible event has a probability of 0."
+      }
+    },
+    {
+      "id": "mth-ch-14-c-02",
+      "type": "concept",
+      "topic": "Deck of Cards",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "The 52 Playing Cards",
+        "body": "- **Total:** 52 cards (26 Red, 26 Black).\n- **Suits:** 4 suits (Hearts, Diamonds, Spades, Clubs) - 13 cards each.\n- **Face Cards:** 12 total (4 Kings, 4 Queens, 4 Jacks)."
+      }
+    }
+  ]
 }

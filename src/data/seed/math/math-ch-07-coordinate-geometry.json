@@ -7,7 +7,106 @@
     "chapterNumber": 7,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 20
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "mth-ch-07-c-01",
+      "type": "concept",
+      "topic": "The Cartesian Plane",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Coordinates Recap",
+        "body": "A point is represented as \\((x, y)\\).\n- **Abscissa:** The x-coordinate (distance from y-axis).\n- **Ordinate:** The y-coordinate (distance from x-axis).\n- **Origin:** The point \\((0, 0)\\).",
+        "analogy": "Coordinates are like a GPS for a flat map. You go 'x' steps left/right and 'y' steps up/down to find the exact treasure."
+      }
+    },
+    {
+      "id": "mth-ch-07-e-01",
+      "type": "examTip",
+      "topic": "Distance Formula",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Use this to find the length between two points \\(A(x_1, y_1)\\) and \\(B(x_2, y_2)\\):",
+        "exactPhrase": "Distance \\(AB = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\\). Note: The distance of a point \\(P(x, y)\\) from the origin \\((0, 0)\\) is simply \\(\\sqrt{x^2 + y^2}\\)."
+      }
+    },
+    
+    {
+      "id": "mth-ch-07-e-02",
+      "type": "examTip",
+      "topic": "Collinear Points",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "How to prove three points A, B, and C are on the same line:",
+        "exactPhrase": "Points A, B, and C are collinear if the sum of the lengths of any two line segments is equal to the length of the third line segment (e.g., \\(AB + BC = AC\\))."
+      }
+    },
+    {
+      "id": "mth-ch-07-c-02",
+      "type": "concept",
+      "topic": "Section Formula",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Internal Division",
+        "body": "If a point \\(P(x, y)\\) divides the line segment joining \\(A(x_1, y_1)\\) and \\(B(x_2, y_2)\\) in the ratio \\(m_1 : m_2\\) internally, the coordinates of \\(P\\) are:\n\n\\[ x = \\frac{m_1x_2 + m_2x_1}{m_1 + m_2}, \\quad y = \\frac{m_1y_2 + m_2y_1}{m_1 + m_2} \\]"
+      }
+    },
+    
+    {
+      "id": "mth-ch-07-e-03",
+      "type": "examTip",
+      "topic": "Midpoint Formula",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "instruction": "A special case of the section formula where the ratio is 1:1:",
+        "exactPhrase": "The midpoint of a line segment joining \\((x_1, y_1)\\) and \\((x_2, y_2)\\) is \\(\\left( \\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2} \\right)\\)."
+      }
+    },
+    {
+      "id": "mth-ch-07-e-04",
+      "type": "examTip",
+      "topic": "Centroid of a Triangle",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Use this for coordinates of the center of a triangle with vertices \\((x_1, y_1), (x_2, y_2), (x_3, y_3)\\):",
+        "exactPhrase": "Centroid \\(G = \\left( \\frac{x_1 + x_2 + x_3}{3}, \\frac{y_1 + y_2 + y_3}{3} \\right)\\)."
+      }
+    },
+    {
+      "id": "mth-ch-07-q-01",
+      "type": "quiz",
+      "topic": "Distance from Y-axis",
+      "difficulty": 1,
+      "xpValue": 15,
+      "content": {
+        "question": "What is the distance of the point \\(P(3, -4)\\) from the y-axis?",
+        "options": [
+          "3 units",
+          "4 units",
+          "5 units",
+          "-4 units"
+        ],
+        "correctIndex": 0,
+        "explanation": "The distance of a point from the y-axis is its x-coordinate (abscissa). Here, the x-coordinate is 3. Note: Distance is always a positive value, so even if it was -3, the answer would be 3."
+      }
+    },
+    {
+      "id": "mth-ch-07-m-01",
+      "type": "memoryHook",
+      "topic": "Section Formula Cross-over",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "The X-Switch",
+        "explanation": "In the Section Formula, \\(m_1\\) always multiplies with the *second* point (\\(x_2, y_2\\)) and \\(m_2\\) multiplies with the *first* point (\\(x_1, y_1\\)). They 'cross' each other!"
+      }
+    }
+  ]
 }

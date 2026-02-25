@@ -7,7 +7,84 @@
     "chapterNumber": 10,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 18
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "mth-ch-10-c-01",
+      "type": "concept",
+      "topic": "Tangent to a Circle",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "What is a Tangent?",
+        "body": "A tangent to a circle is a line that intersects the circle at only **one** point. \n\n- The point where the line touches the circle is called the **point of contact**.\n- There is only one tangent at a single point of the circle.\n- There are no tangents from a point inside the circle.",
+        "analogy": "Imagine a bicycle wheel rolling on flat ground. The ground is a tangent to the wheel, touching it at exactly one point at any given moment."
+      }
+    },
+    
+    {
+      "id": "mth-ch-10-e-01",
+      "type": "examTip",
+      "topic": "Theorem 10.1: Radius-Tangent Perpendicularity",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "This is the foundation for solving circle geometry problems:",
+        "exactPhrase": "The tangent at any point of a circle is perpendicular to the radius through the point of contact. (i.e., radius \\(\\perp\\) tangent)."
+      }
+    },
+    {
+      "id": "mth-ch-10-e-02",
+      "type": "examTip",
+      "topic": "Theorem 10.2: Tangents from External Point",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "This theorem is frequently asked as a 3-mark proof:",
+        "exactPhrase": "The lengths of tangents drawn from an external point to a circle are equal. If PA and PB are tangents from point P to a circle, then \\(PA = PB\\)."
+      }
+    },
+    
+    {
+      "id": "mth-ch-10-e-03",
+      "type": "examTip",
+      "topic": "Tangents and Angles",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "Memorize this relationship for 2-mark angle-finding questions:",
+        "exactPhrase": "The angle between the two tangents drawn from an external point to a circle is supplementary to the angle subtended by the line-segment joining the points of contact at the centre."
+      }
+    },
+    {
+      "id": "mth-ch-10-q-01",
+      "type": "quiz",
+      "topic": "Number of Tangents",
+      "difficulty": 1,
+      "xpValue": 15,
+      "content": {
+        "question": "How many tangents can be drawn to a circle from a point lying outside the circle?",
+        "options": [
+          "Exactly one",
+          "Exactly two",
+          "Infinitely many",
+          "Zero"
+        ],
+        "correctIndex": 1,
+        "explanation": "From any point outside a circle, exactly two tangents can be drawn. From a point *on* the circle, only one can be drawn. From *inside*, none can be drawn."
+      }
+    },
+    {
+      "id": "mth-ch-10-m-01",
+      "type": "memoryHook",
+      "topic": "The 90-degree Rule",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "Radius meets Tangent at a Right angle",
+        "explanation": "Think of 'RT' (Radio-Tangent) = **R**ight **T**riangle. Whenever a radius hits a tangent, a \\(90^\\circ\\) angle is born!"
+      }
+    }
+  ]
 }

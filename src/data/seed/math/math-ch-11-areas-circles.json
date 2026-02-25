@@ -7,7 +7,96 @@
     "chapterNumber": 11,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 20
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "mth-ch-11-c-01",
+      "type": "concept",
+      "topic": "Basic Formulas Recap",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Circumference and Area",
+        "body": "For a circle with radius \\(r\\):\n1. **Circumference:** \\(2\\pi r\\)\n2. **Area:** \\(\\pi r^2\\)\n\n**Note:** If the diameter \\(d\\) is given, remember \\(r = d/2\\). Take \\(\\pi = 22/7\\) unless specified as \\(3.14\\).",
+        "analogy": "Circumference is the length of the fence around a circular park. Area is the amount of grass needed to cover the park."
+      }
+    },
+    {
+      "id": "mth-ch-11-c-02",
+      "type": "concept",
+      "topic": "Sector of a Circle",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Area of a Sector",
+        "body": "A sector is a portion of a circle enclosed by two radii and an arc.\n\n- **Area of Sector:** \\(\\frac{\\theta}{360^\\circ} \\times \\pi r^2\\)\n- **Length of an Arc:** \\(\\frac{\\theta}{360^\\circ} \\times 2\\pi r\\)\nWhere \\(\\theta\\) is the angle of the sector.",
+        "analogy": "A sector is like a slice of pizza!"
+      }
+    },
+    
+    {
+      "id": "mth-ch-11-c-03",
+      "type": "concept",
+      "topic": "Segment of a Circle",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "title": "Area of a Segment",
+        "body": "A segment is a portion of a circle enclosed by a chord and an arc.\n\n**Area of Minor Segment:**\n\\(\\text{Area of Sector} - \\text{Area of corresponding Triangle}\\)\n\n\\[ \\text{Area} = \\left( \\frac{\\theta}{360^\\circ} \\times \\pi r^2 \\right) - \\left( \\frac{1}{2}r^2 \\sin \\theta \\right) \\]"
+      }
+    },
+    
+    {
+      "id": "mth-ch-11-e-01",
+      "type": "examTip",
+      "topic": "Major vs Minor",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "If the question asks for the 'Major' area, use this shortcut:",
+        "exactPhrase": "Area of Major Sector = \\(\\text{Total Area of Circle} - \\text{Area of Minor Sector}\\). Alternatively, use the angle \\((360^\\circ - \\theta)\\) in the sector formula."
+      }
+    },
+    {
+      "id": "mth-ch-11-e-02",
+      "type": "examTip",
+      "topic": "Clock Problems",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "These appear often in 3-mark questions. Calculate the angle first:",
+        "exactPhrase": "The minute hand of a clock describes \\(360^\\circ\\) in 60 minutes. Therefore, in 1 minute, it rotates through \\(6^\\circ\\). Angle \\(\\theta = (\\text{minutes}) \\times 6^\\circ\\)."
+      }
+    },
+    {
+      "id": "mth-ch-11-q-01",
+      "type": "quiz",
+      "topic": "Sector Area Calculation",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "Find the area of a sector of a circle with radius 6 cm if the angle of the sector is \\(60^\\circ\\).",
+        "options": [
+          "\\(132/7 \\text{ cm}^2\\)",
+          "\\(18.84 \\text{ cm}^2\\)",
+          "\\(6 \\text{ cm}^2\\)",
+          "\\(11 \\text{ cm}^2\\)"
+        ],
+        "correctIndex": 0,
+        "explanation": "Area = \\((60/360) \\times (22/7) \\times 6 \\times 6\\). This simplifies to \\((1/6) \\times (22/7) \\times 36\\), which is \\(22/7 \\times 6 = 132/7 \\text{ cm}^2\\)."
+      }
+    },
+    {
+      "id": "mth-ch-11-m-01",
+      "type": "memoryHook",
+      "topic": "Arc Length vs Sector Area",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "Length is Line, Area is Space",
+        "explanation": "Arc length uses the circumference formula (\\(2\\pi r\\)) because it's a line. Sector area uses the area formula (\\(\\pi r^2\\)) because it's a 2D space."
+      }
+    }
+  ]
 }

@@ -22,6 +22,8 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
+      "versionCode": 1,
+      "package": "com.sachi.ckhe",
       "predictiveBackGestureEnabled": false
     },
     "web": {
@@ -29,6 +31,11 @@
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "771324f9-e9cf-4cfe-a2ec-e139a1439fd6"
+      }
+    }
   }
 }

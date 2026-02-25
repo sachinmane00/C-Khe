@@ -7,7 +7,41 @@
     "chapterNumber": 9,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 15
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "mth-ch-09-c-01",
+      "type": "concept",
+      "topic": "Line of Sight and Angles",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Angle of Elevation vs Depression",
+        "body": "1. Line of Sight: The line drawn from the eye of an observer to the point in the object viewed.\n2. Angle of Elevation: The angle formed by the line of sight with the horizontal when the object is above the horizontal level.\n3. Angle of Depression: The angle formed when the object is below the horizontal level."
+      }
+    },
+    {
+      "id": "mth-ch-09-e-01",
+      "type": "examTip",
+      "topic": "The Alternate Angle Trick",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "When dealing with the Angle of Depression, remember this rule:",
+        "exactPhrase": "The Angle of Depression from a point to an object is numerically equal to the Angle of Elevation of the point from the object. This is because horizontal lines are parallel, making them alternate interior angles."
+      }
+    },
+    {
+      "id": "mth-ch-09-c-02",
+      "type": "concept",
+      "topic": "Solving Strategy",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "Which Ratio to Use?",
+        "body": "In 90% of Height and Distance problems, use Tangent (tan) because they involve Height (Opposite) and Distance (Adjacent). Use sin only if the Hypotenuse (ladder length/kite string) is mentioned."
+      }
+    }
+  ]
 }

@@ -7,7 +7,95 @@
     "chapterNumber": 8,
     "version": "1.0",
     "lastUpdated": "2026-02-25",
-    "totalCards": 0
+    "totalCards": 30
   },
-  "cards": []
+  "cards": [
+    {
+      "id": "mth-ch-08-c-01",
+      "type": "concept",
+      "topic": "Trigonometric Ratios",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "The Six Ratios",
+        "body": "Trigonometry is the study of relationships between the sides and angles of a right-angled triangle. \n\nWith respect to angle \\(\\theta\\):\n1. \\(\\sin \\theta = \\text{Opposite/Hypotenuse}\\)\n2. \\(\\cos \\theta = \\text{Adjacent/Hypotenuse}\\)\n3. \\(\\tan \\theta = \\text{Opposite/Adjacent}\\)\n\n**Reciprocals:**\n- \\(\\text{cosec } \\theta = 1/\\sin \\theta\\)\n- \\(\\sec \\theta = 1/\\cos \\theta\\)\n- \\(\\cot \\theta = 1/\\tan \\theta\\)",
+        "analogy": "Think of it like a recipe. If you know the angle, the ratios tell you exactly how much 'Side A' you need relative to 'Side B' to build that specific triangle."
+      }
+    },
+    
+    {
+      "id": "mth-ch-08-m-01",
+      "type": "memoryHook",
+      "topic": "SOH CAH TOA",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "hook": "Some People Have / Curly Brown Hair / Through Proper Brushing",
+        "explanation": "**S**in = **P**erpendicular/**H**ypotenuse\n**C**os = **B**ase/**H**ypotenuse\n**T**an = **P**erpendicular/**B**ase\n(Note: Perpendicular = Opposite, Base = Adjacent)"
+      }
+    },
+    {
+      "id": "mth-ch-08-c-02",
+      "type": "concept",
+      "topic": "Values for Specific Angles",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "title": "The Trigonometric Table",
+        "body": "You must know the values for \\(0^\\circ, 30^\\circ, 45^\\circ, 60^\\circ,\\) and \\(90^\\circ\\).\n\n**Key Values to Memorize:**\n- \\(\\sin 30^\\circ = 1/2\\)\n- \\(\\sin 45^\\circ = 1/\\sqrt{2}\\)\n- \\(\\sin 60^\\circ = \\sqrt{3}/2\\)\n- \\(\\tan 45^\\circ = 1\\)"
+      }
+    },
+    
+    {
+      "id": "mth-ch-08-e-01",
+      "type": "examTip",
+      "topic": "Trigonometric Identities",
+      "difficulty": 3,
+      "xpValue": 10,
+      "content": {
+        "instruction": "These three identities are the 'tools' used to solve almost all 4-mark proving questions:",
+        "exactPhrase": "1. \\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\)\n2. \\(1 + \\tan^2 \\theta = \\sec^2 \\theta\\)\n3. \\(1 + \\cot^2 \\theta = \\text{cosec}^2 \\theta\\)"
+      }
+    },
+    {
+      "id": "mth-ch-08-e-02",
+      "type": "examTip",
+      "topic": "Converting to Sin and Cos",
+      "difficulty": 2,
+      "xpValue": 10,
+      "content": {
+        "instruction": "The 'Golden Rule' for proving identities:",
+        "exactPhrase": "When you are stuck on a proof involving \\(\\tan, \\cot, \\sec,\\) or \\(\\text{cosec}\\), convert everything into terms of \\(\\sin\\) and \\(\\cos\\). Most expressions simplify much faster this way."
+      }
+    },
+    {
+      "id": "mth-ch-08-c-03",
+      "type": "concept",
+      "topic": "Relation between Ratios",
+      "difficulty": 1,
+      "xpValue": 10,
+      "content": {
+        "title": "Tangent and Cotangent",
+        "body": "Always remember that \\(\\tan\\) and \\(\\cot\\) can be expressed as ratios of \\(\\sin\\) and \\(\\cos\\):\n\n- \\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}\\)\n- \\(\\cot \\theta = \\frac{\\cos \\theta}{\\sin \\theta}\\)"
+      }
+    },
+    {
+      "id": "mth-ch-08-q-01",
+      "type": "quiz",
+      "topic": "Evaluating Expressions",
+      "difficulty": 2,
+      "xpValue": 15,
+      "content": {
+        "question": "Evaluate: \\(\\sin 60^\\circ \\cos 30^\\circ + \\sin 30^\\circ \\cos 60^\\circ\\)",
+        "options": [
+          "0",
+          "1",
+          "1/2",
+          "\\(\\sqrt{3}/2\\)"
+        ],
+        "correctIndex": 1,
+        "explanation": "Substitute values: \\((\\sqrt{3}/2 \\times \\sqrt{3}/2) + (1/2 \\times 1/2)\\). This becomes \\(3/4 + 1/4 = 4/4 = 1\\). Note: This is also the formula for \\(\\sin(A+B)\\) which is \\(\\sin(60+30) = \\sin 90^\\circ = 1\\)."
+      }
+    }
+  ]
 }
