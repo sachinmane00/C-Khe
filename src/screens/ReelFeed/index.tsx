@@ -1,5 +1,6 @@
-import React, { useState, useRef, useMemo } from 'react'
-import { View, FlatList, Dimensions, StyleSheet, useColorScheme } from 'react-native'
+import React, { useState, useRef, useMemo, useEffect } from 'react'
+import { View, FlatList, Dimensions, StyleSheet, useColorScheme, TouchableOpacity, Text } from 'react-native'
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 import { darkTheme, lightTheme, type Theme } from '../../constants/theme'
 import { useUserStore } from '../../store/userStore'
 import { useContentStore } from '../../store/contentStore'
@@ -8,16 +9,27 @@ import ExamTipCard from '../../components/cards/ExamTipCard'
 import QuizCard from '../../components/cards/QuizCard'
 import StreakBadge from '../../components/ui/StreakBadge'
 import XPPopup from './XPPopup'
-import type { Card } from '../../types'
+import type { Card, Subject } from '../../types'
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack'
+import type { RouteProp } from '@react-navigation/native'
+import type { RootStackParamList } from '../../navigation/types'
+
+type Nav = NativeStackNavigationProp<RootStackParamList, 'ReelFeed'>
+type Route = RouteProp<RootStackParamList, 'ReelFeed'>
+
+interface Props {
+  navigation?: Nav
+  route?: Route
+}
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window')
 
-export default function ReelFeed() {
+export default function ReelFeed({ navigation, route }: Props) {
   const scheme = useColorScheme()
   const theme = scheme === 'dark' ? darkTheme : lightTheme
 
   const { streak, addXP, updateStreak } = useUserStore()
-  const { cards, bookmarkCard, markTooEasy } = useContentStore()
+  const { cards, bookmarkCard, markTooEasy, setSubject } = useContentStore()
 
   const [activeIndex, setActiveIndex] = useState(0)
   const [showBookmarkFlash, setShowBookmarkFlash] = useState(false)
@@ -25,7 +37,12 @@ export default function ReelFeed() {
 
   const activeIndexRef = useRef(0)
 
-  // onViewableItemsChanged must be a stable ref — Zustand actions + setState are stable
+  // Load subject from route params on mount
+  useEffect(() => {
+    const subject = route?.params?.subject
+    if (subject) setSubject(subject)
+  }, [route?.params?.subject])
+
   const onViewableItemsChanged = useRef(({ viewableItems }: any) => {
     if (viewableItems.length > 0 && viewableItems[0].index !== null) {
       const newIdx = viewableItems[0].index as number
@@ -59,54 +76,58 @@ export default function ReelFeed() {
 
     switch (card.type) {
       case 'concept':
-        cardContent = (
-          <ConceptCard card={card} onGotIt={() => handleXP(card)} />
-        )
+        cardContent = <ConceptCard card={card} onGotIt={() => handleXP(card)} />
         break
       case 'examTip':
-        cardContent = (
-          <ExamTipCard card={card} onBookmark={() => handleBookmark(card)} />
-        )
+        cardContent = <ExamTipCard card={card} onBookmark={() => handleBookmark(card)} />
         break
       case 'quiz':
-        cardContent = (
-          <QuizCard card={card} onAnswer={(_, xp) => addXP(xp)} />
-        )
+        cardContent = <QuizCard card={card} onAnswer={(_, xp) => addXP(xp)} />
         break
       default:
         return null
     }
 
     return (
-      <View style={[styles.cardScreen, { paddingTop: theme.spacing.xxl + 4 }]}>
+      <View style={[styles.cardScreen, { height: pageHeight, paddingTop: theme.spacing.xxl + 4 }]}>
         {cardContent}
       </View>
     )
   }
 
+  const canGoBack = navigation?.canGoBack?.() ?? false
+  const insets = useSafeAreaInsets()
+  // Page height = visible FlatList frame after top safe-area inset
+  const pageHeight = SCREEN_HEIGHT - insets.top
   const styles = useMemo(() => createStyles(theme), [theme])
 
   return (
-    <View style={styles.screen}>
-      {/* Full-screen FlatList — native snapping handles all vertical swipes */}
+    <SafeAreaView style={styles.screen} edges={['top']}>
       <FlatList
         data={cards}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
         pagingEnabled
-        snapToInterval={SCREEN_HEIGHT}
+        snapToInterval={pageHeight}
         decelerationRate="fast"
         showsVerticalScrollIndicator={false}
         onViewableItemsChanged={onViewableItemsChanged}
         viewabilityConfig={viewabilityConfig}
       />
 
-      {/* Progress bar — absolute overlay at top */}
+      {/* Progress bar */}
       <View style={styles.progressTrack} pointerEvents="none">
         <View style={[styles.progressFill, { width: progressWidth }]} />
       </View>
 
-      {/* Streak badge — absolute top-right */}
+      {/* Back button — only when pushed from Dashboard */}
+      {canGoBack && (
+        <TouchableOpacity style={styles.backBtn} onPress={() => navigation!.goBack()}>
+          <Text style={styles.backIcon}>‹</Text>
+        </TouchableOpacity>
+      )}
+
+      {/* Streak badge */}
       <View style={styles.streakBadgeWrapper}>
         <StreakBadge streak={streak} />
       </View>
@@ -118,9 +139,8 @@ export default function ReelFeed() {
         </View>
       )}
 
-      {/* XP popup */}
       <XPPopup visible={xpPopup.visible} amount={xpPopup.amount} />
-    </View>
+    </SafeAreaView>
   )
 }
 
@@ -145,6 +165,24 @@ function createStyles(t: Theme) {
     progressFill: {
       height: 3,
       backgroundColor: t.colors.accentPurple,
+    },
+    backBtn: {
+      position: 'absolute',
+      top: 10,
+      left: 12,
+      zIndex: 10,
+      width: 36,
+      height: 36,
+      borderRadius: 18,
+      backgroundColor: 'rgba(0,0,0,0.35)',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    backIcon: {
+      color: '#F1F5F9',
+      fontSize: 28,
+      lineHeight: 32,
+      fontFamily: 'Roboto_400Regular',
     },
     streakBadgeWrapper: {
       position: 'absolute',
