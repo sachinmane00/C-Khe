@@ -67,7 +67,7 @@ export default function ReelFeed({ navigation, route }: Props) {
 
     // Chapter drill-down: filter seed cards
     if (params?.chapterId && params?.chapterTitle && params?.subject) {
-      const allSubjectCards: Card[] = seedData[params.subject] ?? []
+      const allSubjectCards: Card[] = seedData[params.subject as Subject] ?? []
       const searchTitle = params.chapterTitle.toLowerCase()
       const filtered = allSubjectCards.filter((c) => {
         const cardChapter = c.chapter.toLowerCase()
@@ -88,7 +88,7 @@ export default function ReelFeed({ navigation, route }: Props) {
 
     // Subject-only: load full subject cards
     if (params?.subject) {
-      setSubject(params.subject)
+      setSubject(params.subject as Subject)
       setCardsReady(true)
       return
     }

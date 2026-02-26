@@ -22,7 +22,6 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "versionCode": 1,
       "package": "com.sachi.ckhe",
       "predictiveBackGestureEnabled": false
     },

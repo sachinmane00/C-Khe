@@ -137,10 +137,9 @@ export default function SearchModal({ visible, onClose, activeSubject, onResultP
             </View>
           ) : (
             <FlatList
-              data={results}
-              keyExtractor={(item, i) =>
-                item.type === 'card' ? (item.card?.id ?? i.toString()) : (item.chapter?.id ?? i.toString())
-              }
+              data={results.filter((r) => r.type === 'card')}
+              keyExtractor={(item, i) => item.card?.id ?? i.toString()}
+
               renderItem={({ item }) => (
                 <SearchResultCard result={item} onPress={onResultPress} />
               )}

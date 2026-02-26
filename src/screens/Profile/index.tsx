@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { View, Text, StyleSheet, useColorScheme } from 'react-native'
+import { View, Text, Image, StyleSheet, useColorScheme } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { darkTheme, lightTheme, type Theme } from '../../constants/theme'
 import { useUserStore } from '../../store/userStore'
@@ -15,28 +15,42 @@ export default function Profile() {
 
   return (
     <SafeAreaView style={styles.screen} edges={['top']}>
-      <View style={styles.header}>
-        <Text style={styles.title}>Profile</Text>
+      {/* ── Brand header ── */}
+      <View style={styles.brandHeader}>
+        <Image
+          source={require('../../../assets/icon.png')}
+          style={styles.brandLogo}
+        />
+        <View style={styles.brandText}>
+          <Text style={[styles.brandName, { color: theme.colors.textPrimary }]}>C-Khe</Text>
+          <Text style={[styles.brandTagline, { color: theme.colors.textSecondary }]}>
+            Your CBSE Study Partner
+          </Text>
+        </View>
       </View>
+
       <View style={styles.body}>
+        {/* ── Stats ── */}
         <View style={styles.statsRow}>
-          <View style={styles.statBox}>
+          <View style={[styles.statBox, { backgroundColor: theme.colors.card }]}>
             <Text style={styles.statVal}>{xp}</Text>
             <Text style={styles.statLabel}>Total XP</Text>
           </View>
-          <View style={styles.statBox}>
+          <View style={[styles.statBox, { backgroundColor: theme.colors.card }]}>
             <StreakBadge streak={streak} size="lg" />
             <Text style={styles.statLabel}>Streak</Text>
           </View>
-          <View style={styles.statBox}>
+          <View style={[styles.statBox, { backgroundColor: theme.colors.card }]}>
             <Text style={styles.statVal}>{badges.length}</Text>
             <Text style={styles.statLabel}>Badges</Text>
           </View>
         </View>
+
         <Text style={[styles.comingSoon, { color: theme.colors.textSecondary }]}>
-          Full profile coming in Sprint 3 🚀
+          Full profile coming soon
         </Text>
       </View>
+
       <XPBar xp={xp} />
     </SafeAreaView>
   )
@@ -45,14 +59,30 @@ export default function Profile() {
 function createStyles(t: Theme) {
   return StyleSheet.create({
     screen: { flex: 1, backgroundColor: t.colors.background },
-    header: {
+    brandHeader: {
+      flexDirection: 'row',
+      alignItems: 'center',
       paddingHorizontal: t.spacing.md,
       paddingVertical: t.spacing.md,
+      gap: t.spacing.sm,
+      borderBottomWidth: 1,
+      borderBottomColor: `${t.colors.textSecondary}18`,
     },
-    title: {
-      color: t.colors.textPrimary,
+    brandLogo: {
+      width: 48,
+      height: 48,
+      borderRadius: 12,
+    },
+    brandText: {
+      gap: 2,
+    },
+    brandName: {
       fontSize: t.fontSize.xl,
       fontFamily: 'SpaceGrotesk_700Bold',
+    },
+    brandTagline: {
+      fontSize: t.fontSize.sm,
+      fontFamily: 'DMSans_400Regular',
     },
     body: {
       flex: 1,
@@ -65,7 +95,6 @@ function createStyles(t: Theme) {
     },
     statBox: {
       flex: 1,
-      backgroundColor: t.colors.card,
       borderRadius: t.borderRadius.md,
       padding: t.spacing.md,
       alignItems: 'center',

@@ -32,7 +32,8 @@
       "Bash(cmd //c \"taskkill /PID 12564 /F\" && sleep 2 && cd \"C:/Users/sachi/Documents/snaplearn\" && CI=1 npx expo start --tunnel --clear 2>&1)",
       "Bash(cat:*)",
       "Bash(cd /c/Users/sachi/Documents/snaplearn && npx tsc --noEmit 2>&1)",
-      "Bash(tail:*)"
+      "Bash(tail:*)",
+      "WebFetch(domain:www.orchidsinternationalschool.com)"
     ]
   }
 }

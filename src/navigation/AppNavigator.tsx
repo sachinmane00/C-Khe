@@ -1,6 +1,8 @@
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Onboarding from '../screens/Onboarding'
+import PathSelection from '../screens/Onboarding/PathSelection'
+import ClassSelection from '../screens/Onboarding/ClassSelection'
 import TabNavigator from './TabNavigator'
 import ReelFeed from '../screens/ReelFeed'
 import SubjectDrillDown from '../screens/SubjectDrillDown'
@@ -14,7 +16,26 @@ export default function AppNavigator() {
       initialRouteName="Onboarding"
       screenOptions={{ headerShown: false }}
     >
-      <Stack.Screen name="Onboarding" component={Onboarding} />
+      {/* Splash — replaces itself with PathSelection after 2s */}
+      <Stack.Screen
+        name="Onboarding"
+        component={Onboarding}
+        options={{ gestureEnabled: false }}
+      />
+
+      {/* Onboarding flow — in the stack so back gestures work */}
+      <Stack.Screen
+        name="PathSelection"
+        component={PathSelection}
+        options={{ animation: 'slide_from_right', gestureEnabled: false }}
+      />
+      <Stack.Screen
+        name="ClassSelection"
+        component={ClassSelection}
+        options={{ animation: 'slide_from_right' }}
+      />
+
+      {/* Main app */}
       <Stack.Screen name="Tabs" component={TabNavigator} />
       <Stack.Screen
         name="SubjectDrillDown"

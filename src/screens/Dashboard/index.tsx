@@ -7,7 +7,8 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import { darkTheme, lightTheme, type Theme } from '../../constants/theme'
 import { useUserStore } from '../../store/userStore'
 import { useContentStore } from '../../store/contentStore'
-import { allSubjects, subjectMeta, seedData } from '../../data/seed'
+import { seedData } from '../../data/seed'
+import { getSubjectsForClass } from '../../data/seed/cbse_all_chapters'
 import StreakBadge from '../../components/ui/StreakBadge'
 import ProgressRing from '../../components/ui/ProgressRing'
 import XPBar from '../../components/ui/XPBar'
@@ -21,20 +22,41 @@ interface Props {
   navigation: Nav
 }
 
+const SUBJECT_META: Record<string, { color: string; emoji: string }> = {
+  Science:            { color: '#14B8A6', emoji: '🔬' },
+  Math:               { color: '#7C3AED', emoji: '📐' },
+  SST:                { color: '#F97316', emoji: '🌍' },
+  English:            { color: '#F59E0B', emoji: '📖' },
+  Hindi:              { color: '#EC4899', emoji: '✍️' },
+  EVS:                { color: '#84CC16', emoji: '🌱' },
+  History:            { color: '#EF4444', emoji: '🏛️' },
+  Geography:          { color: '#06B6D4', emoji: '🗺️' },
+  'Political Science': { color: '#8B5CF6', emoji: '⚖️' },
+  Economics:          { color: '#EC4899', emoji: '💹' },
+  Physics:            { color: '#3B82F6', emoji: '⚛️' },
+  Chemistry:          { color: '#F97316', emoji: '🧪' },
+  Biology:            { color: '#10B981', emoji: '🧬' },
+}
+
+const DEFAULT_META = { color: '#94A3B8', emoji: '📖' }
+const CLASS_10_SUBJECTS = new Set<string>(['Science', 'Math', 'SST', 'English', 'Hindi'])
+
 export default function Dashboard({ navigation }: Props) {
   const scheme = useColorScheme()
   const theme = scheme === 'dark' ? darkTheme : lightTheme
   const styles = useMemo(() => createStyles(theme), [theme])
 
-  const { xp, streak, subjectProgress } = useUserStore()
+  const { xp, streak, subjectProgress, classLevel } = useUserStore()
   const { setSubject } = useContentStore()
 
-  // Daily challenge: count cards studied today (approximate from XP)
   const dailyCards = Math.min(10, Math.floor(xp / 5) % 10)
+  const subjects = getSubjectsForClass(classLevel)
 
-  function goToSubjectDrillDown(subject: Subject) {
-    setSubject(subject)
-    navigation.navigate('SubjectDrillDown', { subject })
+  function goToSubjectDrillDown(subject: string) {
+    if (classLevel === 10 && CLASS_10_SUBJECTS.has(subject)) {
+      setSubject(subject as Subject)
+    }
+    navigation.navigate('SubjectDrillDown', { subject, classLevel })
   }
 
   return (
@@ -49,27 +71,25 @@ export default function Dashboard({ navigation }: Props) {
           <StreakBadge streak={streak} size="sm" />
         </View>
 
-        {/* ── Section 1: Your Subjects ── */}
-        <Text style={styles.sectionTitle}>Your Subjects</Text>
+        {/* ── Subjects ── */}
+        <Text style={styles.sectionTitle}>Subjects</Text>
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.subjectRow}
         >
-          {allSubjects.map((subject) => {
-            const meta = subjectMeta[subject]
-            const count = seedData[subject].length
-            const progress = subjectProgress[subject] ?? 0
+          {subjects.map((subject) => {
+            const meta = SUBJECT_META[subject] ?? DEFAULT_META
+            const isClass10 = classLevel === 10 && CLASS_10_SUBJECTS.has(subject)
+            const cardCount = isClass10 ? (seedData[subject as Subject]?.length ?? 0) : 0
+            const progress = isClass10 ? (subjectProgress[subject as Subject] ?? 0) : 0
 
             return (
               <TouchableOpacity
                 key={subject}
                 style={[
                   styles.subjectCard,
-                  {
-                    backgroundColor: `${meta.color}18`,
-                    borderColor: meta.color,
-                  },
+                  { backgroundColor: `${meta.color}18`, borderColor: meta.color },
                 ]}
                 onPress={() => goToSubjectDrillDown(subject)}
                 activeOpacity={0.75}
@@ -81,18 +101,16 @@ export default function Dashboard({ navigation }: Props) {
                   strokeWidth={6}
                   emoji={meta.emoji}
                 />
-                <Text style={[styles.subjectName, { color: meta.color }]}>
-                  {subject}
-                </Text>
+                <Text style={[styles.subjectName, { color: meta.color }]}>{subject}</Text>
                 <Text style={styles.cardCount}>
-                  {count > 0 ? `${count} cards` : 'AI ready'}
+                  {cardCount > 0 ? `${cardCount} cards` : 'Chapters →'}
                 </Text>
               </TouchableOpacity>
             )
           })}
         </ScrollView>
 
-        {/* ── Section 2: Daily Challenge ── */}
+        {/* ── Daily Challenge ── */}
         <Text style={styles.sectionTitle}>Daily Challenge</Text>
         <View style={styles.challengeCard}>
           <View style={styles.challengeHeader}>
@@ -162,6 +180,7 @@ function createStyles(t: Theme) {
     subjectName: {
       fontSize: t.fontSize.sm,
       fontFamily: 'SpaceGrotesk_700Bold',
+      textAlign: 'center',
     },
     cardCount: {
       color: t.colors.textSecondary,

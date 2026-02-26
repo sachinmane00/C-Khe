@@ -1,5 +1,5 @@
 import type { Card, Chapter, SearchResult } from '../types'
-import { allChapters } from '../data/seed/cbse10_chapters'
+import { allCBSEChapters } from '../data/seed/cbse_all_chapters'
 import { seedData } from '../data/seed'
 
 function normalize(str: string): string {
@@ -62,7 +62,7 @@ export function searchChapters(query: string): SearchResult[] {
   if (!query.trim()) return []
   const results: SearchResult[] = []
 
-  for (const chapter of allChapters) {
+  for (const chapter of allCBSEChapters) {
     let best = scoreText(chapter.title, query)
     let matchedOn = 'title'
 
@@ -79,7 +79,7 @@ export function searchChapters(query: string): SearchResult[] {
     }
 
     if (best > 0) {
-      results.push({ type: 'chapter', chapter, relevanceScore: best, matchedOn })
+      results.push({ type: 'chapter', chapter: chapter as unknown as Chapter, relevanceScore: best, matchedOn })
     }
   }
 

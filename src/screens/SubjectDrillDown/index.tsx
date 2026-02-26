@@ -10,11 +10,10 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { Ionicons } from '@expo/vector-icons'
 import { darkTheme, lightTheme, type Theme } from '../../constants/theme'
-import { subjectMeta } from '../../data/seed'
-import { chaptersBySubject } from '../../data/seed/cbse10_chapters'
+import { chaptersByClass, type CBSEChapter } from '../../data/seed/cbse_all_chapters'
 import { useSearchStore } from '../../store/searchStore'
 import SearchModal from '../../components/search/SearchModal'
-import type { Chapter, Subject, SearchResult, Card } from '../../types'
+import type { Subject, SearchResult } from '../../types'
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import type { RouteProp } from '@react-navigation/native'
 import type { RootStackParamList } from '../../navigation/types'
@@ -27,15 +26,31 @@ interface Props {
   route: Route
 }
 
+const SUBJECT_META: Record<string, { color: string; emoji: string }> = {
+  Science:            { color: '#14B8A6', emoji: '🔬' },
+  Math:               { color: '#7C3AED', emoji: '📐' },
+  SST:                { color: '#F97316', emoji: '🌍' },
+  English:            { color: '#F59E0B', emoji: '📖' },
+  Hindi:              { color: '#EC4899', emoji: '✍️' },
+  EVS:                { color: '#84CC16', emoji: '🌱' },
+  History:            { color: '#EF4444', emoji: '🏛️' },
+  Geography:          { color: '#06B6D4', emoji: '🗺️' },
+  'Political Science': { color: '#8B5CF6', emoji: '⚖️' },
+  Economics:          { color: '#EC4899', emoji: '💹' },
+  Physics:            { color: '#3B82F6', emoji: '⚛️' },
+  Chemistry:          { color: '#F97316', emoji: '🧪' },
+  Biology:            { color: '#10B981', emoji: '🧬' },
+}
+const DEFAULT_META = { color: '#94A3B8', emoji: '📖' }
+
 export default function SubjectDrillDown({ navigation, route }: Props) {
-  const { subject } = route.params
+  const { subject, classLevel = 10 } = route.params
   const scheme = useColorScheme()
   const theme = scheme === 'dark' ? darkTheme : lightTheme
   const styles = useMemo(() => createStyles(theme), [theme])
 
-  const meta = subjectMeta[subject]
-  const chapters = chaptersBySubject[subject] ?? []
-  console.log('chapters loaded:', subject, chapters.length)
+  const meta = SUBJECT_META[subject] ?? DEFAULT_META
+  const chapters: CBSEChapter[] = chaptersByClass[classLevel]?.[subject] ?? []
 
   const [searchVisible, setSearchVisible] = useState(false)
   const { setVisible } = useSearchStore()
@@ -50,7 +65,7 @@ export default function SubjectDrillDown({ navigation, route }: Props) {
     setVisible(false)
   }
 
-  function handleChapterPress(chapter: Chapter) {
+  function handleChapterPress(chapter: CBSEChapter) {
     navigation.navigate('ReelFeed', {
       subject,
       chapterId: chapter.id,
@@ -61,15 +76,6 @@ export default function SubjectDrillDown({ navigation, route }: Props) {
   function handleResultPress(result: SearchResult) {
     closeSearch()
 
-    if (result.type === 'chapter' && result.chapter) {
-      navigation.navigate('ReelFeed', {
-        subject: result.chapter.subject,
-        chapterId: result.chapter.id,
-        chapterTitle: result.chapter.title,
-      })
-      return
-    }
-
     if (result.type === 'card' && result.card) {
       navigation.navigate('ReelFeed', {
         subject: result.card.subject,
@@ -78,7 +84,7 @@ export default function SubjectDrillDown({ navigation, route }: Props) {
     }
   }
 
-  function renderChapter({ item }: { item: Chapter }) {
+  function renderChapter({ item }: { item: CBSEChapter }) {
     return (
       <TouchableOpacity
         style={[styles.chapterRow, { backgroundColor: theme.colors.surface }]}
@@ -111,6 +117,9 @@ export default function SubjectDrillDown({ navigation, route }: Props) {
         <View style={styles.headerCenter}>
           <Text style={styles.emoji}>{meta.emoji}</Text>
           <Text style={[styles.headerTitle, { color: theme.colors.textPrimary }]}>{subject}</Text>
+          <Text style={[styles.classTag, { color: theme.colors.textSecondary }]}>
+            Class {classLevel}
+          </Text>
         </View>
         <TouchableOpacity onPress={openSearch} style={styles.searchBtn}>
           <Ionicons name="search" size={22} color={theme.colors.accentPurple} />
@@ -126,7 +135,7 @@ export default function SubjectDrillDown({ navigation, route }: Props) {
         ItemSeparatorComponent={() => <View style={{ height: 8 }} />}
         ListEmptyComponent={
           <Text style={[styles.emptyText, { color: theme.colors.textSecondary }]}>
-            Chapters coming soon for {subject}.
+            Chapters coming soon for {subject} Class {classLevel}.
           </Text>
         }
       />
@@ -135,7 +144,7 @@ export default function SubjectDrillDown({ navigation, route }: Props) {
       <SearchModal
         visible={searchVisible}
         onClose={closeSearch}
-        activeSubject={subject}
+        activeSubject={null}
         onResultPress={handleResultPress}
       />
     </SafeAreaView>
@@ -162,12 +171,16 @@ function createStyles(t: Theme) {
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
-      gap: 8,
+      gap: 6,
     },
     emoji: { fontSize: 22 },
     headerTitle: {
       fontSize: t.fontSize.xl,
       fontFamily: 'SpaceGrotesk_700Bold',
+    },
+    classTag: {
+      fontSize: t.fontSize.sm,
+      fontFamily: 'DMSans_400Regular',
     },
     searchBtn: {
       padding: t.spacing.sm,

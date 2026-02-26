@@ -1,11 +1,13 @@
-import type { Card, Subject } from '../types'
+import type { Card } from '../types'
 
 export type RootStackParamList = {
-  Onboarding: undefined
+  Onboarding: undefined      // splash screen only — replaces itself with PathSelection
+  PathSelection: undefined   // "What are you studying for?"
+  ClassSelection: undefined  // "Which class?"
   Tabs: undefined
-  SubjectDrillDown: { subject: Subject }
+  SubjectDrillDown: { subject: string; classLevel?: number }
   ReelFeed: {
-    subject?: Subject
+    subject?: string
     chapterId?: string
     chapterTitle?: string
     cards?: Card[]

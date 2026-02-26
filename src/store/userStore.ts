@@ -4,6 +4,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 import type { UserStats, Subject } from '../types'
 
 interface UserStore extends UserStats {
+  classLevel: number
+  setClassLevel: (level: number) => void
   addXP: (amount: number) => void
   updateStreak: () => void
   unlockBadge: (badge: string) => void
@@ -24,6 +26,9 @@ export const useUserStore = create<UserStore>()(
   persist(
     (set, get) => ({
       ...initialState,
+      classLevel: 10,
+
+      setClassLevel: (level) => set({ classLevel: level }),
 
       addXP: (amount) => set((s) => ({ xp: s.xp + amount })),
 

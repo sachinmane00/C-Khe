@@ -24,11 +24,6 @@ export default function TabNavigator() {
   function handleResultPress(result: SearchResult) {
     setSearchVisible(false)
 
-    if (result.type === 'chapter' && result.chapter) {
-      navigation.navigate('SubjectDrillDown', { subject: result.chapter.subject })
-      return
-    }
-
     if (result.type === 'card' && result.card) {
       navigation.navigate('ReelFeed', {
         subject: result.card.subject,
